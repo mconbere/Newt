@@ -1,0 +1,18 @@
+<Maratis version="3.0">
+
+<Level>
+
+	<properties currentScene="0" />
+
+	<Scene name="Scene-1">
+
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+
+	</Scene>
+
+</Level>
+
+</Maratis>
