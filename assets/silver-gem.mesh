@@ -1,0 +1,169 @@
+<Maratis>
+
+<Mesh>
+
+<Materials num="1">
+	<Material id="0" type="1">
+		<blend type="0" />
+		<opacity value="1.000000" />
+		<shininess value="100.000000" />
+		<customValue value="0.000000" />
+		<diffuseColor r="0.390010" g="0.393106" b="0.390600" />
+		<specularColor r="0.500000" g="0.500000" b="0.500000" />
+		<emitColor r="0.000000" g="0.000000" b="0.000000" />
+		<customColor r="0.000000" g="0.000000" b="0.000000" />
+	</Material>
+</Materials>
+
+<BoundingBox minx="-1.000000" miny="-1.815449" minz="-0.547091" maxx="1.000000" maxy="1.815450" maxz="0.547091" />
+
+<SubMeshs num="1">
+	<SubMesh id="0">
+		<BoundingBox minx="-1.000000" miny="-1.815449" minz="-0.547091" maxx="1.000000" maxy="1.815450" maxz="0.547091" />
+		<Vertices num="18">
+			<vertex x="-0.000000" y="-1.815449" z="0.000000" />
+			<vertex x="-1.000000" y="-1.000000" z="0.000000" />
+			<vertex x="-0.727794" y="-0.727794" z="0.547091" />
+			<vertex x="-0.000000" y="-1.321273" z="0.547091" />
+			<vertex x="1.000000" y="-1.000000" z="0.000000" />
+			<vertex x="0.727794" y="-0.727794" z="0.547091" />
+			<vertex x="-1.000000" y="1.000000" z="0.000000" />
+			<vertex x="-0.000000" y="1.815450" z="0.000000" />
+			<vertex x="0.000000" y="1.321273" z="0.547091" />
+			<vertex x="-0.727794" y="0.727794" z="0.547091" />
+			<vertex x="1.000000" y="1.000000" z="0.000000" />
+			<vertex x="0.727794" y="0.727794" z="0.547091" />
+			<vertex x="-0.000000" y="1.321273" z="-0.547091" />
+			<vertex x="-0.727794" y="-0.727794" z="-0.547090" />
+			<vertex x="0.000000" y="-1.321273" z="-0.547091" />
+			<vertex x="0.727794" y="-0.727794" z="-0.547091" />
+			<vertex x="0.727794" y="0.727794" z="-0.547091" />
+			<vertex x="-0.727794" y="0.727794" z="-0.547090" />
+		</Vertices>
+		<Normals num="18">
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.883816" y="0.467818" z="0.000000" />
+			<normal x="0.529557" y="0.208625" z="-0.822199" />
+			<normal x="0.000000" y="0.530290" z="-0.847804" />
+			<normal x="-0.883816" y="0.467818" z="0.000000" />
+			<normal x="-0.529557" y="0.208625" z="-0.822199" />
+			<normal x="0.883816" y="-0.467818" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-0.530290" z="-0.847804" />
+			<normal x="0.529557" y="-0.208625" z="-0.822199" />
+			<normal x="-0.883816" y="-0.467818" z="0.000000" />
+			<normal x="-0.529557" y="-0.208625" z="-0.822199" />
+			<normal x="0.000000" y="-0.530290" z="0.847804" />
+			<normal x="0.529557" y="0.208625" z="0.822199" />
+			<normal x="0.000000" y="0.530290" z="0.847804" />
+			<normal x="-0.529557" y="0.208625" z="0.822199" />
+			<normal x="-0.529557" y="-0.208625" z="0.822199" />
+			<normal x="0.529557" y="-0.208625" z="0.822199" />
+		</Normals>
+		<Indices num="96">
+			<index value="0" />
+			<index value="1" />
+			<index value="2" />
+			<index value="2" />
+			<index value="3" />
+			<index value="0" />
+			<index value="4" />
+			<index value="0" />
+			<index value="3" />
+			<index value="3" />
+			<index value="5" />
+			<index value="4" />
+			<index value="6" />
+			<index value="7" />
+			<index value="8" />
+			<index value="8" />
+			<index value="9" />
+			<index value="6" />
+			<index value="7" />
+			<index value="10" />
+			<index value="11" />
+			<index value="11" />
+			<index value="8" />
+			<index value="7" />
+			<index value="1" />
+			<index value="6" />
+			<index value="9" />
+			<index value="9" />
+			<index value="2" />
+			<index value="1" />
+			<index value="10" />
+			<index value="4" />
+			<index value="5" />
+			<index value="5" />
+			<index value="11" />
+			<index value="10" />
+			<index value="5" />
+			<index value="8" />
+			<index value="11" />
+			<index value="2" />
+			<index value="9" />
+			<index value="8" />
+			<index value="8" />
+			<index value="3" />
+			<index value="2" />
+			<index value="8" />
+			<index value="5" />
+			<index value="3" />
+			<index value="12" />
+			<index value="13" />
+			<index value="14" />
+			<index value="12" />
+			<index value="14" />
+			<index value="15" />
+			<index value="15" />
+			<index value="16" />
+			<index value="12" />
+			<index value="13" />
+			<index value="12" />
+			<index value="17" />
+			<index value="6" />
+			<index value="1" />
+			<index value="13" />
+			<index value="13" />
+			<index value="17" />
+			<index value="6" />
+			<index value="4" />
+			<index value="10" />
+			<index value="16" />
+			<index value="16" />
+			<index value="15" />
+			<index value="4" />
+			<index value="7" />
+			<index value="6" />
+			<index value="17" />
+			<index value="17" />
+			<index value="12" />
+			<index value="7" />
+			<index value="10" />
+			<index value="7" />
+			<index value="12" />
+			<index value="12" />
+			<index value="16" />
+			<index value="10" />
+			<index value="1" />
+			<index value="0" />
+			<index value="14" />
+			<index value="14" />
+			<index value="13" />
+			<index value="1" />
+			<index value="0" />
+			<index value="4" />
+			<index value="15" />
+			<index value="15" />
+			<index value="14" />
+			<index value="0" />
+		</Indices>
+		<Displays num="1">
+			<display primType="triangles" begin="0" size="96" material="0" cullFace="2" />
+		</Displays>
+	</SubMesh>
+</SubMeshs>
+
+</Mesh>
+
+</Maratis>
