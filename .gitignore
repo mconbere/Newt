@@ -1,0 +1,9 @@
+# Ignore these punkass sons-a-bitches
+*.pyc
+*~
+.DS_Store
+*.mode1v3
+*.pbxuser
+xcuserdata
+*.xcworkspace
+.sconsign.dblite
