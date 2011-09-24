@@ -1,3 +1,4 @@
+# coding: utf-8
 # platform specific customizations
 # 2011-02-13, Davide Bacchet (davide.bacchet@gmail.com)
 # $LastChangedDate: 2011-02-15 15:25:50 +0100 (mar., 15 févr. 2011) $
