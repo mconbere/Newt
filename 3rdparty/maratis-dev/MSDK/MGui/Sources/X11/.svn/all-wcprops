@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/X11
+END
+MX11Window.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/X11/MX11Window.cpp
+END
+x11_keysym2unicode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/X11/x11_keysym2unicode.cpp
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables
+END
+EnumVariable.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables/EnumVariable.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables/__init__.py
+END
+ListVariable.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables/ListVariable.py
+END
+BoolVariable.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables/BoolVariable.py
+END
+PackageVariable.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables/PackageVariable.py
+END
+PathVariable.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Variables/PathVariable.py
+END

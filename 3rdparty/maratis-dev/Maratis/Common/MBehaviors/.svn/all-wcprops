@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/34/trunk/dev/Maratis/Common/MBehaviors
+END
+MBFollow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MBehaviors/MBFollow.cpp
+END
+MBFollow.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MBehaviors/MBFollow.h
+END
+MBLookAt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/34/trunk/dev/Maratis/Common/MBehaviors/MBLookAt.cpp
+END
+MBLookAt.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MBehaviors/MBLookAt.h
+END

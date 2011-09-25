@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/59/trunk/dev/Maratis/Common/MRenderers
+END
+MFixedRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/59/trunk/dev/Maratis/Common/MRenderers/MFixedRenderer.cpp
+END
+MStandardRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/59/trunk/dev/Maratis/Common/MRenderers/MStandardRenderer.cpp
+END
+MFixedRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MRenderers/MFixedRenderer.h
+END
+MStandardRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/51/trunk/dev/Maratis/Common/MRenderers/MStandardRenderer.h
+END
+MStandardShaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/21/trunk/dev/Maratis/Common/MRenderers/MStandardShaders.h
+END

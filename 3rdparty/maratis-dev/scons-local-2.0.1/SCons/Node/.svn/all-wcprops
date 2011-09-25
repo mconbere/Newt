@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Node
+END
+FS.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Node/FS.py
+END
+Alias.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Node/Alias.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Node/__init__.py
+END
+Python.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Node/Python.py
+END

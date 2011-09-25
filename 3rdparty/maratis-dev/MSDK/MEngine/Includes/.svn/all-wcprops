@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/50/trunk/dev/MSDK/MEngine/Includes
+END
+MMorphingData.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMorphingData.h
+END
+MBox3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MBox3d.h
+END
+MArmatureAnimRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MArmatureAnimRef.h
+END
+MMaterialsAnimRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMaterialsAnimRef.h
+END
+MTexturesAnimRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MTexturesAnimRef.h
+END
+MMaterialsAnim.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMaterialsAnim.h
+END
+MTexturesAnim.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MTexturesAnim.h
+END
+MKey.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MKey.h
+END
+MScene.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MScene.h
+END
+MTextureRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/21/trunk/dev/MSDK/MEngine/Includes/MTextureRef.h
+END
+MMaterial.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/21/trunk/dev/MSDK/MEngine/Includes/MMaterial.h
+END
+MTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MTexture.h
+END
+MOBone.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MOBone.h
+END
+MMaterialAnim.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMaterialAnim.h
+END
+MShaderRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MShaderRef.h
+END
+MTextureAnim.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MTextureAnim.h
+END
+MRenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MRenderer.h
+END
+MOCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MOCamera.h
+END
+MGame.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MGame.h
+END
+MMeshTools.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMeshTools.h
+END
+MBehaviorCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MBehaviorCreator.h
+END
+MArmature.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MArmature.h
+END
+MArmatureAnim.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MArmatureAnim.h
+END
+MSoundRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MSoundRef.h
+END
+MVariable.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/50/trunk/dev/MSDK/MEngine/Includes/MVariable.h
+END
+MOLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MOLight.h
+END
+MRendererCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MRendererCreator.h
+END
+MMeshRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMeshRef.h
+END
+MBehaviorManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MBehaviorManager.h
+END
+MOEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MOEntity.h
+END
+MMesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MMesh.h
+END
+MObject3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MObject3d.h
+END
+MSkinData.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MSkinData.h
+END
+MBehavior.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MBehavior.h
+END
+MRendererManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MRendererManager.h
+END
+MObject3dAnim.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MObject3dAnim.h
+END
+MOText.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MOText.h
+END
+MFontRef.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MFontRef.h
+END
+MEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MEngine.h
+END
+MFrustum.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MFrustum.h
+END
+MFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MFont.h
+END
+MOSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MOSound.h
+END
+MLevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MLevel.h
+END
+MFXManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MEngine/Includes/MFXManager.h
+END

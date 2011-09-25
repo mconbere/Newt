@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/59/trunk/dev/MSDK/MGui/Sources
+END
+MGui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/MGui.cpp
+END
+MGuiSlide.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/MGuiSlide.cpp
+END
+MGuiImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MGuiImage.cpp
+END
+MMouse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/MMouse.cpp
+END
+MGuiText.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MGuiText.cpp
+END
+MGuiMenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/MGuiMenu.cpp
+END
+MGui2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MGui2d.cpp
+END
+MGuiTextureFont.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MGuiTextureFont.cpp
+END
+MGuiWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/57/trunk/dev/MSDK/MGui/Sources/MGuiWindow.cpp
+END
+MGuiEditText.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MGuiEditText.cpp
+END
+MJoystick.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MJoystick.cpp
+END
+MKeyboard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MGui/Sources/MKeyboard.cpp
+END
+MGuiButton.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/52/trunk/dev/MSDK/MGui/Sources/MGuiButton.cpp
+END

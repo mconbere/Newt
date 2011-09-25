@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty
+END
+windows.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/windows.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/var/scons/thirdparty/__init__.py
+END
+zlib.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/zlib.py
+END
+devil.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/devil.py
+END
+tinyxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/tinyxml.py
+END
+libpng.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/libpng.py
+END
+libsndfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/libsndfile.py
+END
+glee.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/glee.py
+END
+libjpeg.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/libjpeg.py
+END
+openal.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/openal.py
+END
+lua.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/lua.py
+END
+freetype.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/freetype.py
+END
+opengl.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/opengl.py
+END
+cocoa.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/cocoa.py
+END
+dirent.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/dirent.py
+END
+bullet.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/var/scons/thirdparty/bullet.py
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Script
+END
+Interactive.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Script/Interactive.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Script/__init__.py
+END
+SConsOptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Script/SConsOptions.py
+END
+Main.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Script/Main.py
+END
+SConscript.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Script/SConscript.py
+END
