@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 39
+build
+Debug
+*.ncb
+*.suo
+*.user
+Release
+
+END

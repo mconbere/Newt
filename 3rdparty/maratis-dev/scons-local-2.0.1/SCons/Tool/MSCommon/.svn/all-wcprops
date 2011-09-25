@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/common.py
+END
+vc.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/vc.py
+END
+vs.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/vs.py
+END
+arch.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/arch.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/__init__.py
+END
+sdk.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/sdk.py
+END
+netframework.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Tool/MSCommon/netframework.py
+END

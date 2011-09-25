@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/57/trunk/dev/Maratis/Common/MLoaders
+END
+MBinFontLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MLoaders/MBinFontLoader.cpp
+END
+MDevILLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/57/trunk/dev/Maratis/Common/MLoaders/MDevILLoader.cpp
+END
+MFreetypeLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MLoaders/MFreetypeLoader.cpp
+END
+MBinFontLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MLoaders/MBinFontLoader.h
+END
+MSndFileLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MLoaders/MSndFileLoader.cpp
+END
+MFreetypeLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MLoaders/MFreetypeLoader.h
+END
+MDevILLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/57/trunk/dev/Maratis/Common/MLoaders/MDevILLoader.h
+END
+MSndFileLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/dev/Maratis/Common/MLoaders/MSndFileLoader.h
+END

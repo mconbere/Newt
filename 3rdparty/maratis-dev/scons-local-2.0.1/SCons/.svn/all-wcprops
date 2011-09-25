@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons
+END
+Warnings.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Warnings.py
+END
+PathList.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/PathList.py
+END
+Executor.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Executor.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/__init__.py
+END
+Subst.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Subst.py
+END
+CacheDir.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/CacheDir.py
+END
+dblite.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/dblite.py
+END
+Environment.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Environment.py
+END
+Memoize.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Memoize.py
+END
+Defaults.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Defaults.py
+END
+exitfuncs.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/exitfuncs.py
+END
+SConf.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/SConf.py
+END
+Job.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Job.py
+END
+Errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Errors.py
+END
+Util.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Util.py
+END
+Action.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Action.py
+END
+Taskmaster.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Taskmaster.py
+END
+Sig.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Sig.py
+END
+cpp.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/cpp.py
+END
+SConsign.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/SConsign.py
+END
+Conftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Conftest.py
+END
+Debug.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Debug.py
+END
+Builder.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/scons-local-2.0.1/SCons/Builder.py
+END

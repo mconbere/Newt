@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/32/trunk/dev/Examples/ManualUse
+END
+MyGame.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/31/trunk/dev/Examples/ManualUse/MyGame.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/32/trunk/dev/Examples/ManualUse/main.cpp
+END
+MyGame.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/20/trunk/dev/Examples/ManualUse/MyGame.h
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/28/trunk/dev/Examples/ManualUse/SConscript
+END

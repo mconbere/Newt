@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/59/trunk/dev/MSDK/MCore/Includes
+END
+MMaths.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/59/trunk/dev/MSDK/MCore/Includes/MMaths.h
+END
+MColor.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MColor.h
+END
+MRenderingContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/57/trunk/dev/MSDK/MCore/Includes/MRenderingContext.h
+END
+MImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MImage.h
+END
+MVector2.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MVector2.h
+END
+MQuaternion.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MQuaternion.h
+END
+MVector3.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/MSDK/MCore/Includes/MVector3.h
+END
+MVector4.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/57/trunk/dev/MSDK/MCore/Includes/MVector4.h
+END
+MStringTools.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MStringTools.h
+END
+MPhysicsContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/22/trunk/dev/MSDK/MCore/Includes/MPhysicsContext.h
+END
+MCore.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MCore.h
+END
+MSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MSound.h
+END
+MSystemContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MSystemContext.h
+END
+MSoundContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MSoundContext.h
+END
+MFileTools.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MFileTools.h
+END
+MUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MUtils.h
+END
+MDataLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MDataLoader.h
+END
+MDataManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MDataManager.h
+END
+MMatrix4x4.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MMatrix4x4.h
+END
+MInputContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/52/trunk/dev/MSDK/MCore/Includes/MInputContext.h
+END
+MString.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MString.h
+END
+MScriptContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Includes/MScriptContext.h
+END

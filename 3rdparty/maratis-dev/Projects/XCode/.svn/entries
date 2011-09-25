@@ -1,0 +1,43 @@
+10
+
+dir
+59
+http://maratis.googlecode.com/svn/trunk/dev/Projects/XCode
+http://maratis.googlecode.com/svn
+
+
+
+2011-09-14T10:12:57.858280Z
+57
+anael.seghezzi@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+9d9a707f-7efe-918e-91e4-5b34a9e3d4e4
+
+MCore.xcodeproj
+dir
+
+MaratisWorkspace.xcworkspace
+dir
+
+MaratisPlayer.xcodeproj
+dir
+
+Maratis.xcodeproj
+dir
+
+MEngine.xcodeproj
+dir
+

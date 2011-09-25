@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/59/trunk/dev/MSDK/MCore/Sources
+END
+MImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MImage.cpp
+END
+MDataManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MDataManager.cpp
+END
+MMatrix4x4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MMatrix4x4.cpp
+END
+MVector2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MVector2.cpp
+END
+MVector3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/57/trunk/dev/MSDK/MCore/Sources/MVector3.cpp
+END
+MQuaternion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MQuaternion.cpp
+END
+MVector4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MVector4.cpp
+END
+MString.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MString.cpp
+END
+MStringTools.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MStringTools.cpp
+END
+MSound.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MSound.cpp
+END
+MMaths.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/59/trunk/dev/MSDK/MCore/Sources/MMaths.cpp
+END
+MColor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MColor.cpp
+END
+MDataLoader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/dev/MSDK/MCore/Sources/MDataLoader.cpp
+END
+MFileTools.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/33/trunk/dev/MSDK/MCore/Sources/MFileTools.cpp
+END
