@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1796A21438CDA70060D173 /* MColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17967D1438CDA70060D173 /* MColor.h */; };
+		8E1796A31438CDA70060D173 /* MCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17967E1438CDA70060D173 /* MCore.h */; };
+		8E1796A41438CDA70060D173 /* MDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17967F1438CDA70060D173 /* MDataLoader.h */; };
+		8E1796A51438CDA70060D173 /* MDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796801438CDA70060D173 /* MDataManager.h */; };
+		8E1796A61438CDA70060D173 /* MFileTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796811438CDA70060D173 /* MFileTools.h */; };
+		8E1796A71438CDA70060D173 /* MImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796821438CDA70060D173 /* MImage.h */; };
+		8E1796A81438CDA70060D173 /* MInputContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796831438CDA70060D173 /* MInputContext.h */; };
+		8E1796A91438CDA70060D173 /* MMaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796841438CDA70060D173 /* MMaths.h */; };
+		8E1796AA1438CDA70060D173 /* MMatrix4x4.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796851438CDA70060D173 /* MMatrix4x4.h */; };
+		8E1796AB1438CDA70060D173 /* MPhysicsContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796861438CDA70060D173 /* MPhysicsContext.h */; };
+		8E1796AC1438CDA70060D173 /* MQuaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796871438CDA70060D173 /* MQuaternion.h */; };
+		8E1796AD1438CDA70060D173 /* MRenderingContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796881438CDA70060D173 /* MRenderingContext.h */; };
+		8E1796AE1438CDA70060D173 /* MScriptContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796891438CDA70060D173 /* MScriptContext.h */; };
+		8E1796AF1438CDA70060D173 /* MSound.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17968A1438CDA70060D173 /* MSound.h */; };
+		8E1796B01438CDA70060D173 /* MSoundContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17968B1438CDA70060D173 /* MSoundContext.h */; };
+		8E1796B11438CDA70060D173 /* MString.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17968C1438CDA70060D173 /* MString.h */; };
+		8E1796B21438CDA70060D173 /* MStringTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17968D1438CDA70060D173 /* MStringTools.h */; };
+		8E1796B31438CDA70060D173 /* MSystemContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17968E1438CDA70060D173 /* MSystemContext.h */; };
+		8E1796B41438CDA70060D173 /* MUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17968F1438CDA70060D173 /* MUtils.h */; };
+		8E1796B51438CDA70060D173 /* MVector2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796901438CDA70060D173 /* MVector2.h */; };
+		8E1796B61438CDA70060D173 /* MVector3.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796911438CDA70060D173 /* MVector3.h */; };
+		8E1796B71438CDA70060D173 /* MVector4.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796921438CDA70060D173 /* MVector4.h */; };
+		8E1796B81438CDA70060D173 /* MColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796941438CDA70060D173 /* MColor.cpp */; };
+		8E1796B91438CDA70060D173 /* MDataLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796951438CDA70060D173 /* MDataLoader.cpp */; };
+		8E1796BA1438CDA70060D173 /* MDataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796961438CDA70060D173 /* MDataManager.cpp */; };
+		8E1796BB1438CDA70060D173 /* MFileTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796971438CDA70060D173 /* MFileTools.cpp */; };
+		8E1796BC1438CDA70060D173 /* MImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796981438CDA70060D173 /* MImage.cpp */; };
+		8E1796BD1438CDA70060D173 /* MMaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796991438CDA70060D173 /* MMaths.cpp */; };
+		8E1796BE1438CDA70060D173 /* MMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17969A1438CDA70060D173 /* MMatrix4x4.cpp */; };
+		8E1796BF1438CDA70060D173 /* MQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17969B1438CDA70060D173 /* MQuaternion.cpp */; };
+		8E1796C01438CDA70060D173 /* MSound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17969C1438CDA70060D173 /* MSound.cpp */; };
+		8E1796C11438CDA70060D173 /* MString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17969D1438CDA70060D173 /* MString.cpp */; };
+		8E1796C21438CDA70060D173 /* MStringTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17969E1438CDA70060D173 /* MStringTools.cpp */; };
+		8E1796C31438CDA70060D173 /* MVector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17969F1438CDA70060D173 /* MVector2.cpp */; };
+		8E1796C41438CDA70060D173 /* MVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796A01438CDA70060D173 /* MVector3.cpp */; };
+		8E1796C51438CDA70060D173 /* MVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796A11438CDA70060D173 /* MVector4.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E17967D1438CDA70060D173 /* MColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MColor.h; sourceTree = "<group>"; };
+		8E17967E1438CDA70060D173 /* MCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCore.h; sourceTree = "<group>"; };
+		8E17967F1438CDA70060D173 /* MDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDataLoader.h; sourceTree = "<group>"; };
+		8E1796801438CDA70060D173 /* MDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDataManager.h; sourceTree = "<group>"; };
+		8E1796811438CDA70060D173 /* MFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFileTools.h; sourceTree = "<group>"; };
+		8E1796821438CDA70060D173 /* MImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MImage.h; sourceTree = "<group>"; };
+		8E1796831438CDA70060D173 /* MInputContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInputContext.h; sourceTree = "<group>"; };
+		8E1796841438CDA70060D173 /* MMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMaths.h; sourceTree = "<group>"; };
+		8E1796851438CDA70060D173 /* MMatrix4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMatrix4x4.h; sourceTree = "<group>"; };
+		8E1796861438CDA70060D173 /* MPhysicsContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPhysicsContext.h; sourceTree = "<group>"; };
+		8E1796871438CDA70060D173 /* MQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQuaternion.h; sourceTree = "<group>"; };
+		8E1796881438CDA70060D173 /* MRenderingContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRenderingContext.h; sourceTree = "<group>"; };
+		8E1796891438CDA70060D173 /* MScriptContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MScriptContext.h; sourceTree = "<group>"; };
+		8E17968A1438CDA70060D173 /* MSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSound.h; sourceTree = "<group>"; };
+		8E17968B1438CDA70060D173 /* MSoundContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSoundContext.h; sourceTree = "<group>"; };
+		8E17968C1438CDA70060D173 /* MString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MString.h; sourceTree = "<group>"; };
+		8E17968D1438CDA70060D173 /* MStringTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MStringTools.h; sourceTree = "<group>"; };
+		8E17968E1438CDA70060D173 /* MSystemContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSystemContext.h; sourceTree = "<group>"; };
+		8E17968F1438CDA70060D173 /* MUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUtils.h; sourceTree = "<group>"; };
+		8E1796901438CDA70060D173 /* MVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVector2.h; sourceTree = "<group>"; };
+		8E1796911438CDA70060D173 /* MVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVector3.h; sourceTree = "<group>"; };
+		8E1796921438CDA70060D173 /* MVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVector4.h; sourceTree = "<group>"; };
+		8E1796941438CDA70060D173 /* MColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MColor.cpp; sourceTree = "<group>"; };
+		8E1796951438CDA70060D173 /* MDataLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MDataLoader.cpp; sourceTree = "<group>"; };
+		8E1796961438CDA70060D173 /* MDataManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MDataManager.cpp; sourceTree = "<group>"; };
+		8E1796971438CDA70060D173 /* MFileTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFileTools.cpp; sourceTree = "<group>"; };
+		8E1796981438CDA70060D173 /* MImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MImage.cpp; sourceTree = "<group>"; };
+		8E1796991438CDA70060D173 /* MMaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMaths.cpp; sourceTree = "<group>"; };
+		8E17969A1438CDA70060D173 /* MMatrix4x4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMatrix4x4.cpp; sourceTree = "<group>"; };
+		8E17969B1438CDA70060D173 /* MQuaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MQuaternion.cpp; sourceTree = "<group>"; };
+		8E17969C1438CDA70060D173 /* MSound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSound.cpp; sourceTree = "<group>"; };
+		8E17969D1438CDA70060D173 /* MString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MString.cpp; sourceTree = "<group>"; };
+		8E17969E1438CDA70060D173 /* MStringTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MStringTools.cpp; sourceTree = "<group>"; };
+		8E17969F1438CDA70060D173 /* MVector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MVector2.cpp; sourceTree = "<group>"; };
+		8E1796A01438CDA70060D173 /* MVector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MVector3.cpp; sourceTree = "<group>"; };
+		8E1796A11438CDA70060D173 /* MVector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MVector4.cpp; sourceTree = "<group>"; };
+		8E2447DA1437857E00C2214D /* libMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E2447D71437857E00C2214D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E17967C1438CDA70060D173 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				8E17967D1438CDA70060D173 /* MColor.h */,
+				8E17967E1438CDA70060D173 /* MCore.h */,
+				8E17967F1438CDA70060D173 /* MDataLoader.h */,
+				8E1796801438CDA70060D173 /* MDataManager.h */,
+				8E1796811438CDA70060D173 /* MFileTools.h */,
+				8E1796821438CDA70060D173 /* MImage.h */,
+				8E1796831438CDA70060D173 /* MInputContext.h */,
+				8E1796841438CDA70060D173 /* MMaths.h */,
+				8E1796851438CDA70060D173 /* MMatrix4x4.h */,
+				8E1796861438CDA70060D173 /* MPhysicsContext.h */,
+				8E1796871438CDA70060D173 /* MQuaternion.h */,
+				8E1796881438CDA70060D173 /* MRenderingContext.h */,
+				8E1796891438CDA70060D173 /* MScriptContext.h */,
+				8E17968A1438CDA70060D173 /* MSound.h */,
+				8E17968B1438CDA70060D173 /* MSoundContext.h */,
+				8E17968C1438CDA70060D173 /* MString.h */,
+				8E17968D1438CDA70060D173 /* MStringTools.h */,
+				8E17968E1438CDA70060D173 /* MSystemContext.h */,
+				8E17968F1438CDA70060D173 /* MUtils.h */,
+				8E1796901438CDA70060D173 /* MVector2.h */,
+				8E1796911438CDA70060D173 /* MVector3.h */,
+				8E1796921438CDA70060D173 /* MVector4.h */,
+			);
+			name = Includes;
+			path = "../../../3rdparty/maratis-dev/MSDK/MCore/Includes";
+			sourceTree = "<group>";
+		};
+		8E1796931438CDA70060D173 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E1796941438CDA70060D173 /* MColor.cpp */,
+				8E1796951438CDA70060D173 /* MDataLoader.cpp */,
+				8E1796961438CDA70060D173 /* MDataManager.cpp */,
+				8E1796971438CDA70060D173 /* MFileTools.cpp */,
+				8E1796981438CDA70060D173 /* MImage.cpp */,
+				8E1796991438CDA70060D173 /* MMaths.cpp */,
+				8E17969A1438CDA70060D173 /* MMatrix4x4.cpp */,
+				8E17969B1438CDA70060D173 /* MQuaternion.cpp */,
+				8E17969C1438CDA70060D173 /* MSound.cpp */,
+				8E17969D1438CDA70060D173 /* MString.cpp */,
+				8E17969E1438CDA70060D173 /* MStringTools.cpp */,
+				8E17969F1438CDA70060D173 /* MVector2.cpp */,
+				8E1796A01438CDA70060D173 /* MVector3.cpp */,
+				8E1796A11438CDA70060D173 /* MVector4.cpp */,
+			);
+			name = Sources;
+			path = "../../../3rdparty/maratis-dev/MSDK/MCore/Sources";
+			sourceTree = "<group>";
+		};
+		8E2447CF1437857E00C2214D = {
+			isa = PBXGroup;
+			children = (
+				8E2447E1143785AA00C2214D /* Source */,
+				8E2447DB1437857E00C2214D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E2447DB1437857E00C2214D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E2447DA1437857E00C2214D /* libMCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E2447E1143785AA00C2214D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E17967C1438CDA70060D173 /* Includes */,
+				8E1796931438CDA70060D173 /* Sources */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E2447D81437857E00C2214D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1796A21438CDA70060D173 /* MColor.h in Headers */,
+				8E1796A31438CDA70060D173 /* MCore.h in Headers */,
+				8E1796A41438CDA70060D173 /* MDataLoader.h in Headers */,
+				8E1796A51438CDA70060D173 /* MDataManager.h in Headers */,
+				8E1796A61438CDA70060D173 /* MFileTools.h in Headers */,
+				8E1796A71438CDA70060D173 /* MImage.h in Headers */,
+				8E1796A81438CDA70060D173 /* MInputContext.h in Headers */,
+				8E1796A91438CDA70060D173 /* MMaths.h in Headers */,
+				8E1796AA1438CDA70060D173 /* MMatrix4x4.h in Headers */,
+				8E1796AB1438CDA70060D173 /* MPhysicsContext.h in Headers */,
+				8E1796AC1438CDA70060D173 /* MQuaternion.h in Headers */,
+				8E1796AD1438CDA70060D173 /* MRenderingContext.h in Headers */,
+				8E1796AE1438CDA70060D173 /* MScriptContext.h in Headers */,
+				8E1796AF1438CDA70060D173 /* MSound.h in Headers */,
+				8E1796B01438CDA70060D173 /* MSoundContext.h in Headers */,
+				8E1796B11438CDA70060D173 /* MString.h in Headers */,
+				8E1796B21438CDA70060D173 /* MStringTools.h in Headers */,
+				8E1796B31438CDA70060D173 /* MSystemContext.h in Headers */,
+				8E1796B41438CDA70060D173 /* MUtils.h in Headers */,
+				8E1796B51438CDA70060D173 /* MVector2.h in Headers */,
+				8E1796B61438CDA70060D173 /* MVector3.h in Headers */,
+				8E1796B71438CDA70060D173 /* MVector4.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E2447D91437857E00C2214D /* MCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2447DE1437857E00C2214D /* Build configuration list for PBXNativeTarget "MCore" */;
+			buildPhases = (
+				8E2447D61437857E00C2214D /* Sources */,
+				8E2447D71437857E00C2214D /* Frameworks */,
+				8E2447D81437857E00C2214D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCore;
+			productName = MCore;
+			productReference = 8E2447DA1437857E00C2214D /* libMCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E2447D11437857E00C2214D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E2447D41437857E00C2214D /* Build configuration list for PBXProject "MCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E2447CF1437857E00C2214D;
+			productRefGroup = 8E2447DB1437857E00C2214D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E2447D91437857E00C2214D /* MCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E2447D61437857E00C2214D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1796B81438CDA70060D173 /* MColor.cpp in Sources */,
+				8E1796B91438CDA70060D173 /* MDataLoader.cpp in Sources */,
+				8E1796BA1438CDA70060D173 /* MDataManager.cpp in Sources */,
+				8E1796BB1438CDA70060D173 /* MFileTools.cpp in Sources */,
+				8E1796BC1438CDA70060D173 /* MImage.cpp in Sources */,
+				8E1796BD1438CDA70060D173 /* MMaths.cpp in Sources */,
+				8E1796BE1438CDA70060D173 /* MMatrix4x4.cpp in Sources */,
+				8E1796BF1438CDA70060D173 /* MQuaternion.cpp in Sources */,
+				8E1796C01438CDA70060D173 /* MSound.cpp in Sources */,
+				8E1796C11438CDA70060D173 /* MString.cpp in Sources */,
+				8E1796C21438CDA70060D173 /* MStringTools.cpp in Sources */,
+				8E1796C31438CDA70060D173 /* MVector2.cpp in Sources */,
+				8E1796C41438CDA70060D173 /* MVector3.cpp in Sources */,
+				8E1796C51438CDA70060D173 /* MVector4.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E2447DC1437857E00C2214D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E2447DD1437857E00C2214D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E2447DF1437857E00C2214D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E2447E01437857E00C2214D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E2447D41437857E00C2214D /* Build configuration list for PBXProject "MCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2447DC1437857E00C2214D /* Debug */,
+				8E2447DD1437857E00C2214D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2447DE1437857E00C2214D /* Build configuration list for PBXNativeTarget "MCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2447DF1437857E00C2214D /* Debug */,
+				8E2447E01437857E00C2214D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E2447D11437857E00C2214D /* Project object */;
+}

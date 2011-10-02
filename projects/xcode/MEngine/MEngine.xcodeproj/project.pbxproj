@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1797201438CDD40060D173 /* MArmature.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796C81438CDD40060D173 /* MArmature.h */; };
+		8E1797211438CDD40060D173 /* MArmatureAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796C91438CDD40060D173 /* MArmatureAnim.h */; };
+		8E1797221438CDD40060D173 /* MArmatureAnimRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796CA1438CDD40060D173 /* MArmatureAnimRef.h */; };
+		8E1797231438CDD40060D173 /* MBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796CB1438CDD40060D173 /* MBehavior.h */; };
+		8E1797241438CDD40060D173 /* MBehaviorCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796CC1438CDD40060D173 /* MBehaviorCreator.h */; };
+		8E1797251438CDD40060D173 /* MBehaviorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796CD1438CDD40060D173 /* MBehaviorManager.h */; };
+		8E1797261438CDD40060D173 /* MBox3d.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796CE1438CDD40060D173 /* MBox3d.h */; };
+		8E1797271438CDD40060D173 /* MEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796CF1438CDD40060D173 /* MEngine.h */; };
+		8E1797281438CDD40060D173 /* MFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D01438CDD40060D173 /* MFont.h */; };
+		8E1797291438CDD40060D173 /* MFontRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D11438CDD40060D173 /* MFontRef.h */; };
+		8E17972A1438CDD40060D173 /* MFrustum.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D21438CDD40060D173 /* MFrustum.h */; };
+		8E17972B1438CDD40060D173 /* MFXManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D31438CDD40060D173 /* MFXManager.h */; };
+		8E17972C1438CDD40060D173 /* MGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D41438CDD40060D173 /* MGame.h */; };
+		8E17972D1438CDD40060D173 /* MKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D51438CDD40060D173 /* MKey.h */; };
+		8E17972E1438CDD40060D173 /* MLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D61438CDD40060D173 /* MLevel.h */; };
+		8E17972F1438CDD40060D173 /* MMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D71438CDD40060D173 /* MMaterial.h */; };
+		8E1797301438CDD40060D173 /* MMaterialAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D81438CDD40060D173 /* MMaterialAnim.h */; };
+		8E1797311438CDD40060D173 /* MMaterialsAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796D91438CDD40060D173 /* MMaterialsAnim.h */; };
+		8E1797321438CDD40060D173 /* MMaterialsAnimRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796DA1438CDD40060D173 /* MMaterialsAnimRef.h */; };
+		8E1797331438CDD40060D173 /* MMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796DB1438CDD40060D173 /* MMesh.h */; };
+		8E1797341438CDD40060D173 /* MMeshRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796DC1438CDD40060D173 /* MMeshRef.h */; };
+		8E1797351438CDD40060D173 /* MMeshTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796DD1438CDD40060D173 /* MMeshTools.h */; };
+		8E1797361438CDD40060D173 /* MMorphingData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796DE1438CDD40060D173 /* MMorphingData.h */; };
+		8E1797371438CDD40060D173 /* MObject3d.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796DF1438CDD40060D173 /* MObject3d.h */; };
+		8E1797381438CDD40060D173 /* MObject3dAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E01438CDD40060D173 /* MObject3dAnim.h */; };
+		8E1797391438CDD40060D173 /* MOBone.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E11438CDD40060D173 /* MOBone.h */; };
+		8E17973A1438CDD40060D173 /* MOCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E21438CDD40060D173 /* MOCamera.h */; };
+		8E17973B1438CDD40060D173 /* MOEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E31438CDD40060D173 /* MOEntity.h */; };
+		8E17973C1438CDD40060D173 /* MOLight.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E41438CDD40060D173 /* MOLight.h */; };
+		8E17973D1438CDD40060D173 /* MOSound.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E51438CDD40060D173 /* MOSound.h */; };
+		8E17973E1438CDD40060D173 /* MOText.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E61438CDD40060D173 /* MOText.h */; };
+		8E17973F1438CDD40060D173 /* MRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E71438CDD40060D173 /* MRenderer.h */; };
+		8E1797401438CDD40060D173 /* MRendererCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E81438CDD40060D173 /* MRendererCreator.h */; };
+		8E1797411438CDD40060D173 /* MRendererManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796E91438CDD40060D173 /* MRendererManager.h */; };
+		8E1797421438CDD40060D173 /* MScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796EA1438CDD40060D173 /* MScene.h */; };
+		8E1797431438CDD40060D173 /* MShaderRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796EB1438CDD40060D173 /* MShaderRef.h */; };
+		8E1797441438CDD40060D173 /* MSkinData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796EC1438CDD40060D173 /* MSkinData.h */; };
+		8E1797451438CDD40060D173 /* MSoundRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796ED1438CDD40060D173 /* MSoundRef.h */; };
+		8E1797461438CDD40060D173 /* MTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796EE1438CDD40060D173 /* MTexture.h */; };
+		8E1797471438CDD40060D173 /* MTextureAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796EF1438CDD40060D173 /* MTextureAnim.h */; };
+		8E1797481438CDD40060D173 /* MTextureRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796F01438CDD40060D173 /* MTextureRef.h */; };
+		8E1797491438CDD40060D173 /* MTexturesAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796F11438CDD40060D173 /* MTexturesAnim.h */; };
+		8E17974A1438CDD40060D173 /* MTexturesAnimRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796F21438CDD40060D173 /* MTexturesAnimRef.h */; };
+		8E17974B1438CDD40060D173 /* MVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1796F31438CDD40060D173 /* MVariable.h */; };
+		8E17974C1438CDD40060D173 /* MArmature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796F51438CDD40060D173 /* MArmature.cpp */; };
+		8E17974D1438CDD40060D173 /* MArmatureAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796F61438CDD40060D173 /* MArmatureAnim.cpp */; };
+		8E17974E1438CDD40060D173 /* MArmatureAnimRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796F71438CDD40060D173 /* MArmatureAnimRef.cpp */; };
+		8E17974F1438CDD40060D173 /* MBehavior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796F81438CDD40060D173 /* MBehavior.cpp */; };
+		8E1797501438CDD40060D173 /* MBehaviorCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796F91438CDD40060D173 /* MBehaviorCreator.cpp */; };
+		8E1797511438CDD40060D173 /* MBehaviorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796FA1438CDD40060D173 /* MBehaviorManager.cpp */; };
+		8E1797521438CDD40060D173 /* MBox3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796FB1438CDD40060D173 /* MBox3d.cpp */; };
+		8E1797531438CDD40060D173 /* MEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796FC1438CDD40060D173 /* MEngine.cpp */; };
+		8E1797541438CDD40060D173 /* MFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796FD1438CDD40060D173 /* MFont.cpp */; };
+		8E1797551438CDD40060D173 /* MFontRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796FE1438CDD40060D173 /* MFontRef.cpp */; };
+		8E1797561438CDD40060D173 /* MFrustum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1796FF1438CDD40060D173 /* MFrustum.cpp */; };
+		8E1797571438CDD40060D173 /* MFXManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797001438CDD40060D173 /* MFXManager.cpp */; };
+		8E1797581438CDD40060D173 /* MGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797011438CDD40060D173 /* MGame.cpp */; };
+		8E1797591438CDD40060D173 /* MKey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797021438CDD40060D173 /* MKey.cpp */; };
+		8E17975A1438CDD40060D173 /* MLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797031438CDD40060D173 /* MLevel.cpp */; };
+		8E17975B1438CDD40060D173 /* MMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797041438CDD40060D173 /* MMaterial.cpp */; };
+		8E17975C1438CDD40060D173 /* MMaterialAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797051438CDD40060D173 /* MMaterialAnim.cpp */; };
+		8E17975D1438CDD40060D173 /* MMaterialsAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797061438CDD40060D173 /* MMaterialsAnim.cpp */; };
+		8E17975E1438CDD40060D173 /* MMaterialsAnimRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797071438CDD40060D173 /* MMaterialsAnimRef.cpp */; };
+		8E17975F1438CDD40060D173 /* MMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797081438CDD40060D173 /* MMesh.cpp */; };
+		8E1797601438CDD40060D173 /* MMeshRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797091438CDD40060D173 /* MMeshRef.cpp */; };
+		8E1797611438CDD40060D173 /* MMeshTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17970A1438CDD40060D173 /* MMeshTools.cpp */; };
+		8E1797621438CDD40060D173 /* MMorphingData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17970B1438CDD40060D173 /* MMorphingData.cpp */; };
+		8E1797631438CDD40060D173 /* MObject3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17970C1438CDD40060D173 /* MObject3d.cpp */; };
+		8E1797641438CDD40060D173 /* MObject3dAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17970D1438CDD40060D173 /* MObject3dAnim.cpp */; };
+		8E1797651438CDD40060D173 /* MOBone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17970E1438CDD40060D173 /* MOBone.cpp */; };
+		8E1797661438CDD40060D173 /* MOCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17970F1438CDD40060D173 /* MOCamera.cpp */; };
+		8E1797671438CDD40060D173 /* MOEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797101438CDD40060D173 /* MOEntity.cpp */; };
+		8E1797681438CDD40060D173 /* MOLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797111438CDD40060D173 /* MOLight.cpp */; };
+		8E1797691438CDD40060D173 /* MOSound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797121438CDD40060D173 /* MOSound.cpp */; };
+		8E17976A1438CDD40060D173 /* MOText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797131438CDD40060D173 /* MOText.cpp */; };
+		8E17976B1438CDD40060D173 /* MRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797141438CDD40060D173 /* MRenderer.cpp */; };
+		8E17976C1438CDD40060D173 /* MRendererCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797151438CDD40060D173 /* MRendererCreator.cpp */; };
+		8E17976D1438CDD40060D173 /* MRendererManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797161438CDD40060D173 /* MRendererManager.cpp */; };
+		8E17976E1438CDD40060D173 /* MScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797171438CDD40060D173 /* MScene.cpp */; };
+		8E17976F1438CDD40060D173 /* MShaderRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797181438CDD40060D173 /* MShaderRef.cpp */; };
+		8E1797701438CDD40060D173 /* MSkinData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797191438CDD40060D173 /* MSkinData.cpp */; };
+		8E1797711438CDD40060D173 /* MSoundRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17971A1438CDD40060D173 /* MSoundRef.cpp */; };
+		8E1797721438CDD40060D173 /* MTextureAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17971B1438CDD40060D173 /* MTextureAnim.cpp */; };
+		8E1797731438CDD40060D173 /* MTextureRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17971C1438CDD40060D173 /* MTextureRef.cpp */; };
+		8E1797741438CDD40060D173 /* MTexturesAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17971D1438CDD40060D173 /* MTexturesAnim.cpp */; };
+		8E1797751438CDD40060D173 /* MTexturesAnimRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17971E1438CDD40060D173 /* MTexturesAnimRef.cpp */; };
+		8E1797761438CDD40060D173 /* MVariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17971F1438CDD40060D173 /* MVariable.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E1796C81438CDD40060D173 /* MArmature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArmature.h; sourceTree = "<group>"; };
+		8E1796C91438CDD40060D173 /* MArmatureAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArmatureAnim.h; sourceTree = "<group>"; };
+		8E1796CA1438CDD40060D173 /* MArmatureAnimRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MArmatureAnimRef.h; sourceTree = "<group>"; };
+		8E1796CB1438CDD40060D173 /* MBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBehavior.h; sourceTree = "<group>"; };
+		8E1796CC1438CDD40060D173 /* MBehaviorCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBehaviorCreator.h; sourceTree = "<group>"; };
+		8E1796CD1438CDD40060D173 /* MBehaviorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBehaviorManager.h; sourceTree = "<group>"; };
+		8E1796CE1438CDD40060D173 /* MBox3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBox3d.h; sourceTree = "<group>"; };
+		8E1796CF1438CDD40060D173 /* MEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEngine.h; sourceTree = "<group>"; };
+		8E1796D01438CDD40060D173 /* MFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFont.h; sourceTree = "<group>"; };
+		8E1796D11438CDD40060D173 /* MFontRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFontRef.h; sourceTree = "<group>"; };
+		8E1796D21438CDD40060D173 /* MFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFrustum.h; sourceTree = "<group>"; };
+		8E1796D31438CDD40060D173 /* MFXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFXManager.h; sourceTree = "<group>"; };
+		8E1796D41438CDD40060D173 /* MGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGame.h; sourceTree = "<group>"; };
+		8E1796D51438CDD40060D173 /* MKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKey.h; sourceTree = "<group>"; };
+		8E1796D61438CDD40060D173 /* MLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLevel.h; sourceTree = "<group>"; };
+		8E1796D71438CDD40060D173 /* MMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMaterial.h; sourceTree = "<group>"; };
+		8E1796D81438CDD40060D173 /* MMaterialAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMaterialAnim.h; sourceTree = "<group>"; };
+		8E1796D91438CDD40060D173 /* MMaterialsAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMaterialsAnim.h; sourceTree = "<group>"; };
+		8E1796DA1438CDD40060D173 /* MMaterialsAnimRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMaterialsAnimRef.h; sourceTree = "<group>"; };
+		8E1796DB1438CDD40060D173 /* MMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMesh.h; sourceTree = "<group>"; };
+		8E1796DC1438CDD40060D173 /* MMeshRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMeshRef.h; sourceTree = "<group>"; };
+		8E1796DD1438CDD40060D173 /* MMeshTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMeshTools.h; sourceTree = "<group>"; };
+		8E1796DE1438CDD40060D173 /* MMorphingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMorphingData.h; sourceTree = "<group>"; };
+		8E1796DF1438CDD40060D173 /* MObject3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MObject3d.h; sourceTree = "<group>"; };
+		8E1796E01438CDD40060D173 /* MObject3dAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MObject3dAnim.h; sourceTree = "<group>"; };
+		8E1796E11438CDD40060D173 /* MOBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBone.h; sourceTree = "<group>"; };
+		8E1796E21438CDD40060D173 /* MOCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCamera.h; sourceTree = "<group>"; };
+		8E1796E31438CDD40060D173 /* MOEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOEntity.h; sourceTree = "<group>"; };
+		8E1796E41438CDD40060D173 /* MOLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOLight.h; sourceTree = "<group>"; };
+		8E1796E51438CDD40060D173 /* MOSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSound.h; sourceTree = "<group>"; };
+		8E1796E61438CDD40060D173 /* MOText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOText.h; sourceTree = "<group>"; };
+		8E1796E71438CDD40060D173 /* MRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRenderer.h; sourceTree = "<group>"; };
+		8E1796E81438CDD40060D173 /* MRendererCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRendererCreator.h; sourceTree = "<group>"; };
+		8E1796E91438CDD40060D173 /* MRendererManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRendererManager.h; sourceTree = "<group>"; };
+		8E1796EA1438CDD40060D173 /* MScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MScene.h; sourceTree = "<group>"; };
+		8E1796EB1438CDD40060D173 /* MShaderRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MShaderRef.h; sourceTree = "<group>"; };
+		8E1796EC1438CDD40060D173 /* MSkinData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSkinData.h; sourceTree = "<group>"; };
+		8E1796ED1438CDD40060D173 /* MSoundRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSoundRef.h; sourceTree = "<group>"; };
+		8E1796EE1438CDD40060D173 /* MTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTexture.h; sourceTree = "<group>"; };
+		8E1796EF1438CDD40060D173 /* MTextureAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTextureAnim.h; sourceTree = "<group>"; };
+		8E1796F01438CDD40060D173 /* MTextureRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTextureRef.h; sourceTree = "<group>"; };
+		8E1796F11438CDD40060D173 /* MTexturesAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTexturesAnim.h; sourceTree = "<group>"; };
+		8E1796F21438CDD40060D173 /* MTexturesAnimRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTexturesAnimRef.h; sourceTree = "<group>"; };
+		8E1796F31438CDD40060D173 /* MVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVariable.h; sourceTree = "<group>"; };
+		8E1796F51438CDD40060D173 /* MArmature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MArmature.cpp; sourceTree = "<group>"; };
+		8E1796F61438CDD40060D173 /* MArmatureAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MArmatureAnim.cpp; sourceTree = "<group>"; };
+		8E1796F71438CDD40060D173 /* MArmatureAnimRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MArmatureAnimRef.cpp; sourceTree = "<group>"; };
+		8E1796F81438CDD40060D173 /* MBehavior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBehavior.cpp; sourceTree = "<group>"; };
+		8E1796F91438CDD40060D173 /* MBehaviorCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBehaviorCreator.cpp; sourceTree = "<group>"; };
+		8E1796FA1438CDD40060D173 /* MBehaviorManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBehaviorManager.cpp; sourceTree = "<group>"; };
+		8E1796FB1438CDD40060D173 /* MBox3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBox3d.cpp; sourceTree = "<group>"; };
+		8E1796FC1438CDD40060D173 /* MEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MEngine.cpp; sourceTree = "<group>"; };
+		8E1796FD1438CDD40060D173 /* MFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFont.cpp; sourceTree = "<group>"; };
+		8E1796FE1438CDD40060D173 /* MFontRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFontRef.cpp; sourceTree = "<group>"; };
+		8E1796FF1438CDD40060D173 /* MFrustum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFrustum.cpp; sourceTree = "<group>"; };
+		8E1797001438CDD40060D173 /* MFXManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFXManager.cpp; sourceTree = "<group>"; };
+		8E1797011438CDD40060D173 /* MGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGame.cpp; sourceTree = "<group>"; };
+		8E1797021438CDD40060D173 /* MKey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MKey.cpp; sourceTree = "<group>"; };
+		8E1797031438CDD40060D173 /* MLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLevel.cpp; sourceTree = "<group>"; };
+		8E1797041438CDD40060D173 /* MMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMaterial.cpp; sourceTree = "<group>"; };
+		8E1797051438CDD40060D173 /* MMaterialAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMaterialAnim.cpp; sourceTree = "<group>"; };
+		8E1797061438CDD40060D173 /* MMaterialsAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMaterialsAnim.cpp; sourceTree = "<group>"; };
+		8E1797071438CDD40060D173 /* MMaterialsAnimRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMaterialsAnimRef.cpp; sourceTree = "<group>"; };
+		8E1797081438CDD40060D173 /* MMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMesh.cpp; sourceTree = "<group>"; };
+		8E1797091438CDD40060D173 /* MMeshRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMeshRef.cpp; sourceTree = "<group>"; };
+		8E17970A1438CDD40060D173 /* MMeshTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMeshTools.cpp; sourceTree = "<group>"; };
+		8E17970B1438CDD40060D173 /* MMorphingData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMorphingData.cpp; sourceTree = "<group>"; };
+		8E17970C1438CDD40060D173 /* MObject3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MObject3d.cpp; sourceTree = "<group>"; };
+		8E17970D1438CDD40060D173 /* MObject3dAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MObject3dAnim.cpp; sourceTree = "<group>"; };
+		8E17970E1438CDD40060D173 /* MOBone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOBone.cpp; sourceTree = "<group>"; };
+		8E17970F1438CDD40060D173 /* MOCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOCamera.cpp; sourceTree = "<group>"; };
+		8E1797101438CDD40060D173 /* MOEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOEntity.cpp; sourceTree = "<group>"; };
+		8E1797111438CDD40060D173 /* MOLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOLight.cpp; sourceTree = "<group>"; };
+		8E1797121438CDD40060D173 /* MOSound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOSound.cpp; sourceTree = "<group>"; };
+		8E1797131438CDD40060D173 /* MOText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOText.cpp; sourceTree = "<group>"; };
+		8E1797141438CDD40060D173 /* MRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRenderer.cpp; sourceTree = "<group>"; };
+		8E1797151438CDD40060D173 /* MRendererCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRendererCreator.cpp; sourceTree = "<group>"; };
+		8E1797161438CDD40060D173 /* MRendererManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRendererManager.cpp; sourceTree = "<group>"; };
+		8E1797171438CDD40060D173 /* MScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MScene.cpp; sourceTree = "<group>"; };
+		8E1797181438CDD40060D173 /* MShaderRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MShaderRef.cpp; sourceTree = "<group>"; };
+		8E1797191438CDD40060D173 /* MSkinData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSkinData.cpp; sourceTree = "<group>"; };
+		8E17971A1438CDD40060D173 /* MSoundRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSoundRef.cpp; sourceTree = "<group>"; };
+		8E17971B1438CDD40060D173 /* MTextureAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTextureAnim.cpp; sourceTree = "<group>"; };
+		8E17971C1438CDD40060D173 /* MTextureRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTextureRef.cpp; sourceTree = "<group>"; };
+		8E17971D1438CDD40060D173 /* MTexturesAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTexturesAnim.cpp; sourceTree = "<group>"; };
+		8E17971E1438CDD40060D173 /* MTexturesAnimRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MTexturesAnimRef.cpp; sourceTree = "<group>"; };
+		8E17971F1438CDD40060D173 /* MVariable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MVariable.cpp; sourceTree = "<group>"; };
+		8E2447111437813000C2214D /* libMEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E24470E1437813000C2214D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1796C71438CDD40060D173 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				8E1796C81438CDD40060D173 /* MArmature.h */,
+				8E1796C91438CDD40060D173 /* MArmatureAnim.h */,
+				8E1796CA1438CDD40060D173 /* MArmatureAnimRef.h */,
+				8E1796CB1438CDD40060D173 /* MBehavior.h */,
+				8E1796CC1438CDD40060D173 /* MBehaviorCreator.h */,
+				8E1796CD1438CDD40060D173 /* MBehaviorManager.h */,
+				8E1796CE1438CDD40060D173 /* MBox3d.h */,
+				8E1796CF1438CDD40060D173 /* MEngine.h */,
+				8E1796D01438CDD40060D173 /* MFont.h */,
+				8E1796D11438CDD40060D173 /* MFontRef.h */,
+				8E1796D21438CDD40060D173 /* MFrustum.h */,
+				8E1796D31438CDD40060D173 /* MFXManager.h */,
+				8E1796D41438CDD40060D173 /* MGame.h */,
+				8E1796D51438CDD40060D173 /* MKey.h */,
+				8E1796D61438CDD40060D173 /* MLevel.h */,
+				8E1796D71438CDD40060D173 /* MMaterial.h */,
+				8E1796D81438CDD40060D173 /* MMaterialAnim.h */,
+				8E1796D91438CDD40060D173 /* MMaterialsAnim.h */,
+				8E1796DA1438CDD40060D173 /* MMaterialsAnimRef.h */,
+				8E1796DB1438CDD40060D173 /* MMesh.h */,
+				8E1796DC1438CDD40060D173 /* MMeshRef.h */,
+				8E1796DD1438CDD40060D173 /* MMeshTools.h */,
+				8E1796DE1438CDD40060D173 /* MMorphingData.h */,
+				8E1796DF1438CDD40060D173 /* MObject3d.h */,
+				8E1796E01438CDD40060D173 /* MObject3dAnim.h */,
+				8E1796E11438CDD40060D173 /* MOBone.h */,
+				8E1796E21438CDD40060D173 /* MOCamera.h */,
+				8E1796E31438CDD40060D173 /* MOEntity.h */,
+				8E1796E41438CDD40060D173 /* MOLight.h */,
+				8E1796E51438CDD40060D173 /* MOSound.h */,
+				8E1796E61438CDD40060D173 /* MOText.h */,
+				8E1796E71438CDD40060D173 /* MRenderer.h */,
+				8E1796E81438CDD40060D173 /* MRendererCreator.h */,
+				8E1796E91438CDD40060D173 /* MRendererManager.h */,
+				8E1796EA1438CDD40060D173 /* MScene.h */,
+				8E1796EB1438CDD40060D173 /* MShaderRef.h */,
+				8E1796EC1438CDD40060D173 /* MSkinData.h */,
+				8E1796ED1438CDD40060D173 /* MSoundRef.h */,
+				8E1796EE1438CDD40060D173 /* MTexture.h */,
+				8E1796EF1438CDD40060D173 /* MTextureAnim.h */,
+				8E1796F01438CDD40060D173 /* MTextureRef.h */,
+				8E1796F11438CDD40060D173 /* MTexturesAnim.h */,
+				8E1796F21438CDD40060D173 /* MTexturesAnimRef.h */,
+				8E1796F31438CDD40060D173 /* MVariable.h */,
+			);
+			name = Includes;
+			path = "../../../3rdparty/maratis-dev/MSDK/MEngine/Includes";
+			sourceTree = "<group>";
+		};
+		8E1796F41438CDD40060D173 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E1796F51438CDD40060D173 /* MArmature.cpp */,
+				8E1796F61438CDD40060D173 /* MArmatureAnim.cpp */,
+				8E1796F71438CDD40060D173 /* MArmatureAnimRef.cpp */,
+				8E1796F81438CDD40060D173 /* MBehavior.cpp */,
+				8E1796F91438CDD40060D173 /* MBehaviorCreator.cpp */,
+				8E1796FA1438CDD40060D173 /* MBehaviorManager.cpp */,
+				8E1796FB1438CDD40060D173 /* MBox3d.cpp */,
+				8E1796FC1438CDD40060D173 /* MEngine.cpp */,
+				8E1796FD1438CDD40060D173 /* MFont.cpp */,
+				8E1796FE1438CDD40060D173 /* MFontRef.cpp */,
+				8E1796FF1438CDD40060D173 /* MFrustum.cpp */,
+				8E1797001438CDD40060D173 /* MFXManager.cpp */,
+				8E1797011438CDD40060D173 /* MGame.cpp */,
+				8E1797021438CDD40060D173 /* MKey.cpp */,
+				8E1797031438CDD40060D173 /* MLevel.cpp */,
+				8E1797041438CDD40060D173 /* MMaterial.cpp */,
+				8E1797051438CDD40060D173 /* MMaterialAnim.cpp */,
+				8E1797061438CDD40060D173 /* MMaterialsAnim.cpp */,
+				8E1797071438CDD40060D173 /* MMaterialsAnimRef.cpp */,
+				8E1797081438CDD40060D173 /* MMesh.cpp */,
+				8E1797091438CDD40060D173 /* MMeshRef.cpp */,
+				8E17970A1438CDD40060D173 /* MMeshTools.cpp */,
+				8E17970B1438CDD40060D173 /* MMorphingData.cpp */,
+				8E17970C1438CDD40060D173 /* MObject3d.cpp */,
+				8E17970D1438CDD40060D173 /* MObject3dAnim.cpp */,
+				8E17970E1438CDD40060D173 /* MOBone.cpp */,
+				8E17970F1438CDD40060D173 /* MOCamera.cpp */,
+				8E1797101438CDD40060D173 /* MOEntity.cpp */,
+				8E1797111438CDD40060D173 /* MOLight.cpp */,
+				8E1797121438CDD40060D173 /* MOSound.cpp */,
+				8E1797131438CDD40060D173 /* MOText.cpp */,
+				8E1797141438CDD40060D173 /* MRenderer.cpp */,
+				8E1797151438CDD40060D173 /* MRendererCreator.cpp */,
+				8E1797161438CDD40060D173 /* MRendererManager.cpp */,
+				8E1797171438CDD40060D173 /* MScene.cpp */,
+				8E1797181438CDD40060D173 /* MShaderRef.cpp */,
+				8E1797191438CDD40060D173 /* MSkinData.cpp */,
+				8E17971A1438CDD40060D173 /* MSoundRef.cpp */,
+				8E17971B1438CDD40060D173 /* MTextureAnim.cpp */,
+				8E17971C1438CDD40060D173 /* MTextureRef.cpp */,
+				8E17971D1438CDD40060D173 /* MTexturesAnim.cpp */,
+				8E17971E1438CDD40060D173 /* MTexturesAnimRef.cpp */,
+				8E17971F1438CDD40060D173 /* MVariable.cpp */,
+			);
+			name = Sources;
+			path = "../../../3rdparty/maratis-dev/MSDK/MEngine/Sources";
+			sourceTree = "<group>";
+		};
+		8E2447061437813000C2214D = {
+			isa = PBXGroup;
+			children = (
+				8E24471E1437826200C2214D /* Source */,
+				8E2447121437813000C2214D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E2447121437813000C2214D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E2447111437813000C2214D /* libMEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E24471E1437826200C2214D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E1796C71438CDD40060D173 /* Includes */,
+				8E1796F41438CDD40060D173 /* Sources */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E24470F1437813000C2214D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1797201438CDD40060D173 /* MArmature.h in Headers */,
+				8E1797211438CDD40060D173 /* MArmatureAnim.h in Headers */,
+				8E1797221438CDD40060D173 /* MArmatureAnimRef.h in Headers */,
+				8E1797231438CDD40060D173 /* MBehavior.h in Headers */,
+				8E1797241438CDD40060D173 /* MBehaviorCreator.h in Headers */,
+				8E1797251438CDD40060D173 /* MBehaviorManager.h in Headers */,
+				8E1797261438CDD40060D173 /* MBox3d.h in Headers */,
+				8E1797271438CDD40060D173 /* MEngine.h in Headers */,
+				8E1797281438CDD40060D173 /* MFont.h in Headers */,
+				8E1797291438CDD40060D173 /* MFontRef.h in Headers */,
+				8E17972A1438CDD40060D173 /* MFrustum.h in Headers */,
+				8E17972B1438CDD40060D173 /* MFXManager.h in Headers */,
+				8E17972C1438CDD40060D173 /* MGame.h in Headers */,
+				8E17972D1438CDD40060D173 /* MKey.h in Headers */,
+				8E17972E1438CDD40060D173 /* MLevel.h in Headers */,
+				8E17972F1438CDD40060D173 /* MMaterial.h in Headers */,
+				8E1797301438CDD40060D173 /* MMaterialAnim.h in Headers */,
+				8E1797311438CDD40060D173 /* MMaterialsAnim.h in Headers */,
+				8E1797321438CDD40060D173 /* MMaterialsAnimRef.h in Headers */,
+				8E1797331438CDD40060D173 /* MMesh.h in Headers */,
+				8E1797341438CDD40060D173 /* MMeshRef.h in Headers */,
+				8E1797351438CDD40060D173 /* MMeshTools.h in Headers */,
+				8E1797361438CDD40060D173 /* MMorphingData.h in Headers */,
+				8E1797371438CDD40060D173 /* MObject3d.h in Headers */,
+				8E1797381438CDD40060D173 /* MObject3dAnim.h in Headers */,
+				8E1797391438CDD40060D173 /* MOBone.h in Headers */,
+				8E17973A1438CDD40060D173 /* MOCamera.h in Headers */,
+				8E17973B1438CDD40060D173 /* MOEntity.h in Headers */,
+				8E17973C1438CDD40060D173 /* MOLight.h in Headers */,
+				8E17973D1438CDD40060D173 /* MOSound.h in Headers */,
+				8E17973E1438CDD40060D173 /* MOText.h in Headers */,
+				8E17973F1438CDD40060D173 /* MRenderer.h in Headers */,
+				8E1797401438CDD40060D173 /* MRendererCreator.h in Headers */,
+				8E1797411438CDD40060D173 /* MRendererManager.h in Headers */,
+				8E1797421438CDD40060D173 /* MScene.h in Headers */,
+				8E1797431438CDD40060D173 /* MShaderRef.h in Headers */,
+				8E1797441438CDD40060D173 /* MSkinData.h in Headers */,
+				8E1797451438CDD40060D173 /* MSoundRef.h in Headers */,
+				8E1797461438CDD40060D173 /* MTexture.h in Headers */,
+				8E1797471438CDD40060D173 /* MTextureAnim.h in Headers */,
+				8E1797481438CDD40060D173 /* MTextureRef.h in Headers */,
+				8E1797491438CDD40060D173 /* MTexturesAnim.h in Headers */,
+				8E17974A1438CDD40060D173 /* MTexturesAnimRef.h in Headers */,
+				8E17974B1438CDD40060D173 /* MVariable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E2447101437813000C2214D /* MEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2447151437813000C2214D /* Build configuration list for PBXNativeTarget "MEngine" */;
+			buildPhases = (
+				8E24470D1437813000C2214D /* Sources */,
+				8E24470E1437813000C2214D /* Frameworks */,
+				8E24470F1437813000C2214D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEngine;
+			productName = MEngine;
+			productReference = 8E2447111437813000C2214D /* libMEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E2447081437813000C2214D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E24470B1437813000C2214D /* Build configuration list for PBXProject "MEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E2447061437813000C2214D;
+			productRefGroup = 8E2447121437813000C2214D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E2447101437813000C2214D /* MEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E24470D1437813000C2214D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E17974C1438CDD40060D173 /* MArmature.cpp in Sources */,
+				8E17974D1438CDD40060D173 /* MArmatureAnim.cpp in Sources */,
+				8E17974E1438CDD40060D173 /* MArmatureAnimRef.cpp in Sources */,
+				8E17974F1438CDD40060D173 /* MBehavior.cpp in Sources */,
+				8E1797501438CDD40060D173 /* MBehaviorCreator.cpp in Sources */,
+				8E1797511438CDD40060D173 /* MBehaviorManager.cpp in Sources */,
+				8E1797521438CDD40060D173 /* MBox3d.cpp in Sources */,
+				8E1797531438CDD40060D173 /* MEngine.cpp in Sources */,
+				8E1797541438CDD40060D173 /* MFont.cpp in Sources */,
+				8E1797551438CDD40060D173 /* MFontRef.cpp in Sources */,
+				8E1797561438CDD40060D173 /* MFrustum.cpp in Sources */,
+				8E1797571438CDD40060D173 /* MFXManager.cpp in Sources */,
+				8E1797581438CDD40060D173 /* MGame.cpp in Sources */,
+				8E1797591438CDD40060D173 /* MKey.cpp in Sources */,
+				8E17975A1438CDD40060D173 /* MLevel.cpp in Sources */,
+				8E17975B1438CDD40060D173 /* MMaterial.cpp in Sources */,
+				8E17975C1438CDD40060D173 /* MMaterialAnim.cpp in Sources */,
+				8E17975D1438CDD40060D173 /* MMaterialsAnim.cpp in Sources */,
+				8E17975E1438CDD40060D173 /* MMaterialsAnimRef.cpp in Sources */,
+				8E17975F1438CDD40060D173 /* MMesh.cpp in Sources */,
+				8E1797601438CDD40060D173 /* MMeshRef.cpp in Sources */,
+				8E1797611438CDD40060D173 /* MMeshTools.cpp in Sources */,
+				8E1797621438CDD40060D173 /* MMorphingData.cpp in Sources */,
+				8E1797631438CDD40060D173 /* MObject3d.cpp in Sources */,
+				8E1797641438CDD40060D173 /* MObject3dAnim.cpp in Sources */,
+				8E1797651438CDD40060D173 /* MOBone.cpp in Sources */,
+				8E1797661438CDD40060D173 /* MOCamera.cpp in Sources */,
+				8E1797671438CDD40060D173 /* MOEntity.cpp in Sources */,
+				8E1797681438CDD40060D173 /* MOLight.cpp in Sources */,
+				8E1797691438CDD40060D173 /* MOSound.cpp in Sources */,
+				8E17976A1438CDD40060D173 /* MOText.cpp in Sources */,
+				8E17976B1438CDD40060D173 /* MRenderer.cpp in Sources */,
+				8E17976C1438CDD40060D173 /* MRendererCreator.cpp in Sources */,
+				8E17976D1438CDD40060D173 /* MRendererManager.cpp in Sources */,
+				8E17976E1438CDD40060D173 /* MScene.cpp in Sources */,
+				8E17976F1438CDD40060D173 /* MShaderRef.cpp in Sources */,
+				8E1797701438CDD40060D173 /* MSkinData.cpp in Sources */,
+				8E1797711438CDD40060D173 /* MSoundRef.cpp in Sources */,
+				8E1797721438CDD40060D173 /* MTextureAnim.cpp in Sources */,
+				8E1797731438CDD40060D173 /* MTextureRef.cpp in Sources */,
+				8E1797741438CDD40060D173 /* MTexturesAnim.cpp in Sources */,
+				8E1797751438CDD40060D173 /* MTexturesAnimRef.cpp in Sources */,
+				8E1797761438CDD40060D173 /* MVariable.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E2447131437813000C2214D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E2447141437813000C2214D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E2447161437813000C2214D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E2447171437813000C2214D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E24470B1437813000C2214D /* Build configuration list for PBXProject "MEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2447131437813000C2214D /* Debug */,
+				8E2447141437813000C2214D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2447151437813000C2214D /* Build configuration list for PBXNativeTarget "MEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2447161437813000C2214D /* Debug */,
+				8E2447171437813000C2214D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E2447081437813000C2214D /* Project object */;
+}

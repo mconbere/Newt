@@ -5,5 +5,4 @@
 *.mode1v3
 *.pbxuser
 xcuserdata
-*.xcworkspace
 .sconsign.dblite

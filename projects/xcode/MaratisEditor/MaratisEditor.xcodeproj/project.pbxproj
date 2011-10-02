@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1797791438CE890060D173 /* libSndFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1797781438CE890060D173 /* libSndFile.a */; };
+		8E17977B1438CEAB0060D173 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17977A1438CEAB0060D173 /* libpng.a */; };
+		8E17977D1438CEC50060D173 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17977C1438CEC50060D173 /* libjpeg.a */; };
+		8E17977F1438CEF80060D173 /* libil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17977E1438CEF80060D173 /* libil.a */; };
+		8E1797811438CF120060D173 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1797801438CF120060D173 /* libfreetype.a */; };
+		8E1797851438CF2C0060D173 /* libbullet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1797821438CF2C0060D173 /* libbullet.a */; };
+		8E1797861438CF2C0060D173 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1797831438CF2C0060D173 /* liblua.a */; };
+		8E1797871438CF2C0060D173 /* libtinyxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1797841438CF2C0060D173 /* libtinyxml.a */; };
+		8E1797B41438CF610060D173 /* MCocoaWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A11438CF610060D173 /* MCocoaWindow.mm */; };
+		8E1797B51438CF610060D173 /* MGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A21438CF610060D173 /* MGui.cpp */; };
+		8E1797B61438CF610060D173 /* MGui2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A31438CF610060D173 /* MGui2d.cpp */; };
+		8E1797B71438CF610060D173 /* MGuiButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A41438CF610060D173 /* MGuiButton.cpp */; };
+		8E1797B81438CF610060D173 /* MGuiEditText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A51438CF610060D173 /* MGuiEditText.cpp */; };
+		8E1797B91438CF610060D173 /* MGuiImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A61438CF610060D173 /* MGuiImage.cpp */; };
+		8E1797BA1438CF610060D173 /* MGuiMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A71438CF610060D173 /* MGuiMenu.cpp */; };
+		8E1797BB1438CF610060D173 /* MGuiSlide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A81438CF610060D173 /* MGuiSlide.cpp */; };
+		8E1797BC1438CF610060D173 /* MGuiText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797A91438CF610060D173 /* MGuiText.cpp */; };
+		8E1797BD1438CF610060D173 /* MGuiTextureFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797AA1438CF610060D173 /* MGuiTextureFont.cpp */; };
+		8E1797BE1438CF610060D173 /* MGuiWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797AB1438CF610060D173 /* MGuiWindow.cpp */; };
+		8E1797BF1438CF610060D173 /* MJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797AC1438CF610060D173 /* MJoystick.cpp */; };
+		8E1797C01438CF610060D173 /* MKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797AD1438CF610060D173 /* MKeyboard.cpp */; };
+		8E1797C11438CF610060D173 /* MMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797AE1438CF610060D173 /* MMouse.cpp */; };
+		8E1797D81438CF9C0060D173 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797C71438CF9C0060D173 /* main.cpp */; };
+		8E1797D91438CF9C0060D173 /* Maratis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797C91438CF9C0060D173 /* Maratis.cpp */; };
+		8E1797DA1438CF9C0060D173 /* MaratisUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797CB1438CF9C0060D173 /* MaratisUI.cpp */; };
+		8E1797DB1438CF9C0060D173 /* MFontBin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797CE1438CF9C0060D173 /* MFontBin.cpp */; };
+		8E1797DC1438CF9C0060D173 /* MFilesUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797D11438CF9C0060D173 /* MFilesUpdate.cpp */; };
+		8E1797DD1438CF9C0060D173 /* MRenderArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797D41438CF9C0060D173 /* MRenderArray.cpp */; };
+		8E1798121438CFA50060D173 /* MBFollow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797E11438CFA50060D173 /* MBFollow.cpp */; };
+		8E1798131438CFA50060D173 /* MBLookAt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797E31438CFA50060D173 /* MBLookAt.cpp */; };
+		8E1798141438CFA50060D173 /* MALContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797E61438CFA50060D173 /* MALContext.cpp */; };
+		8E1798151438CFA50060D173 /* MBulletContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797E81438CFA50060D173 /* MBulletContext.cpp */; };
+		8E1798161438CFA50060D173 /* MGLContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797EA1438CFA50060D173 /* MGLContext.cpp */; };
+		8E1798171438CFA50060D173 /* MWinContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797EC1438CFA50060D173 /* MWinContext.cpp */; };
+		8E1798181438CFA50060D173 /* MLevelLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797EF1438CFA50060D173 /* MLevelLoad.cpp */; };
+		8E1798191438CFA50060D173 /* MLevelSave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797F11438CFA50060D173 /* MLevelSave.cpp */; };
+		8E17981A1438CFA50060D173 /* MMeshLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797F31438CFA50060D173 /* MMeshLoad.cpp */; };
+		8E17981B1438CFA50060D173 /* MInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797F71438CFA50060D173 /* MInput.cpp */; };
+		8E17981C1438CFA50060D173 /* MBinFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797FA1438CFA50060D173 /* MBinFontLoader.cpp */; };
+		8E17981D1438CFA50060D173 /* MDevILLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797FC1438CFA50060D173 /* MDevILLoader.cpp */; };
+		8E17981E1438CFA50060D173 /* MFreetypeLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1797FE1438CFA50060D173 /* MFreetypeLoader.cpp */; };
+		8E17981F1438CFA50060D173 /* MSndFileLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798001438CFA50060D173 /* MSndFileLoader.cpp */; };
+		8E1798201438CFA50060D173 /* MPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798031438CFA50060D173 /* MPlugin.cpp */; };
+		8E1798211438CFA50060D173 /* MProject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798061438CFA50060D173 /* MProject.cpp */; };
+		8E1798221438CFA50060D173 /* MFixedRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798091438CFA50060D173 /* MFixedRenderer.cpp */; };
+		8E1798231438CFA50060D173 /* MStandardRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17980B1438CFA50060D173 /* MStandardRenderer.cpp */; };
+		8E1798241438CFA50060D173 /* MScript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17980F1438CFA50060D173 /* MScript.cpp */; };
+		8E1798281438CFE50060D173 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 8E1798261438CFE50060D173 /* font */; };
+		8E1798291438CFE50060D173 /* gui in Resources */ = {isa = PBXBuildFile; fileRef = 8E1798271438CFE50060D173 /* gui */; };
+		8E4C7D3014379C2E0038F5DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4C7D2F14379C2E0038F5DA /* Cocoa.framework */; };
+		8E4C7D3A14379C2E0038F5DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E4C7D3814379C2E0038F5DA /* InfoPlist.strings */; };
+		8E4C7E841437B4A50038F5DA /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4C7E811437B4A50038F5DA /* libMCore.a */; };
+		8E4C7E851437B4A50038F5DA /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4C7E821437B4A50038F5DA /* libMEngine.a */; };
+		8EA243481437D4BD0069F997 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA243461437D4BD0069F997 /* OpenAL.framework */; };
+		8EA243491437D4BD0069F997 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA243471437D4BD0069F997 /* OpenGL.framework */; };
+		8EA2435C1437D6620069F997 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA2435B1437D6620069F997 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E1797781438CE890060D173 /* libSndFile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSndFile.a; path = ../../../3rdparty/libsndfile/osx/static/libSndFile.a; sourceTree = "<group>"; };
+		8E17977A1438CEAB0060D173 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../3rdparty/libpng/osx/libpng.a; sourceTree = "<group>"; };
+		8E17977C1438CEC50060D173 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../3rdparty/libjpeg/osx/libjpeg.a; sourceTree = "<group>"; };
+		8E17977E1438CEF80060D173 /* libil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libil.a; path = ../../../3rdparty/devil/osx/libil.a; sourceTree = "<group>"; };
+		8E1797801438CF120060D173 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../3rdparty/freetype/osx/libfreetype.a; sourceTree = "<group>"; };
+		8E1797821438CF2C0060D173 /* libbullet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbullet.a; sourceTree = SOURCE_ROOT; };
+		8E1797831438CF2C0060D173 /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblua.a; sourceTree = SOURCE_ROOT; };
+		8E1797841438CF2C0060D173 /* libtinyxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtinyxml.a; sourceTree = SOURCE_ROOT; };
+		8E17978A1438CF610060D173 /* MCocoaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCocoaWindow.h; sourceTree = "<group>"; };
+		8E17978B1438CF610060D173 /* MGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGui.h; sourceTree = "<group>"; };
+		8E17978C1438CF610060D173 /* MGui2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGui2d.h; sourceTree = "<group>"; };
+		8E17978D1438CF610060D173 /* MGuiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiButton.h; sourceTree = "<group>"; };
+		8E17978E1438CF610060D173 /* MGuiEditText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiEditText.h; sourceTree = "<group>"; };
+		8E17978F1438CF610060D173 /* MGuiEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiEvents.h; sourceTree = "<group>"; };
+		8E1797901438CF610060D173 /* MGuiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiImage.h; sourceTree = "<group>"; };
+		8E1797911438CF610060D173 /* MGuiMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiMenu.h; sourceTree = "<group>"; };
+		8E1797921438CF610060D173 /* MGuiSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiSlide.h; sourceTree = "<group>"; };
+		8E1797931438CF610060D173 /* MGuiText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiText.h; sourceTree = "<group>"; };
+		8E1797941438CF610060D173 /* MGuiTextureFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiTextureFont.h; sourceTree = "<group>"; };
+		8E1797951438CF610060D173 /* MGuiWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiWindow.h; sourceTree = "<group>"; };
+		8E1797961438CF610060D173 /* MJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJoystick.h; sourceTree = "<group>"; };
+		8E1797971438CF610060D173 /* MKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKeyboard.h; sourceTree = "<group>"; };
+		8E1797981438CF610060D173 /* MMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMouse.h; sourceTree = "<group>"; };
+		8E1797991438CF610060D173 /* MWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWindow.h; sourceTree = "<group>"; };
+		8E17979A1438CF610060D173 /* MWinEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWinEvents.h; sourceTree = "<group>"; };
+		8E1797A11438CF610060D173 /* MCocoaWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCocoaWindow.mm; sourceTree = "<group>"; };
+		8E1797A21438CF610060D173 /* MGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGui.cpp; sourceTree = "<group>"; };
+		8E1797A31438CF610060D173 /* MGui2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGui2d.cpp; sourceTree = "<group>"; };
+		8E1797A41438CF610060D173 /* MGuiButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiButton.cpp; sourceTree = "<group>"; };
+		8E1797A51438CF610060D173 /* MGuiEditText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiEditText.cpp; sourceTree = "<group>"; };
+		8E1797A61438CF610060D173 /* MGuiImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiImage.cpp; sourceTree = "<group>"; };
+		8E1797A71438CF610060D173 /* MGuiMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiMenu.cpp; sourceTree = "<group>"; };
+		8E1797A81438CF610060D173 /* MGuiSlide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiSlide.cpp; sourceTree = "<group>"; };
+		8E1797A91438CF610060D173 /* MGuiText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiText.cpp; sourceTree = "<group>"; };
+		8E1797AA1438CF610060D173 /* MGuiTextureFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiTextureFont.cpp; sourceTree = "<group>"; };
+		8E1797AB1438CF610060D173 /* MGuiWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiWindow.cpp; sourceTree = "<group>"; };
+		8E1797AC1438CF610060D173 /* MJoystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MJoystick.cpp; sourceTree = "<group>"; };
+		8E1797AD1438CF610060D173 /* MKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MKeyboard.cpp; sourceTree = "<group>"; };
+		8E1797AE1438CF610060D173 /* MMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMouse.cpp; sourceTree = "<group>"; };
+		8E1797C71438CF9C0060D173 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8E1797C91438CF9C0060D173 /* Maratis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Maratis.cpp; sourceTree = "<group>"; };
+		8E1797CA1438CF9C0060D173 /* Maratis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maratis.h; sourceTree = "<group>"; };
+		8E1797CB1438CF9C0060D173 /* MaratisUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaratisUI.cpp; sourceTree = "<group>"; };
+		8E1797CC1438CF9C0060D173 /* MaratisUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaratisUI.h; sourceTree = "<group>"; };
+		8E1797CE1438CF9C0060D173 /* MFontBin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFontBin.cpp; sourceTree = "<group>"; };
+		8E1797CF1438CF9C0060D173 /* MFontBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFontBin.h; sourceTree = "<group>"; };
+		8E1797D11438CF9C0060D173 /* MFilesUpdate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFilesUpdate.cpp; sourceTree = "<group>"; };
+		8E1797D21438CF9C0060D173 /* MFilesUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFilesUpdate.h; sourceTree = "<group>"; };
+		8E1797D41438CF9C0060D173 /* MRenderArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRenderArray.cpp; sourceTree = "<group>"; };
+		8E1797D51438CF9C0060D173 /* MRenderArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRenderArray.h; sourceTree = "<group>"; };
+		8E1797E11438CFA50060D173 /* MBFollow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBFollow.cpp; sourceTree = "<group>"; };
+		8E1797E21438CFA50060D173 /* MBFollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFollow.h; sourceTree = "<group>"; };
+		8E1797E31438CFA50060D173 /* MBLookAt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBLookAt.cpp; sourceTree = "<group>"; };
+		8E1797E41438CFA50060D173 /* MBLookAt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLookAt.h; sourceTree = "<group>"; };
+		8E1797E61438CFA50060D173 /* MALContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MALContext.cpp; sourceTree = "<group>"; };
+		8E1797E71438CFA50060D173 /* MALContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALContext.h; sourceTree = "<group>"; };
+		8E1797E81438CFA50060D173 /* MBulletContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBulletContext.cpp; sourceTree = "<group>"; };
+		8E1797E91438CFA50060D173 /* MBulletContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBulletContext.h; sourceTree = "<group>"; };
+		8E1797EA1438CFA50060D173 /* MGLContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGLContext.cpp; sourceTree = "<group>"; };
+		8E1797EB1438CFA50060D173 /* MGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLContext.h; sourceTree = "<group>"; };
+		8E1797EC1438CFA50060D173 /* MWinContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MWinContext.cpp; sourceTree = "<group>"; };
+		8E1797ED1438CFA50060D173 /* MWinContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWinContext.h; sourceTree = "<group>"; };
+		8E1797EF1438CFA50060D173 /* MLevelLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLevelLoad.cpp; sourceTree = "<group>"; };
+		8E1797F01438CFA50060D173 /* MLevelLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLevelLoad.h; sourceTree = "<group>"; };
+		8E1797F11438CFA50060D173 /* MLevelSave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLevelSave.cpp; sourceTree = "<group>"; };
+		8E1797F21438CFA50060D173 /* MLevelSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLevelSave.h; sourceTree = "<group>"; };
+		8E1797F31438CFA50060D173 /* MMeshLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMeshLoad.cpp; sourceTree = "<group>"; };
+		8E1797F41438CFA50060D173 /* MMeshLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMeshLoad.h; sourceTree = "<group>"; };
+		8E1797F51438CFA50060D173 /* MGameWinEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGameWinEvents.h; sourceTree = "<group>"; };
+		8E1797F71438CFA50060D173 /* MInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MInput.cpp; sourceTree = "<group>"; };
+		8E1797F81438CFA50060D173 /* MInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInput.h; sourceTree = "<group>"; };
+		8E1797FA1438CFA50060D173 /* MBinFontLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBinFontLoader.cpp; sourceTree = "<group>"; };
+		8E1797FB1438CFA50060D173 /* MBinFontLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBinFontLoader.h; sourceTree = "<group>"; };
+		8E1797FC1438CFA50060D173 /* MDevILLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MDevILLoader.cpp; sourceTree = "<group>"; };
+		8E1797FD1438CFA50060D173 /* MDevILLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDevILLoader.h; sourceTree = "<group>"; };
+		8E1797FE1438CFA50060D173 /* MFreetypeLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFreetypeLoader.cpp; sourceTree = "<group>"; };
+		8E1797FF1438CFA50060D173 /* MFreetypeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFreetypeLoader.h; sourceTree = "<group>"; };
+		8E1798001438CFA50060D173 /* MSndFileLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSndFileLoader.cpp; sourceTree = "<group>"; };
+		8E1798011438CFA50060D173 /* MSndFileLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSndFileLoader.h; sourceTree = "<group>"; };
+		8E1798031438CFA50060D173 /* MPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPlugin.cpp; sourceTree = "<group>"; };
+		8E1798041438CFA50060D173 /* MPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlugin.h; sourceTree = "<group>"; };
+		8E1798061438CFA50060D173 /* MProject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MProject.cpp; sourceTree = "<group>"; };
+		8E1798071438CFA50060D173 /* MProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MProject.h; sourceTree = "<group>"; };
+		8E1798091438CFA50060D173 /* MFixedRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFixedRenderer.cpp; sourceTree = "<group>"; };
+		8E17980A1438CFA50060D173 /* MFixedRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFixedRenderer.h; sourceTree = "<group>"; };
+		8E17980B1438CFA50060D173 /* MStandardRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MStandardRenderer.cpp; sourceTree = "<group>"; };
+		8E17980C1438CFA50060D173 /* MStandardRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MStandardRenderer.h; sourceTree = "<group>"; };
+		8E17980D1438CFA50060D173 /* MStandardShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MStandardShaders.h; sourceTree = "<group>"; };
+		8E17980F1438CFA50060D173 /* MScript.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MScript.cpp; sourceTree = "<group>"; };
+		8E1798101438CFA50060D173 /* MScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MScript.h; sourceTree = "<group>"; };
+		8E1798261438CFE50060D173 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = font; path = "../../../3rdparty/maratis-dev/Data/Editor/font"; sourceTree = "<group>"; };
+		8E1798271438CFE50060D173 /* gui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gui; path = "../../../3rdparty/maratis-dev/Data/Editor/gui"; sourceTree = "<group>"; };
+		8E4C7D2B14379C2E0038F5DA /* MaratisEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaratisEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4C7D2F14379C2E0038F5DA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8E4C7D3714379C2E0038F5DA /* MaratisEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaratisEditor-Info.plist"; sourceTree = "<group>"; };
+		8E4C7D3914379C2E0038F5DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E4C7E811437B4A50038F5DA /* libMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4C7E821437B4A50038F5DA /* libMEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA243461437D4BD0069F997 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		8EA243471437D4BD0069F997 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8EA2435B1437D6620069F997 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4C7D2814379C2E0038F5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1797851438CF2C0060D173 /* libbullet.a in Frameworks */,
+				8E1797861438CF2C0060D173 /* liblua.a in Frameworks */,
+				8E1797871438CF2C0060D173 /* libtinyxml.a in Frameworks */,
+				8E1797811438CF120060D173 /* libfreetype.a in Frameworks */,
+				8E17977F1438CEF80060D173 /* libil.a in Frameworks */,
+				8E17977D1438CEC50060D173 /* libjpeg.a in Frameworks */,
+				8E17977B1438CEAB0060D173 /* libpng.a in Frameworks */,
+				8E1797791438CE890060D173 /* libSndFile.a in Frameworks */,
+				8EA2435C1437D6620069F997 /* libz.dylib in Frameworks */,
+				8EA243481437D4BD0069F997 /* OpenAL.framework in Frameworks */,
+				8EA243491437D4BD0069F997 /* OpenGL.framework in Frameworks */,
+				8E4C7E841437B4A50038F5DA /* libMCore.a in Frameworks */,
+				8E4C7E851437B4A50038F5DA /* libMEngine.a in Frameworks */,
+				8E4C7D3014379C2E0038F5DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1793171437E06F0060D173 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798261438CFE50060D173 /* font */,
+				8E1798271438CFE50060D173 /* gui */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E1797881438CF610060D173 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797891438CF610060D173 /* COCOA */,
+				8E17978B1438CF610060D173 /* MGui.h */,
+				8E17978C1438CF610060D173 /* MGui2d.h */,
+				8E17978D1438CF610060D173 /* MGuiButton.h */,
+				8E17978E1438CF610060D173 /* MGuiEditText.h */,
+				8E17978F1438CF610060D173 /* MGuiEvents.h */,
+				8E1797901438CF610060D173 /* MGuiImage.h */,
+				8E1797911438CF610060D173 /* MGuiMenu.h */,
+				8E1797921438CF610060D173 /* MGuiSlide.h */,
+				8E1797931438CF610060D173 /* MGuiText.h */,
+				8E1797941438CF610060D173 /* MGuiTextureFont.h */,
+				8E1797951438CF610060D173 /* MGuiWindow.h */,
+				8E1797961438CF610060D173 /* MJoystick.h */,
+				8E1797971438CF610060D173 /* MKeyboard.h */,
+				8E1797981438CF610060D173 /* MMouse.h */,
+				8E1797991438CF610060D173 /* MWindow.h */,
+				8E17979A1438CF610060D173 /* MWinEvents.h */,
+			);
+			name = Includes;
+			path = "../../../3rdparty/maratis-dev/MSDK/MGui/Includes";
+			sourceTree = "<group>";
+		};
+		8E1797891438CF610060D173 /* COCOA */ = {
+			isa = PBXGroup;
+			children = (
+				8E17978A1438CF610060D173 /* MCocoaWindow.h */,
+			);
+			path = COCOA;
+			sourceTree = "<group>";
+		};
+		8E17979F1438CF610060D173 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797A01438CF610060D173 /* COCOA */,
+				8E1797A21438CF610060D173 /* MGui.cpp */,
+				8E1797A31438CF610060D173 /* MGui2d.cpp */,
+				8E1797A41438CF610060D173 /* MGuiButton.cpp */,
+				8E1797A51438CF610060D173 /* MGuiEditText.cpp */,
+				8E1797A61438CF610060D173 /* MGuiImage.cpp */,
+				8E1797A71438CF610060D173 /* MGuiMenu.cpp */,
+				8E1797A81438CF610060D173 /* MGuiSlide.cpp */,
+				8E1797A91438CF610060D173 /* MGuiText.cpp */,
+				8E1797AA1438CF610060D173 /* MGuiTextureFont.cpp */,
+				8E1797AB1438CF610060D173 /* MGuiWindow.cpp */,
+				8E1797AC1438CF610060D173 /* MJoystick.cpp */,
+				8E1797AD1438CF610060D173 /* MKeyboard.cpp */,
+				8E1797AE1438CF610060D173 /* MMouse.cpp */,
+			);
+			name = Sources;
+			path = "../../../3rdparty/maratis-dev/MSDK/MGui/Sources";
+			sourceTree = "<group>";
+		};
+		8E1797A01438CF610060D173 /* COCOA */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797A11438CF610060D173 /* MCocoaWindow.mm */,
+			);
+			path = COCOA;
+			sourceTree = "<group>";
+		};
+		8E1797C51438CF9C0060D173 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797C71438CF9C0060D173 /* main.cpp */,
+				8E1797C81438CF9C0060D173 /* Maratis */,
+				8E1797CD1438CF9C0060D173 /* MBins */,
+				8E1797D01438CF9C0060D173 /* MFilesUpdate */,
+				8E1797D31438CF9C0060D173 /* MRenderArray */,
+			);
+			name = Editor;
+			path = "../../../3rdparty/maratis-dev/Maratis/Editor";
+			sourceTree = "<group>";
+		};
+		8E1797C81438CF9C0060D173 /* Maratis */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797C91438CF9C0060D173 /* Maratis.cpp */,
+				8E1797CA1438CF9C0060D173 /* Maratis.h */,
+				8E1797CB1438CF9C0060D173 /* MaratisUI.cpp */,
+				8E1797CC1438CF9C0060D173 /* MaratisUI.h */,
+			);
+			path = Maratis;
+			sourceTree = "<group>";
+		};
+		8E1797CD1438CF9C0060D173 /* MBins */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797CE1438CF9C0060D173 /* MFontBin.cpp */,
+				8E1797CF1438CF9C0060D173 /* MFontBin.h */,
+			);
+			path = MBins;
+			sourceTree = "<group>";
+		};
+		8E1797D01438CF9C0060D173 /* MFilesUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797D11438CF9C0060D173 /* MFilesUpdate.cpp */,
+				8E1797D21438CF9C0060D173 /* MFilesUpdate.h */,
+			);
+			path = MFilesUpdate;
+			sourceTree = "<group>";
+		};
+		8E1797D31438CF9C0060D173 /* MRenderArray */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797D41438CF9C0060D173 /* MRenderArray.cpp */,
+				8E1797D51438CF9C0060D173 /* MRenderArray.h */,
+			);
+			path = MRenderArray;
+			sourceTree = "<group>";
+		};
+		8E1797DF1438CFA50060D173 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797E01438CFA50060D173 /* MBehaviors */,
+				8E1797E51438CFA50060D173 /* MContexts */,
+				8E1797EE1438CFA50060D173 /* MFileManager */,
+				8E1797F51438CFA50060D173 /* MGameWinEvents.h */,
+				8E1797F61438CFA50060D173 /* MInput */,
+				8E1797F91438CFA50060D173 /* MLoaders */,
+				8E1798021438CFA50060D173 /* MPlugin */,
+				8E1798051438CFA50060D173 /* MProject */,
+				8E1798081438CFA50060D173 /* MRenderers */,
+				8E17980E1438CFA50060D173 /* MScript */,
+			);
+			name = Common;
+			path = "../../../3rdparty/maratis-dev/Maratis/Common";
+			sourceTree = "<group>";
+		};
+		8E1797E01438CFA50060D173 /* MBehaviors */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797E11438CFA50060D173 /* MBFollow.cpp */,
+				8E1797E21438CFA50060D173 /* MBFollow.h */,
+				8E1797E31438CFA50060D173 /* MBLookAt.cpp */,
+				8E1797E41438CFA50060D173 /* MBLookAt.h */,
+			);
+			path = MBehaviors;
+			sourceTree = "<group>";
+		};
+		8E1797E51438CFA50060D173 /* MContexts */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797E61438CFA50060D173 /* MALContext.cpp */,
+				8E1797E71438CFA50060D173 /* MALContext.h */,
+				8E1797E81438CFA50060D173 /* MBulletContext.cpp */,
+				8E1797E91438CFA50060D173 /* MBulletContext.h */,
+				8E1797EA1438CFA50060D173 /* MGLContext.cpp */,
+				8E1797EB1438CFA50060D173 /* MGLContext.h */,
+				8E1797EC1438CFA50060D173 /* MWinContext.cpp */,
+				8E1797ED1438CFA50060D173 /* MWinContext.h */,
+			);
+			path = MContexts;
+			sourceTree = "<group>";
+		};
+		8E1797EE1438CFA50060D173 /* MFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797EF1438CFA50060D173 /* MLevelLoad.cpp */,
+				8E1797F01438CFA50060D173 /* MLevelLoad.h */,
+				8E1797F11438CFA50060D173 /* MLevelSave.cpp */,
+				8E1797F21438CFA50060D173 /* MLevelSave.h */,
+				8E1797F31438CFA50060D173 /* MMeshLoad.cpp */,
+				8E1797F41438CFA50060D173 /* MMeshLoad.h */,
+			);
+			path = MFileManager;
+			sourceTree = "<group>";
+		};
+		8E1797F61438CFA50060D173 /* MInput */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797F71438CFA50060D173 /* MInput.cpp */,
+				8E1797F81438CFA50060D173 /* MInput.h */,
+			);
+			path = MInput;
+			sourceTree = "<group>";
+		};
+		8E1797F91438CFA50060D173 /* MLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797FA1438CFA50060D173 /* MBinFontLoader.cpp */,
+				8E1797FB1438CFA50060D173 /* MBinFontLoader.h */,
+				8E1797FC1438CFA50060D173 /* MDevILLoader.cpp */,
+				8E1797FD1438CFA50060D173 /* MDevILLoader.h */,
+				8E1797FE1438CFA50060D173 /* MFreetypeLoader.cpp */,
+				8E1797FF1438CFA50060D173 /* MFreetypeLoader.h */,
+				8E1798001438CFA50060D173 /* MSndFileLoader.cpp */,
+				8E1798011438CFA50060D173 /* MSndFileLoader.h */,
+			);
+			path = MLoaders;
+			sourceTree = "<group>";
+		};
+		8E1798021438CFA50060D173 /* MPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798031438CFA50060D173 /* MPlugin.cpp */,
+				8E1798041438CFA50060D173 /* MPlugin.h */,
+			);
+			path = MPlugin;
+			sourceTree = "<group>";
+		};
+		8E1798051438CFA50060D173 /* MProject */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798061438CFA50060D173 /* MProject.cpp */,
+				8E1798071438CFA50060D173 /* MProject.h */,
+			);
+			path = MProject;
+			sourceTree = "<group>";
+		};
+		8E1798081438CFA50060D173 /* MRenderers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798091438CFA50060D173 /* MFixedRenderer.cpp */,
+				8E17980A1438CFA50060D173 /* MFixedRenderer.h */,
+				8E17980B1438CFA50060D173 /* MStandardRenderer.cpp */,
+				8E17980C1438CFA50060D173 /* MStandardRenderer.h */,
+				8E17980D1438CFA50060D173 /* MStandardShaders.h */,
+			);
+			path = MRenderers;
+			sourceTree = "<group>";
+		};
+		8E17980E1438CFA50060D173 /* MScript */ = {
+			isa = PBXGroup;
+			children = (
+				8E17980F1438CFA50060D173 /* MScript.cpp */,
+				8E1798101438CFA50060D173 /* MScript.h */,
+			);
+			path = MScript;
+			sourceTree = "<group>";
+		};
+		8E4C7D2014379C2E0038F5DA = {
+			isa = PBXGroup;
+			children = (
+				8E4C7D4C14379C4C0038F5DA /* Source */,
+				8E1793171437E06F0060D173 /* Resources */,
+				8E4C7D3514379C2E0038F5DA /* MaratisEditor */,
+				8E4C7D2E14379C2E0038F5DA /* Frameworks */,
+				8E4C7D2C14379C2E0038F5DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4C7D2C14379C2E0038F5DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4C7D2B14379C2E0038F5DA /* MaratisEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4C7D2E14379C2E0038F5DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797821438CF2C0060D173 /* libbullet.a */,
+				8E1797831438CF2C0060D173 /* liblua.a */,
+				8E1797841438CF2C0060D173 /* libtinyxml.a */,
+				8E1797801438CF120060D173 /* libfreetype.a */,
+				8E17977E1438CEF80060D173 /* libil.a */,
+				8E1797781438CE890060D173 /* libSndFile.a */,
+				8E17977A1438CEAB0060D173 /* libpng.a */,
+				8E17977C1438CEC50060D173 /* libjpeg.a */,
+				8E4C7E811437B4A50038F5DA /* libMCore.a */,
+				8E4C7E821437B4A50038F5DA /* libMEngine.a */,
+				8EA2435B1437D6620069F997 /* libz.dylib */,
+				8EA243461437D4BD0069F997 /* OpenAL.framework */,
+				8EA243471437D4BD0069F997 /* OpenGL.framework */,
+				8E4C7D2F14379C2E0038F5DA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E4C7D3514379C2E0038F5DA /* MaratisEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8E4C7D3614379C2E0038F5DA /* Supporting Files */,
+			);
+			path = MaratisEditor;
+			sourceTree = "<group>";
+		};
+		8E4C7D3614379C2E0038F5DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E4C7D3714379C2E0038F5DA /* MaratisEditor-Info.plist */,
+				8E4C7D3814379C2E0038F5DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E4C7D4C14379C4C0038F5DA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797DF1438CFA50060D173 /* Common */,
+				8E1797C51438CF9C0060D173 /* Editor */,
+				8E4C7D5B1437A4E90038F5DA /* MGui */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8E4C7D5B1437A4E90038F5DA /* MGui */ = {
+			isa = PBXGroup;
+			children = (
+				8E1797881438CF610060D173 /* Includes */,
+				8E17979F1438CF610060D173 /* Sources */,
+			);
+			name = MGui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E4C7D2A14379C2E0038F5DA /* MaratisEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4C7D4914379C2E0038F5DA /* Build configuration list for PBXNativeTarget "MaratisEditor" */;
+			buildPhases = (
+				8E4C7D2714379C2E0038F5DA /* Sources */,
+				8E4C7D2814379C2E0038F5DA /* Frameworks */,
+				8E4C7D2914379C2E0038F5DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaratisEditor;
+			productName = MaratisEditor;
+			productReference = 8E4C7D2B14379C2E0038F5DA /* MaratisEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4C7D2214379C2E0038F5DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E4C7D2514379C2E0038F5DA /* Build configuration list for PBXProject "MaratisEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E4C7D2014379C2E0038F5DA;
+			productRefGroup = 8E4C7D2C14379C2E0038F5DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4C7D2A14379C2E0038F5DA /* MaratisEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E4C7D2914379C2E0038F5DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1798281438CFE50060D173 /* font in Resources */,
+				8E1798291438CFE50060D173 /* gui in Resources */,
+				8E4C7D3A14379C2E0038F5DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4C7D2714379C2E0038F5DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1797B41438CF610060D173 /* MCocoaWindow.mm in Sources */,
+				8E1797B51438CF610060D173 /* MGui.cpp in Sources */,
+				8E1797B61438CF610060D173 /* MGui2d.cpp in Sources */,
+				8E1797B71438CF610060D173 /* MGuiButton.cpp in Sources */,
+				8E1797B81438CF610060D173 /* MGuiEditText.cpp in Sources */,
+				8E1797B91438CF610060D173 /* MGuiImage.cpp in Sources */,
+				8E1797BA1438CF610060D173 /* MGuiMenu.cpp in Sources */,
+				8E1797BB1438CF610060D173 /* MGuiSlide.cpp in Sources */,
+				8E1797BC1438CF610060D173 /* MGuiText.cpp in Sources */,
+				8E1797BD1438CF610060D173 /* MGuiTextureFont.cpp in Sources */,
+				8E1797BE1438CF610060D173 /* MGuiWindow.cpp in Sources */,
+				8E1797BF1438CF610060D173 /* MJoystick.cpp in Sources */,
+				8E1797C01438CF610060D173 /* MKeyboard.cpp in Sources */,
+				8E1797C11438CF610060D173 /* MMouse.cpp in Sources */,
+				8E1797D81438CF9C0060D173 /* main.cpp in Sources */,
+				8E1797D91438CF9C0060D173 /* Maratis.cpp in Sources */,
+				8E1797DA1438CF9C0060D173 /* MaratisUI.cpp in Sources */,
+				8E1797DB1438CF9C0060D173 /* MFontBin.cpp in Sources */,
+				8E1797DC1438CF9C0060D173 /* MFilesUpdate.cpp in Sources */,
+				8E1797DD1438CF9C0060D173 /* MRenderArray.cpp in Sources */,
+				8E1798121438CFA50060D173 /* MBFollow.cpp in Sources */,
+				8E1798131438CFA50060D173 /* MBLookAt.cpp in Sources */,
+				8E1798141438CFA50060D173 /* MALContext.cpp in Sources */,
+				8E1798151438CFA50060D173 /* MBulletContext.cpp in Sources */,
+				8E1798161438CFA50060D173 /* MGLContext.cpp in Sources */,
+				8E1798171438CFA50060D173 /* MWinContext.cpp in Sources */,
+				8E1798181438CFA50060D173 /* MLevelLoad.cpp in Sources */,
+				8E1798191438CFA50060D173 /* MLevelSave.cpp in Sources */,
+				8E17981A1438CFA50060D173 /* MMeshLoad.cpp in Sources */,
+				8E17981B1438CFA50060D173 /* MInput.cpp in Sources */,
+				8E17981C1438CFA50060D173 /* MBinFontLoader.cpp in Sources */,
+				8E17981D1438CFA50060D173 /* MDevILLoader.cpp in Sources */,
+				8E17981E1438CFA50060D173 /* MFreetypeLoader.cpp in Sources */,
+				8E17981F1438CFA50060D173 /* MSndFileLoader.cpp in Sources */,
+				8E1798201438CFA50060D173 /* MPlugin.cpp in Sources */,
+				8E1798211438CFA50060D173 /* MProject.cpp in Sources */,
+				8E1798221438CFA50060D173 /* MFixedRenderer.cpp in Sources */,
+				8E1798231438CFA50060D173 /* MStandardRenderer.cpp in Sources */,
+				8E1798241438CFA50060D173 /* MScript.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E4C7D3814379C2E0038F5DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4C7D3914379C2E0038F5DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E4C7D4714379C2E0038F5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/tinyxml",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/freetype/include",
+					"${SRCROOT}/../../../3rdparty/devil",
+					"${SRCROOT}/../../../3rdparty/libsndfile/include",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E4C7D4814379C2E0038F5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/tinyxml",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/freetype/include",
+					"${SRCROOT}/../../../3rdparty/devil",
+					"${SRCROOT}/../../../3rdparty/libsndfile/include",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E4C7D4A14379C2E0038F5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "MaratisEditor/MaratisEditor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E4C7D4B14379C2E0038F5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "MaratisEditor/MaratisEditor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4C7D2514379C2E0038F5DA /* Build configuration list for PBXProject "MaratisEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4C7D4714379C2E0038F5DA /* Debug */,
+				8E4C7D4814379C2E0038F5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4C7D4914379C2E0038F5DA /* Build configuration list for PBXNativeTarget "MaratisEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4C7D4A14379C2E0038F5DA /* Debug */,
+				8E4C7D4B14379C2E0038F5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E4C7D2214379C2E0038F5DA /* Project object */;
+}
