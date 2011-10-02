@@ -1,0 +1,10 @@
+<Maratis version="3.0">
+
+<Project>
+
+	<renderer name="FixedRenderer" />
+	<start file="levels/Sandbox.level" />
+
+</Project>
+
+</Maratis>

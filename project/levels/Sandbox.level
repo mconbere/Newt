@@ -1,0 +1,161 @@
+<Maratis version="3.0">
+
+<Level>
+
+	<properties currentScene="0" />
+
+	<Scene name="Scene-1">
+
+		<script file="../scripts/Sandbox.lua" />
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+		<Light name="Light0">
+			<active value="true" />
+			<transform 
+				position="30.182486 -20.491592 80.063248"
+				rotation="14.167294 1.401759 84.464874"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="500.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="45.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Light name="Light1">
+			<active value="true" />
+			<transform 
+				position="-25.357084 -58.944153 80.063248"
+				rotation="-15.343088 -1.515333 144.529755"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="500.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="45.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Camera name="Camera">
+			<active value="true" />
+			<transform 
+				position="0.001855 -50.118027 27.918896"
+				rotation="53.130104 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000" />
+			<Behavior name="LookAt">
+				<properties 
+					target="Player" />
+			</Behavior>
+			<Behavior name="Follow">
+				<properties 
+					target="Player"
+					delay="20.000000"
+					offset="0.000000 15.000000 5.000000"
+					local="true" />
+			</Behavior>
+		</Camera>
+		<Entity name="Level" file="../meshs/sandbox.mesh">
+			<BoundingBox min="-50.000008 -49.999996 -1.093753" max="49.999996 50.000019 40.055389" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 0.000000"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="TriangleMesh"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="Tick" file="../meshs/tick.mesh">
+			<BoundingBox min="-3.127959 -2.545846 -4.451963" max="3.127959 1.114909 4.269739" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="0.001855 -20.517990 5.418876"
+				rotation="0.000000 0.000000 -178.161621"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="false" />
+			<Behavior name="Follow">
+				<properties 
+					target="Player"
+					delay="1.000000"
+					offset="0.000000 0.200000 0.000000"
+					local="true" />
+			</Behavior>
+		</Entity>
+		<Entity name="Feet" file="../meshs/box.mesh">
+			<BoundingBox min="-1.000000 -1.000001 -1.000000" max="1.000000 1.000000 1.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="0.001855 -20.117990 0.918876"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="2.800000 1.800000 0.200000" />
+			<properties 
+				invisible="true" />
+			<physics 
+				shape="Box"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+			<Behavior name="Follow">
+				<properties 
+					target="Player"
+					delay="0.000000"
+					offset="0.000000 0.000000 -1.000000"
+					local="true" />
+			</Behavior>
+		</Entity>
+		<Entity name="Player" file="../meshs/box.mesh">
+			<BoundingBox min="-1.000000 -1.000001 -1.000000" max="1.000000 1.000000 1.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="0.001855 -20.117990 5.418876"
+				rotation="0.000000 -0.000000 180.000000"
+				scale="3.200000 2.000000 4.500000" />
+			<properties 
+				invisible="true" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="1.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+
+	</Scene>
+
+</Level>
+
+</Maratis>
