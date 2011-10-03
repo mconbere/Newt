@@ -5,10 +5,19 @@
       location = "group:MaratisEditor/MaratisEditor.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MaratisPlayer/MaratisPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MaratisCommon/MaratisCommon.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MCore/MCore.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MEngine/MEngine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MGui/MGui.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:bullet/bullet.xcodeproj">

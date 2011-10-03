@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E179944143975A40060D173 /* MBFollow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179913143975A40060D173 /* MBFollow.cpp */; };
+		8E179945143975A40060D173 /* MBFollow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179914143975A40060D173 /* MBFollow.h */; };
+		8E179946143975A40060D173 /* MBLookAt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179915143975A40060D173 /* MBLookAt.cpp */; };
+		8E179947143975A40060D173 /* MBLookAt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179916143975A40060D173 /* MBLookAt.h */; };
+		8E179948143975A40060D173 /* MALContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179918143975A40060D173 /* MALContext.cpp */; };
+		8E179949143975A40060D173 /* MALContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179919143975A40060D173 /* MALContext.h */; };
+		8E17994A143975A40060D173 /* MBulletContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17991A143975A40060D173 /* MBulletContext.cpp */; };
+		8E17994B143975A40060D173 /* MBulletContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17991B143975A40060D173 /* MBulletContext.h */; };
+		8E17994C143975A40060D173 /* MGLContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17991C143975A40060D173 /* MGLContext.cpp */; };
+		8E17994D143975A40060D173 /* MGLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17991D143975A40060D173 /* MGLContext.h */; };
+		8E17994E143975A40060D173 /* MWinContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17991E143975A40060D173 /* MWinContext.cpp */; };
+		8E17994F143975A40060D173 /* MWinContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17991F143975A40060D173 /* MWinContext.h */; };
+		8E179950143975A40060D173 /* MLevelLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179921143975A40060D173 /* MLevelLoad.cpp */; };
+		8E179951143975A40060D173 /* MLevelLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179922143975A40060D173 /* MLevelLoad.h */; };
+		8E179952143975A40060D173 /* MLevelSave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179923143975A40060D173 /* MLevelSave.cpp */; };
+		8E179953143975A40060D173 /* MLevelSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179924143975A40060D173 /* MLevelSave.h */; };
+		8E179954143975A40060D173 /* MMeshLoad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179925143975A40060D173 /* MMeshLoad.cpp */; };
+		8E179955143975A40060D173 /* MMeshLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179926143975A40060D173 /* MMeshLoad.h */; };
+		8E179956143975A40060D173 /* MGameWinEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179927143975A40060D173 /* MGameWinEvents.h */; };
+		8E179957143975A40060D173 /* MInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179929143975A40060D173 /* MInput.cpp */; };
+		8E179958143975A40060D173 /* MInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17992A143975A40060D173 /* MInput.h */; };
+		8E179959143975A40060D173 /* MBinFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17992C143975A40060D173 /* MBinFontLoader.cpp */; };
+		8E17995A143975A40060D173 /* MBinFontLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17992D143975A40060D173 /* MBinFontLoader.h */; };
+		8E17995B143975A40060D173 /* MDevILLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17992E143975A40060D173 /* MDevILLoader.cpp */; };
+		8E17995C143975A40060D173 /* MDevILLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17992F143975A40060D173 /* MDevILLoader.h */; };
+		8E17995D143975A40060D173 /* MFreetypeLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179930143975A40060D173 /* MFreetypeLoader.cpp */; };
+		8E17995E143975A40060D173 /* MFreetypeLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179931143975A40060D173 /* MFreetypeLoader.h */; };
+		8E17995F143975A40060D173 /* MSndFileLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179932143975A40060D173 /* MSndFileLoader.cpp */; };
+		8E179960143975A40060D173 /* MSndFileLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179933143975A40060D173 /* MSndFileLoader.h */; };
+		8E179961143975A40060D173 /* MPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179935143975A40060D173 /* MPlugin.cpp */; };
+		8E179962143975A40060D173 /* MPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179936143975A40060D173 /* MPlugin.h */; };
+		8E179963143975A40060D173 /* MProject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179938143975A40060D173 /* MProject.cpp */; };
+		8E179964143975A40060D173 /* MProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179939143975A40060D173 /* MProject.h */; };
+		8E179965143975A40060D173 /* MFixedRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17993B143975A40060D173 /* MFixedRenderer.cpp */; };
+		8E179966143975A40060D173 /* MFixedRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17993C143975A40060D173 /* MFixedRenderer.h */; };
+		8E179967143975A40060D173 /* MStandardRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17993D143975A40060D173 /* MStandardRenderer.cpp */; };
+		8E179968143975A40060D173 /* MStandardRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17993E143975A40060D173 /* MStandardRenderer.h */; };
+		8E179969143975A40060D173 /* MStandardShaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E17993F143975A40060D173 /* MStandardShaders.h */; };
+		8E17996A143975A40060D173 /* MScript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179941143975A40060D173 /* MScript.cpp */; };
+		8E17996B143975A40060D173 /* MScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E179942143975A40060D173 /* MScript.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E179909143975720060D173 /* libMaratisCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMaratisCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179913143975A40060D173 /* MBFollow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBFollow.cpp; sourceTree = "<group>"; };
+		8E179914143975A40060D173 /* MBFollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFollow.h; sourceTree = "<group>"; };
+		8E179915143975A40060D173 /* MBLookAt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBLookAt.cpp; sourceTree = "<group>"; };
+		8E179916143975A40060D173 /* MBLookAt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLookAt.h; sourceTree = "<group>"; };
+		8E179918143975A40060D173 /* MALContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MALContext.cpp; sourceTree = "<group>"; };
+		8E179919143975A40060D173 /* MALContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALContext.h; sourceTree = "<group>"; };
+		8E17991A143975A40060D173 /* MBulletContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBulletContext.cpp; sourceTree = "<group>"; };
+		8E17991B143975A40060D173 /* MBulletContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBulletContext.h; sourceTree = "<group>"; };
+		8E17991C143975A40060D173 /* MGLContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGLContext.cpp; sourceTree = "<group>"; };
+		8E17991D143975A40060D173 /* MGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLContext.h; sourceTree = "<group>"; };
+		8E17991E143975A40060D173 /* MWinContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MWinContext.cpp; sourceTree = "<group>"; };
+		8E17991F143975A40060D173 /* MWinContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWinContext.h; sourceTree = "<group>"; };
+		8E179921143975A40060D173 /* MLevelLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLevelLoad.cpp; sourceTree = "<group>"; };
+		8E179922143975A40060D173 /* MLevelLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLevelLoad.h; sourceTree = "<group>"; };
+		8E179923143975A40060D173 /* MLevelSave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLevelSave.cpp; sourceTree = "<group>"; };
+		8E179924143975A40060D173 /* MLevelSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLevelSave.h; sourceTree = "<group>"; };
+		8E179925143975A40060D173 /* MMeshLoad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMeshLoad.cpp; sourceTree = "<group>"; };
+		8E179926143975A40060D173 /* MMeshLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMeshLoad.h; sourceTree = "<group>"; };
+		8E179927143975A40060D173 /* MGameWinEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGameWinEvents.h; sourceTree = "<group>"; };
+		8E179929143975A40060D173 /* MInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MInput.cpp; sourceTree = "<group>"; };
+		8E17992A143975A40060D173 /* MInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MInput.h; sourceTree = "<group>"; };
+		8E17992C143975A40060D173 /* MBinFontLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBinFontLoader.cpp; sourceTree = "<group>"; };
+		8E17992D143975A40060D173 /* MBinFontLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBinFontLoader.h; sourceTree = "<group>"; };
+		8E17992E143975A40060D173 /* MDevILLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MDevILLoader.cpp; sourceTree = "<group>"; };
+		8E17992F143975A40060D173 /* MDevILLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDevILLoader.h; sourceTree = "<group>"; };
+		8E179930143975A40060D173 /* MFreetypeLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFreetypeLoader.cpp; sourceTree = "<group>"; };
+		8E179931143975A40060D173 /* MFreetypeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFreetypeLoader.h; sourceTree = "<group>"; };
+		8E179932143975A40060D173 /* MSndFileLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSndFileLoader.cpp; sourceTree = "<group>"; };
+		8E179933143975A40060D173 /* MSndFileLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSndFileLoader.h; sourceTree = "<group>"; };
+		8E179935143975A40060D173 /* MPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MPlugin.cpp; sourceTree = "<group>"; };
+		8E179936143975A40060D173 /* MPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPlugin.h; sourceTree = "<group>"; };
+		8E179938143975A40060D173 /* MProject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MProject.cpp; sourceTree = "<group>"; };
+		8E179939143975A40060D173 /* MProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MProject.h; sourceTree = "<group>"; };
+		8E17993B143975A40060D173 /* MFixedRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFixedRenderer.cpp; sourceTree = "<group>"; };
+		8E17993C143975A40060D173 /* MFixedRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFixedRenderer.h; sourceTree = "<group>"; };
+		8E17993D143975A40060D173 /* MStandardRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MStandardRenderer.cpp; sourceTree = "<group>"; };
+		8E17993E143975A40060D173 /* MStandardRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MStandardRenderer.h; sourceTree = "<group>"; };
+		8E17993F143975A40060D173 /* MStandardShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MStandardShaders.h; sourceTree = "<group>"; };
+		8E179941143975A40060D173 /* MScript.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MScript.cpp; sourceTree = "<group>"; };
+		8E179942143975A40060D173 /* MScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MScript.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E179906143975720060D173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1798FE143975720060D173 = {
+			isa = PBXGroup;
+			children = (
+				8E179910143975880060D173 /* Source */,
+				8E17990A143975720060D173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E17990A143975720060D173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E179909143975720060D173 /* libMaratisCommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E179910143975880060D173 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E179911143975A40060D173 /* Common */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8E179911143975A40060D173 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8E179912143975A40060D173 /* MBehaviors */,
+				8E179917143975A40060D173 /* MContexts */,
+				8E179920143975A40060D173 /* MFileManager */,
+				8E179927143975A40060D173 /* MGameWinEvents.h */,
+				8E179928143975A40060D173 /* MInput */,
+				8E17992B143975A40060D173 /* MLoaders */,
+				8E179934143975A40060D173 /* MPlugin */,
+				8E179937143975A40060D173 /* MProject */,
+				8E17993A143975A40060D173 /* MRenderers */,
+				8E179940143975A40060D173 /* MScript */,
+			);
+			name = Common;
+			path = "../../../3rdparty/maratis-dev/Maratis/Common";
+			sourceTree = "<group>";
+		};
+		8E179912143975A40060D173 /* MBehaviors */ = {
+			isa = PBXGroup;
+			children = (
+				8E179913143975A40060D173 /* MBFollow.cpp */,
+				8E179914143975A40060D173 /* MBFollow.h */,
+				8E179915143975A40060D173 /* MBLookAt.cpp */,
+				8E179916143975A40060D173 /* MBLookAt.h */,
+			);
+			path = MBehaviors;
+			sourceTree = "<group>";
+		};
+		8E179917143975A40060D173 /* MContexts */ = {
+			isa = PBXGroup;
+			children = (
+				8E179918143975A40060D173 /* MALContext.cpp */,
+				8E179919143975A40060D173 /* MALContext.h */,
+				8E17991A143975A40060D173 /* MBulletContext.cpp */,
+				8E17991B143975A40060D173 /* MBulletContext.h */,
+				8E17991C143975A40060D173 /* MGLContext.cpp */,
+				8E17991D143975A40060D173 /* MGLContext.h */,
+				8E17991E143975A40060D173 /* MWinContext.cpp */,
+				8E17991F143975A40060D173 /* MWinContext.h */,
+			);
+			path = MContexts;
+			sourceTree = "<group>";
+		};
+		8E179920143975A40060D173 /* MFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				8E179921143975A40060D173 /* MLevelLoad.cpp */,
+				8E179922143975A40060D173 /* MLevelLoad.h */,
+				8E179923143975A40060D173 /* MLevelSave.cpp */,
+				8E179924143975A40060D173 /* MLevelSave.h */,
+				8E179925143975A40060D173 /* MMeshLoad.cpp */,
+				8E179926143975A40060D173 /* MMeshLoad.h */,
+			);
+			path = MFileManager;
+			sourceTree = "<group>";
+		};
+		8E179928143975A40060D173 /* MInput */ = {
+			isa = PBXGroup;
+			children = (
+				8E179929143975A40060D173 /* MInput.cpp */,
+				8E17992A143975A40060D173 /* MInput.h */,
+			);
+			path = MInput;
+			sourceTree = "<group>";
+		};
+		8E17992B143975A40060D173 /* MLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				8E17992C143975A40060D173 /* MBinFontLoader.cpp */,
+				8E17992D143975A40060D173 /* MBinFontLoader.h */,
+				8E17992E143975A40060D173 /* MDevILLoader.cpp */,
+				8E17992F143975A40060D173 /* MDevILLoader.h */,
+				8E179930143975A40060D173 /* MFreetypeLoader.cpp */,
+				8E179931143975A40060D173 /* MFreetypeLoader.h */,
+				8E179932143975A40060D173 /* MSndFileLoader.cpp */,
+				8E179933143975A40060D173 /* MSndFileLoader.h */,
+			);
+			path = MLoaders;
+			sourceTree = "<group>";
+		};
+		8E179934143975A40060D173 /* MPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				8E179935143975A40060D173 /* MPlugin.cpp */,
+				8E179936143975A40060D173 /* MPlugin.h */,
+			);
+			path = MPlugin;
+			sourceTree = "<group>";
+		};
+		8E179937143975A40060D173 /* MProject */ = {
+			isa = PBXGroup;
+			children = (
+				8E179938143975A40060D173 /* MProject.cpp */,
+				8E179939143975A40060D173 /* MProject.h */,
+			);
+			path = MProject;
+			sourceTree = "<group>";
+		};
+		8E17993A143975A40060D173 /* MRenderers */ = {
+			isa = PBXGroup;
+			children = (
+				8E17993B143975A40060D173 /* MFixedRenderer.cpp */,
+				8E17993C143975A40060D173 /* MFixedRenderer.h */,
+				8E17993D143975A40060D173 /* MStandardRenderer.cpp */,
+				8E17993E143975A40060D173 /* MStandardRenderer.h */,
+				8E17993F143975A40060D173 /* MStandardShaders.h */,
+			);
+			path = MRenderers;
+			sourceTree = "<group>";
+		};
+		8E179940143975A40060D173 /* MScript */ = {
+			isa = PBXGroup;
+			children = (
+				8E179941143975A40060D173 /* MScript.cpp */,
+				8E179942143975A40060D173 /* MScript.h */,
+			);
+			path = MScript;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E179907143975720060D173 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179945143975A40060D173 /* MBFollow.h in Headers */,
+				8E179947143975A40060D173 /* MBLookAt.h in Headers */,
+				8E179949143975A40060D173 /* MALContext.h in Headers */,
+				8E17994B143975A40060D173 /* MBulletContext.h in Headers */,
+				8E17994D143975A40060D173 /* MGLContext.h in Headers */,
+				8E17994F143975A40060D173 /* MWinContext.h in Headers */,
+				8E179951143975A40060D173 /* MLevelLoad.h in Headers */,
+				8E179953143975A40060D173 /* MLevelSave.h in Headers */,
+				8E179955143975A40060D173 /* MMeshLoad.h in Headers */,
+				8E179956143975A40060D173 /* MGameWinEvents.h in Headers */,
+				8E179958143975A40060D173 /* MInput.h in Headers */,
+				8E17995A143975A40060D173 /* MBinFontLoader.h in Headers */,
+				8E17995C143975A40060D173 /* MDevILLoader.h in Headers */,
+				8E17995E143975A40060D173 /* MFreetypeLoader.h in Headers */,
+				8E179960143975A40060D173 /* MSndFileLoader.h in Headers */,
+				8E179962143975A40060D173 /* MPlugin.h in Headers */,
+				8E179964143975A40060D173 /* MProject.h in Headers */,
+				8E179966143975A40060D173 /* MFixedRenderer.h in Headers */,
+				8E179968143975A40060D173 /* MStandardRenderer.h in Headers */,
+				8E179969143975A40060D173 /* MStandardShaders.h in Headers */,
+				8E17996B143975A40060D173 /* MScript.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E179908143975720060D173 /* MaratisCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E17990D143975720060D173 /* Build configuration list for PBXNativeTarget "MaratisCommon" */;
+			buildPhases = (
+				8E179905143975720060D173 /* Sources */,
+				8E179906143975720060D173 /* Frameworks */,
+				8E179907143975720060D173 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaratisCommon;
+			productName = MaratisCommon;
+			productReference = 8E179909143975720060D173 /* libMaratisCommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E179900143975720060D173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E179903143975720060D173 /* Build configuration list for PBXProject "MaratisCommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E1798FE143975720060D173;
+			productRefGroup = 8E17990A143975720060D173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E179908143975720060D173 /* MaratisCommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E179905143975720060D173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179944143975A40060D173 /* MBFollow.cpp in Sources */,
+				8E179946143975A40060D173 /* MBLookAt.cpp in Sources */,
+				8E179948143975A40060D173 /* MALContext.cpp in Sources */,
+				8E17994A143975A40060D173 /* MBulletContext.cpp in Sources */,
+				8E17994C143975A40060D173 /* MGLContext.cpp in Sources */,
+				8E17994E143975A40060D173 /* MWinContext.cpp in Sources */,
+				8E179950143975A40060D173 /* MLevelLoad.cpp in Sources */,
+				8E179952143975A40060D173 /* MLevelSave.cpp in Sources */,
+				8E179954143975A40060D173 /* MMeshLoad.cpp in Sources */,
+				8E179957143975A40060D173 /* MInput.cpp in Sources */,
+				8E179959143975A40060D173 /* MBinFontLoader.cpp in Sources */,
+				8E17995B143975A40060D173 /* MDevILLoader.cpp in Sources */,
+				8E17995D143975A40060D173 /* MFreetypeLoader.cpp in Sources */,
+				8E17995F143975A40060D173 /* MSndFileLoader.cpp in Sources */,
+				8E179961143975A40060D173 /* MPlugin.cpp in Sources */,
+				8E179963143975A40060D173 /* MProject.cpp in Sources */,
+				8E179965143975A40060D173 /* MFixedRenderer.cpp in Sources */,
+				8E179967143975A40060D173 /* MStandardRenderer.cpp in Sources */,
+				8E17996A143975A40060D173 /* MScript.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E17990B143975720060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/tinyxml",
+					"${SRCROOT}/../../../3rdparty/devil",
+					"${SRCROOT}/../../../3rdparty/freetype/include",
+					"${SRCROOT}/../../../3rdparty/libsndfile/include",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E17990C143975720060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/tinyxml",
+					"${SRCROOT}/../../../3rdparty/devil",
+					"${SRCROOT}/../../../3rdparty/freetype/include",
+					"${SRCROOT}/../../../3rdparty/libsndfile/include",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E17990E143975720060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E17990F143975720060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E179903143975720060D173 /* Build configuration list for PBXProject "MaratisCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E17990B143975720060D173 /* Debug */,
+				8E17990C143975720060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E17990D143975720060D173 /* Build configuration list for PBXNativeTarget "MaratisCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E17990E143975720060D173 /* Debug */,
+				8E17990F143975720060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E179900143975720060D173 /* Project object */;
+}

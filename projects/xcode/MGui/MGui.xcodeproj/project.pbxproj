@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1798D71439743A0060D173 /* MCocoaWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798AD1439743A0060D173 /* MCocoaWindow.h */; };
+		8E1798D81439743A0060D173 /* MGui.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798AE1439743A0060D173 /* MGui.h */; };
+		8E1798D91439743A0060D173 /* MGui2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798AF1439743A0060D173 /* MGui2d.h */; };
+		8E1798DA1439743A0060D173 /* MGuiButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B01439743A0060D173 /* MGuiButton.h */; };
+		8E1798DB1439743A0060D173 /* MGuiEditText.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B11439743A0060D173 /* MGuiEditText.h */; };
+		8E1798DC1439743A0060D173 /* MGuiEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B21439743A0060D173 /* MGuiEvents.h */; };
+		8E1798DD1439743A0060D173 /* MGuiImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B31439743A0060D173 /* MGuiImage.h */; };
+		8E1798DE1439743A0060D173 /* MGuiMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B41439743A0060D173 /* MGuiMenu.h */; };
+		8E1798DF1439743A0060D173 /* MGuiSlide.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B51439743A0060D173 /* MGuiSlide.h */; };
+		8E1798E01439743A0060D173 /* MGuiText.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B61439743A0060D173 /* MGuiText.h */; };
+		8E1798E11439743A0060D173 /* MGuiTextureFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B71439743A0060D173 /* MGuiTextureFont.h */; };
+		8E1798E21439743A0060D173 /* MGuiWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B81439743A0060D173 /* MGuiWindow.h */; };
+		8E1798E31439743A0060D173 /* MJoystick.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798B91439743A0060D173 /* MJoystick.h */; };
+		8E1798E41439743A0060D173 /* MKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798BA1439743A0060D173 /* MKeyboard.h */; };
+		8E1798E51439743A0060D173 /* MMouse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798BB1439743A0060D173 /* MMouse.h */; };
+		8E1798E61439743A0060D173 /* MWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798BC1439743A0060D173 /* MWindow.h */; };
+		8E1798E71439743A0060D173 /* MWinEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798BD1439743A0060D173 /* MWinEvents.h */; };
+		8E1798E81439743A0060D173 /* MWin32Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798BF1439743A0060D173 /* MWin32Window.h */; };
+		8E1798E91439743A0060D173 /* MX11Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1798C11439743A0060D173 /* MX11Window.h */; };
+		8E1798EA1439743A0060D173 /* MCocoaWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798C41439743A0060D173 /* MCocoaWindow.mm */; };
+		8E1798EB1439743A0060D173 /* MGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798C51439743A0060D173 /* MGui.cpp */; };
+		8E1798EC1439743A0060D173 /* MGui2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798C61439743A0060D173 /* MGui2d.cpp */; };
+		8E1798ED1439743A0060D173 /* MGuiButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798C71439743A0060D173 /* MGuiButton.cpp */; };
+		8E1798EE1439743A0060D173 /* MGuiEditText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798C81439743A0060D173 /* MGuiEditText.cpp */; };
+		8E1798EF1439743A0060D173 /* MGuiImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798C91439743A0060D173 /* MGuiImage.cpp */; };
+		8E1798F01439743A0060D173 /* MGuiMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798CA1439743A0060D173 /* MGuiMenu.cpp */; };
+		8E1798F11439743A0060D173 /* MGuiSlide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798CB1439743A0060D173 /* MGuiSlide.cpp */; };
+		8E1798F21439743A0060D173 /* MGuiText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798CC1439743A0060D173 /* MGuiText.cpp */; };
+		8E1798F31439743A0060D173 /* MGuiTextureFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798CD1439743A0060D173 /* MGuiTextureFont.cpp */; };
+		8E1798F41439743A0060D173 /* MGuiWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798CE1439743A0060D173 /* MGuiWindow.cpp */; };
+		8E1798F51439743A0060D173 /* MJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798CF1439743A0060D173 /* MJoystick.cpp */; };
+		8E1798F61439743A0060D173 /* MKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798D01439743A0060D173 /* MKeyboard.cpp */; };
+		8E1798F71439743A0060D173 /* MMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1798D11439743A0060D173 /* MMouse.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E1798A0143973F70060D173 /* libMGui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMGui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1798AD1439743A0060D173 /* MCocoaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCocoaWindow.h; sourceTree = "<group>"; };
+		8E1798AE1439743A0060D173 /* MGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGui.h; sourceTree = "<group>"; };
+		8E1798AF1439743A0060D173 /* MGui2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGui2d.h; sourceTree = "<group>"; };
+		8E1798B01439743A0060D173 /* MGuiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiButton.h; sourceTree = "<group>"; };
+		8E1798B11439743A0060D173 /* MGuiEditText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiEditText.h; sourceTree = "<group>"; };
+		8E1798B21439743A0060D173 /* MGuiEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiEvents.h; sourceTree = "<group>"; };
+		8E1798B31439743A0060D173 /* MGuiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiImage.h; sourceTree = "<group>"; };
+		8E1798B41439743A0060D173 /* MGuiMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiMenu.h; sourceTree = "<group>"; };
+		8E1798B51439743A0060D173 /* MGuiSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiSlide.h; sourceTree = "<group>"; };
+		8E1798B61439743A0060D173 /* MGuiText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiText.h; sourceTree = "<group>"; };
+		8E1798B71439743A0060D173 /* MGuiTextureFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiTextureFont.h; sourceTree = "<group>"; };
+		8E1798B81439743A0060D173 /* MGuiWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGuiWindow.h; sourceTree = "<group>"; };
+		8E1798B91439743A0060D173 /* MJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJoystick.h; sourceTree = "<group>"; };
+		8E1798BA1439743A0060D173 /* MKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKeyboard.h; sourceTree = "<group>"; };
+		8E1798BB1439743A0060D173 /* MMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMouse.h; sourceTree = "<group>"; };
+		8E1798BC1439743A0060D173 /* MWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWindow.h; sourceTree = "<group>"; };
+		8E1798BD1439743A0060D173 /* MWinEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWinEvents.h; sourceTree = "<group>"; };
+		8E1798BF1439743A0060D173 /* MWin32Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWin32Window.h; sourceTree = "<group>"; };
+		8E1798C11439743A0060D173 /* MX11Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MX11Window.h; sourceTree = "<group>"; };
+		8E1798C41439743A0060D173 /* MCocoaWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCocoaWindow.mm; sourceTree = "<group>"; };
+		8E1798C51439743A0060D173 /* MGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGui.cpp; sourceTree = "<group>"; };
+		8E1798C61439743A0060D173 /* MGui2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGui2d.cpp; sourceTree = "<group>"; };
+		8E1798C71439743A0060D173 /* MGuiButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiButton.cpp; sourceTree = "<group>"; };
+		8E1798C81439743A0060D173 /* MGuiEditText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiEditText.cpp; sourceTree = "<group>"; };
+		8E1798C91439743A0060D173 /* MGuiImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiImage.cpp; sourceTree = "<group>"; };
+		8E1798CA1439743A0060D173 /* MGuiMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiMenu.cpp; sourceTree = "<group>"; };
+		8E1798CB1439743A0060D173 /* MGuiSlide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiSlide.cpp; sourceTree = "<group>"; };
+		8E1798CC1439743A0060D173 /* MGuiText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiText.cpp; sourceTree = "<group>"; };
+		8E1798CD1439743A0060D173 /* MGuiTextureFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiTextureFont.cpp; sourceTree = "<group>"; };
+		8E1798CE1439743A0060D173 /* MGuiWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGuiWindow.cpp; sourceTree = "<group>"; };
+		8E1798CF1439743A0060D173 /* MJoystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MJoystick.cpp; sourceTree = "<group>"; };
+		8E1798D01439743A0060D173 /* MKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MKeyboard.cpp; sourceTree = "<group>"; };
+		8E1798D11439743A0060D173 /* MMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MMouse.cpp; sourceTree = "<group>"; };
+		8E1798D31439743A0060D173 /* MWin32Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MWin32Window.cpp; sourceTree = "<group>"; };
+		8E1798D51439743A0060D173 /* MX11Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MX11Window.cpp; sourceTree = "<group>"; };
+		8E1798D61439743A0060D173 /* x11_keysym2unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = x11_keysym2unicode.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E17989D143973F70060D173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E179895143973F70060D173 = {
+			isa = PBXGroup;
+			children = (
+				8E1798A7143974020060D173 /* Source */,
+				8E1798A1143973F70060D173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1798A1143973F70060D173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798A0143973F70060D173 /* libMGui.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1798A7143974020060D173 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798AB1439743A0060D173 /* Includes */,
+				8E1798C21439743A0060D173 /* Sources */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8E1798AB1439743A0060D173 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798AC1439743A0060D173 /* COCOA */,
+				8E1798AE1439743A0060D173 /* MGui.h */,
+				8E1798AF1439743A0060D173 /* MGui2d.h */,
+				8E1798B01439743A0060D173 /* MGuiButton.h */,
+				8E1798B11439743A0060D173 /* MGuiEditText.h */,
+				8E1798B21439743A0060D173 /* MGuiEvents.h */,
+				8E1798B31439743A0060D173 /* MGuiImage.h */,
+				8E1798B41439743A0060D173 /* MGuiMenu.h */,
+				8E1798B51439743A0060D173 /* MGuiSlide.h */,
+				8E1798B61439743A0060D173 /* MGuiText.h */,
+				8E1798B71439743A0060D173 /* MGuiTextureFont.h */,
+				8E1798B81439743A0060D173 /* MGuiWindow.h */,
+				8E1798B91439743A0060D173 /* MJoystick.h */,
+				8E1798BA1439743A0060D173 /* MKeyboard.h */,
+				8E1798BB1439743A0060D173 /* MMouse.h */,
+				8E1798BC1439743A0060D173 /* MWindow.h */,
+				8E1798BD1439743A0060D173 /* MWinEvents.h */,
+				8E1798BE1439743A0060D173 /* WIN32 */,
+				8E1798C01439743A0060D173 /* X11 */,
+			);
+			name = Includes;
+			path = "../../../3rdparty/maratis-dev/MSDK/MGui/Includes";
+			sourceTree = "<group>";
+		};
+		8E1798AC1439743A0060D173 /* COCOA */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798AD1439743A0060D173 /* MCocoaWindow.h */,
+			);
+			path = COCOA;
+			sourceTree = "<group>";
+		};
+		8E1798BE1439743A0060D173 /* WIN32 */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798BF1439743A0060D173 /* MWin32Window.h */,
+			);
+			path = WIN32;
+			sourceTree = "<group>";
+		};
+		8E1798C01439743A0060D173 /* X11 */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798C11439743A0060D173 /* MX11Window.h */,
+			);
+			path = X11;
+			sourceTree = "<group>";
+		};
+		8E1798C21439743A0060D173 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798C31439743A0060D173 /* COCOA */,
+				8E1798C51439743A0060D173 /* MGui.cpp */,
+				8E1798C61439743A0060D173 /* MGui2d.cpp */,
+				8E1798C71439743A0060D173 /* MGuiButton.cpp */,
+				8E1798C81439743A0060D173 /* MGuiEditText.cpp */,
+				8E1798C91439743A0060D173 /* MGuiImage.cpp */,
+				8E1798CA1439743A0060D173 /* MGuiMenu.cpp */,
+				8E1798CB1439743A0060D173 /* MGuiSlide.cpp */,
+				8E1798CC1439743A0060D173 /* MGuiText.cpp */,
+				8E1798CD1439743A0060D173 /* MGuiTextureFont.cpp */,
+				8E1798CE1439743A0060D173 /* MGuiWindow.cpp */,
+				8E1798CF1439743A0060D173 /* MJoystick.cpp */,
+				8E1798D01439743A0060D173 /* MKeyboard.cpp */,
+				8E1798D11439743A0060D173 /* MMouse.cpp */,
+				8E1798D21439743A0060D173 /* WIN32 */,
+				8E1798D41439743A0060D173 /* X11 */,
+			);
+			name = Sources;
+			path = "../../../3rdparty/maratis-dev/MSDK/MGui/Sources";
+			sourceTree = "<group>";
+		};
+		8E1798C31439743A0060D173 /* COCOA */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798C41439743A0060D173 /* MCocoaWindow.mm */,
+			);
+			path = COCOA;
+			sourceTree = "<group>";
+		};
+		8E1798D21439743A0060D173 /* WIN32 */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798D31439743A0060D173 /* MWin32Window.cpp */,
+			);
+			path = WIN32;
+			sourceTree = "<group>";
+		};
+		8E1798D41439743A0060D173 /* X11 */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798D51439743A0060D173 /* MX11Window.cpp */,
+				8E1798D61439743A0060D173 /* x11_keysym2unicode.cpp */,
+			);
+			path = X11;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E17989E143973F70060D173 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1798D71439743A0060D173 /* MCocoaWindow.h in Headers */,
+				8E1798D81439743A0060D173 /* MGui.h in Headers */,
+				8E1798D91439743A0060D173 /* MGui2d.h in Headers */,
+				8E1798DA1439743A0060D173 /* MGuiButton.h in Headers */,
+				8E1798DB1439743A0060D173 /* MGuiEditText.h in Headers */,
+				8E1798DC1439743A0060D173 /* MGuiEvents.h in Headers */,
+				8E1798DD1439743A0060D173 /* MGuiImage.h in Headers */,
+				8E1798DE1439743A0060D173 /* MGuiMenu.h in Headers */,
+				8E1798DF1439743A0060D173 /* MGuiSlide.h in Headers */,
+				8E1798E01439743A0060D173 /* MGuiText.h in Headers */,
+				8E1798E11439743A0060D173 /* MGuiTextureFont.h in Headers */,
+				8E1798E21439743A0060D173 /* MGuiWindow.h in Headers */,
+				8E1798E31439743A0060D173 /* MJoystick.h in Headers */,
+				8E1798E41439743A0060D173 /* MKeyboard.h in Headers */,
+				8E1798E51439743A0060D173 /* MMouse.h in Headers */,
+				8E1798E61439743A0060D173 /* MWindow.h in Headers */,
+				8E1798E71439743A0060D173 /* MWinEvents.h in Headers */,
+				8E1798E81439743A0060D173 /* MWin32Window.h in Headers */,
+				8E1798E91439743A0060D173 /* MX11Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E17989F143973F70060D173 /* MGui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1798A4143973F70060D173 /* Build configuration list for PBXNativeTarget "MGui" */;
+			buildPhases = (
+				8E17989C143973F70060D173 /* Sources */,
+				8E17989D143973F70060D173 /* Frameworks */,
+				8E17989E143973F70060D173 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGui;
+			productName = MGui;
+			productReference = 8E1798A0143973F70060D173 /* libMGui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E179897143973F70060D173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E17989A143973F70060D173 /* Build configuration list for PBXProject "MGui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E179895143973F70060D173;
+			productRefGroup = 8E1798A1143973F70060D173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E17989F143973F70060D173 /* MGui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E17989C143973F70060D173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1798EA1439743A0060D173 /* MCocoaWindow.mm in Sources */,
+				8E1798EB1439743A0060D173 /* MGui.cpp in Sources */,
+				8E1798EC1439743A0060D173 /* MGui2d.cpp in Sources */,
+				8E1798ED1439743A0060D173 /* MGuiButton.cpp in Sources */,
+				8E1798EE1439743A0060D173 /* MGuiEditText.cpp in Sources */,
+				8E1798EF1439743A0060D173 /* MGuiImage.cpp in Sources */,
+				8E1798F01439743A0060D173 /* MGuiMenu.cpp in Sources */,
+				8E1798F11439743A0060D173 /* MGuiSlide.cpp in Sources */,
+				8E1798F21439743A0060D173 /* MGuiText.cpp in Sources */,
+				8E1798F31439743A0060D173 /* MGuiTextureFont.cpp in Sources */,
+				8E1798F41439743A0060D173 /* MGuiWindow.cpp in Sources */,
+				8E1798F51439743A0060D173 /* MJoystick.cpp in Sources */,
+				8E1798F61439743A0060D173 /* MKeyboard.cpp in Sources */,
+				8E1798F71439743A0060D173 /* MMouse.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E1798A2143973F70060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E1798A3143973F70060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E1798A5143973F70060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E1798A6143973F70060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E17989A143973F70060D173 /* Build configuration list for PBXProject "MGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1798A2143973F70060D173 /* Debug */,
+				8E1798A3143973F70060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1798A4143973F70060D173 /* Build configuration list for PBXNativeTarget "MGui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1798A5143973F70060D173 /* Debug */,
+				8E1798A6143973F70060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E179897143973F70060D173 /* Project object */;
+}

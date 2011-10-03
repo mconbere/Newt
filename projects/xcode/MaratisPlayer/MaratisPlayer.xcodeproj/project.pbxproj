@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1798401439726B0060D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17983F1439726B0060D173 /* Cocoa.framework */; };
+		8E17984A1439726B0060D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E1798481439726B0060D173 /* InfoPlist.strings */; };
+		8E179975143978580060D173 /* libbullet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17996E143978580060D173 /* libbullet.a */; };
+		8E179976143978590060D173 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17996F143978580060D173 /* liblua.a */; };
+		8E179977143978590060D173 /* libMaratisCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179970143978580060D173 /* libMaratisCommon.a */; };
+		8E179978143978590060D173 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179971143978580060D173 /* libMCore.a */; };
+		8E179979143978590060D173 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179972143978580060D173 /* libMEngine.a */; };
+		8E17997A143978590060D173 /* libMGui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179973143978580060D173 /* libMGui.a */; };
+		8E17997B143978590060D173 /* libtinyxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179974143978580060D173 /* libtinyxml.a */; };
+		8E17997E143978590060D173 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17997C143978590060D173 /* OpenAL.framework */; };
+		8E17997F143978590060D173 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17997D143978590060D173 /* OpenGL.framework */; };
+		8E179982143978880060D173 /* libil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179981143978880060D173 /* libil.a */; };
+		8E179984143978960060D173 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179983143978960060D173 /* libfreetype.a */; };
+		8E179986143978A30060D173 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179985143978A30060D173 /* libjpeg.a */; };
+		8E179988143978AE0060D173 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179987143978AE0060D173 /* libpng.a */; };
+		8E17998A143978BA0060D173 /* libSndFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179989143978BA0060D173 /* libSndFile.a */; };
+		8E17998C143978D60060D173 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E17998B143978D60060D173 /* libz.dylib */; };
+		8E179995143978EF0060D173 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17998F143978EF0060D173 /* main.cpp */; };
+		8E179996143978EF0060D173 /* MaratisPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179991143978EF0060D173 /* MaratisPlayer.cpp */; };
+		8E17999A14397AAF0060D173 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 8E17999814397AAF0060D173 /* font */; };
+		8E17999B14397AAF0060D173 /* gui in Resources */ = {isa = PBXBuildFile; fileRef = 8E17999914397AAF0060D173 /* gui */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E17983B1439726B0060D173 /* MaratisPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaratisPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E17983F1439726B0060D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8E1798471439726B0060D173 /* MaratisPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaratisPlayer-Info.plist"; sourceTree = "<group>"; };
+		8E1798491439726B0060D173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E17996E143978580060D173 /* libbullet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbullet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E17996F143978580060D173 /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblua.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179970143978580060D173 /* libMaratisCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaratisCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179971143978580060D173 /* libMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179972143978580060D173 /* libMEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179973143978580060D173 /* libMGui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMGui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179974143978580060D173 /* libtinyxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtinyxml.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E17997C143978590060D173 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		8E17997D143978590060D173 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8E179981143978880060D173 /* libil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libil.a; path = ../../../3rdparty/devil/osx/libil.a; sourceTree = "<group>"; };
+		8E179983143978960060D173 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../3rdparty/freetype/osx/libfreetype.a; sourceTree = "<group>"; };
+		8E179985143978A30060D173 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../3rdparty/libjpeg/osx/libjpeg.a; sourceTree = "<group>"; };
+		8E179987143978AE0060D173 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../3rdparty/libpng/osx/libpng.a; sourceTree = "<group>"; };
+		8E179989143978BA0060D173 /* libSndFile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSndFile.a; path = ../../../3rdparty/libsndfile/osx/static/libSndFile.a; sourceTree = "<group>"; };
+		8E17998B143978D60060D173 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8E17998F143978EF0060D173 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8E179991143978EF0060D173 /* MaratisPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaratisPlayer.cpp; sourceTree = "<group>"; };
+		8E179992143978EF0060D173 /* MaratisPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaratisPlayer.h; sourceTree = "<group>"; };
+		8E17999814397AAF0060D173 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = font; path = "../../../3rdparty/maratis-dev/Data/Editor/font"; sourceTree = "<group>"; };
+		8E17999914397AAF0060D173 /* gui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gui; path = "../../../3rdparty/maratis-dev/Data/Editor/gui"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E1798381439726B0060D173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E17998C143978D60060D173 /* libz.dylib in Frameworks */,
+				8E17998A143978BA0060D173 /* libSndFile.a in Frameworks */,
+				8E179988143978AE0060D173 /* libpng.a in Frameworks */,
+				8E179986143978A30060D173 /* libjpeg.a in Frameworks */,
+				8E179984143978960060D173 /* libfreetype.a in Frameworks */,
+				8E179982143978880060D173 /* libil.a in Frameworks */,
+				8E17997E143978590060D173 /* OpenAL.framework in Frameworks */,
+				8E17997F143978590060D173 /* OpenGL.framework in Frameworks */,
+				8E179975143978580060D173 /* libbullet.a in Frameworks */,
+				8E179976143978590060D173 /* liblua.a in Frameworks */,
+				8E179977143978590060D173 /* libMaratisCommon.a in Frameworks */,
+				8E179978143978590060D173 /* libMCore.a in Frameworks */,
+				8E179979143978590060D173 /* libMEngine.a in Frameworks */,
+				8E17997A143978590060D173 /* libMGui.a in Frameworks */,
+				8E17997B143978590060D173 /* libtinyxml.a in Frameworks */,
+				8E1798401439726B0060D173 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1798301439726B0060D173 = {
+			isa = PBXGroup;
+			children = (
+				8E17985C143972970060D173 /* Source */,
+				8E17999C14397AB50060D173 /* Resources */,
+				8E1798451439726B0060D173 /* MaratisPlayer */,
+				8E17983E1439726B0060D173 /* Frameworks */,
+				8E17983C1439726B0060D173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E17983C1439726B0060D173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E17983B1439726B0060D173 /* MaratisPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E17983E1439726B0060D173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E17997C143978590060D173 /* OpenAL.framework */,
+				8E17997D143978590060D173 /* OpenGL.framework */,
+				8E17996E143978580060D173 /* libbullet.a */,
+				8E17998B143978D60060D173 /* libz.dylib */,
+				8E179989143978BA0060D173 /* libSndFile.a */,
+				8E179987143978AE0060D173 /* libpng.a */,
+				8E179985143978A30060D173 /* libjpeg.a */,
+				8E179983143978960060D173 /* libfreetype.a */,
+				8E179981143978880060D173 /* libil.a */,
+				8E17996F143978580060D173 /* liblua.a */,
+				8E179970143978580060D173 /* libMaratisCommon.a */,
+				8E179971143978580060D173 /* libMCore.a */,
+				8E179972143978580060D173 /* libMEngine.a */,
+				8E179973143978580060D173 /* libMGui.a */,
+				8E179974143978580060D173 /* libtinyxml.a */,
+				8E17983F1439726B0060D173 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E1798451439726B0060D173 /* MaratisPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798461439726B0060D173 /* Supporting Files */,
+			);
+			path = MaratisPlayer;
+			sourceTree = "<group>";
+		};
+		8E1798461439726B0060D173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E1798471439726B0060D173 /* MaratisPlayer-Info.plist */,
+				8E1798481439726B0060D173 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E17985C143972970060D173 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E17998D143978EF0060D173 /* Player */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8E17998D143978EF0060D173 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				8E17998F143978EF0060D173 /* main.cpp */,
+				8E179990143978EF0060D173 /* Maratis */,
+			);
+			name = Player;
+			path = "../../../3rdparty/maratis-dev/Maratis/Player";
+			sourceTree = "<group>";
+		};
+		8E179990143978EF0060D173 /* Maratis */ = {
+			isa = PBXGroup;
+			children = (
+				8E179991143978EF0060D173 /* MaratisPlayer.cpp */,
+				8E179992143978EF0060D173 /* MaratisPlayer.h */,
+			);
+			path = Maratis;
+			sourceTree = "<group>";
+		};
+		8E17999C14397AB50060D173 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E17999814397AAF0060D173 /* font */,
+				8E17999914397AAF0060D173 /* gui */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E17983A1439726B0060D173 /* MaratisPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1798591439726C0060D173 /* Build configuration list for PBXNativeTarget "MaratisPlayer" */;
+			buildPhases = (
+				8E1798371439726B0060D173 /* Sources */,
+				8E1798381439726B0060D173 /* Frameworks */,
+				8E1798391439726B0060D173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaratisPlayer;
+			productName = MaratisPlayer;
+			productReference = 8E17983B1439726B0060D173 /* MaratisPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1798321439726B0060D173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E1798351439726B0060D173 /* Build configuration list for PBXProject "MaratisPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E1798301439726B0060D173;
+			productRefGroup = 8E17983C1439726B0060D173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E17983A1439726B0060D173 /* MaratisPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E1798391439726B0060D173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E17999A14397AAF0060D173 /* font in Resources */,
+				8E17999B14397AAF0060D173 /* gui in Resources */,
+				8E17984A1439726B0060D173 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E1798371439726B0060D173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179995143978EF0060D173 /* main.cpp in Sources */,
+				8E179996143978EF0060D173 /* MaratisPlayer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E1798481439726B0060D173 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1798491439726B0060D173 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E1798571439726C0060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E1798581439726C0060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E17985A1439726C0060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "MaratisPlayer/MaratisPlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E17985B1439726C0060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "MaratisPlayer/MaratisPlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E1798351439726B0060D173 /* Build configuration list for PBXProject "MaratisPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1798571439726C0060D173 /* Debug */,
+				8E1798581439726C0060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1798591439726C0060D173 /* Build configuration list for PBXNativeTarget "MaratisPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E17985A1439726C0060D173 /* Debug */,
+				8E17985B1439726C0060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1798321439726B0060D173 /* Project object */;
+}
