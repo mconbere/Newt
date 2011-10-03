@@ -2046,6 +2046,8 @@ void MScript::callFunction(const char * name)
 
 void MScript::addFunction(const char * name, int (*function)(void)){
 	m_functions[name] = function;
+	if(! m_isRunning)
+		lua_register(m_state, name, MScript::function);
 }
 
 unsigned int MScript::getArgsNumber(void){
