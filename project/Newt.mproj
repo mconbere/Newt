@@ -2,7 +2,7 @@
 
 <Project>
 
-	<renderer name="FixedRenderer" />
+	<renderer name="StandardRenderer" />
 	<start file="levels/Sandbox.level" />
 
 </Project>
