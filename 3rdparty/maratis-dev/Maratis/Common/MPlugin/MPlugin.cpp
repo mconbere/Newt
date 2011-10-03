@@ -31,6 +31,13 @@
 #include <MEngine.h>
 #include "MPlugin.h"
 
+#define NEWT_STATIC_PLUGIN 1  // NEWT add support for a static plugin architecture
+
+#ifdef NEWT_STATIC_PLUGIN
+extern "C" {
+    extern void StartPlugin();
+}
+#endif
 
 typedef void * (*FunctionPtr)();
 
@@ -42,8 +49,10 @@ MPlugin::MPlugin(void)
 MPlugin::~MPlugin(void)
 {
 	if(m_library)
-	{	
-#ifdef WIN32
+	{
+#ifdef NEWT_STATIC_PLUGIN
+        // Nothing to do here
+#elif defined(WIN32)
 		
 		FunctionPtr function = reinterpret_cast<FunctionPtr>(GetProcAddress(m_library, "EndPlugin"));
 		if(function)
@@ -63,7 +72,11 @@ MPlugin::~MPlugin(void)
 
 void MPlugin::load(const char * filename)
 {
-#ifdef WIN32
+#ifdef NEWT_STATIC_PLUGIN
+    // ignore the filename, the plugin is compiled into the executable
+    StartPlugin();
+
+#elif defined(WIN32)
 	
     m_library = LoadLibrary(filename);
     if(! m_library)

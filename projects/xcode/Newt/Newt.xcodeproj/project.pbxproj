@@ -7,40 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BE755771439885000722E31 /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BE755751439885000722E31 /* plugin.cc */; };
-		8BE7557A1439889C00722E31 /* Game.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BE7556614397F3500722E31 /* Game.dylib */; };
-		8BE7557B1439938200722E31 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7556C14397FAC00722E31 /* libMCore.a */; };
-		8BE7557C1439938400722E31 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7556A14397FAA00722E31 /* libMEngine.a */; };
+		8E179A04143998270060D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A03143998270060D173 /* Cocoa.framework */; };
+		8E179A0E143998280060D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A0C143998280060D173 /* InfoPlist.strings */; };
+		8E179A22143998B70060D173 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A20143998B70060D173 /* font */; };
+		8E179A23143998B70060D173 /* gui in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A21143998B70060D173 /* gui */; };
+		8E179A2C143998E60060D173 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179A26143998E60060D173 /* main.cpp */; };
+		8E179A2D143998E60060D173 /* MaratisPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179A28143998E60060D173 /* MaratisPlayer.cpp */; };
+		8E179A361439998F0060D173 /* libbullet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A2F1439998F0060D173 /* libbullet.a */; };
+		8E179A371439998F0060D173 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A301439998F0060D173 /* liblua.a */; };
+		8E179A381439998F0060D173 /* libMaratisCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A311439998F0060D173 /* libMaratisCommon.a */; };
+		8E179A391439998F0060D173 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A321439998F0060D173 /* libMCore.a */; };
+		8E179A3A1439998F0060D173 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A331439998F0060D173 /* libMEngine.a */; };
+		8E179A3B1439998F0060D173 /* libMGui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A341439998F0060D173 /* libMGui.a */; };
+		8E179A3C1439998F0060D173 /* libtinyxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A351439998F0060D173 /* libtinyxml.a */; };
+		8E179A3E143999A30060D173 /* libil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A3D143999A30060D173 /* libil.a */; };
+		8E179A40143999B20060D173 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A3F143999B20060D173 /* libfreetype.a */; };
+		8E179A42143999BE0060D173 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A41143999BE0060D173 /* libjpeg.a */; };
+		8E179A44143999CA0060D173 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A43143999CA0060D173 /* libpng.a */; };
+		8E179A46143999D80060D173 /* libSndFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A45143999D80060D173 /* libSndFile.a */; };
+		8E179A48143999EE0060D173 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A47143999EE0060D173 /* libz.dylib */; };
+		8E179A4B14399A250060D173 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A4914399A250060D173 /* OpenAL.framework */; };
+		8E179A4C14399A250060D173 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A4A14399A250060D173 /* OpenGL.framework */; };
+		8E179A4D14399A510060D173 /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BE755751439885000722E31 /* plugin.cc */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8BE755791439889300722E31 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "${SRCROOT}/../../../project";
-			dstSubfolderSpec = 0;
-			files = (
-				8BE7557A1439889C00722E31 /* Game.dylib in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		8BE7556614397F3500722E31 /* Game.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Game.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE7556A14397FAA00722E31 /* libMEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMEngine.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMEngine.a"; sourceTree = "<group>"; };
-		8BE7556C14397FAC00722E31 /* libMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMCore.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMCore.a"; sourceTree = "<group>"; };
 		8BE755751439885000722E31 /* plugin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = plugin.cc; path = ../../../src/plugin.cc; sourceTree = "<group>"; };
 		8BE755761439885000722E31 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plugin.h; path = ../../../src/plugin.h; sourceTree = "<group>"; };
+		8E179A01143998270060D173 /* Newt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A03143998270060D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8E179A0B143998280060D173 /* Newt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Newt-Info.plist"; sourceTree = "<group>"; };
+		8E179A0D143998280060D173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E179A20143998B70060D173 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = font; path = "../../../3rdparty/maratis-dev/Data/Editor/font"; sourceTree = "<group>"; };
+		8E179A21143998B70060D173 /* gui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gui; path = "../../../3rdparty/maratis-dev/Data/Editor/gui"; sourceTree = "<group>"; };
+		8E179A26143998E60060D173 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8E179A28143998E60060D173 /* MaratisPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaratisPlayer.cpp; sourceTree = "<group>"; };
+		8E179A29143998E60060D173 /* MaratisPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaratisPlayer.h; sourceTree = "<group>"; };
+		8E179A2F1439998F0060D173 /* libbullet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbullet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A301439998F0060D173 /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblua.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A311439998F0060D173 /* libMaratisCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaratisCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A321439998F0060D173 /* libMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A331439998F0060D173 /* libMEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A341439998F0060D173 /* libMGui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMGui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A351439998F0060D173 /* libtinyxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtinyxml.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A3D143999A30060D173 /* libil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libil.a; path = ../../../3rdparty/devil/osx/libil.a; sourceTree = "<group>"; };
+		8E179A3F143999B20060D173 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../3rdparty/freetype/osx/libfreetype.a; sourceTree = "<group>"; };
+		8E179A41143999BE0060D173 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../3rdparty/libjpeg/osx/libjpeg.a; sourceTree = "<group>"; };
+		8E179A43143999CA0060D173 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../3rdparty/libpng/osx/libpng.a; sourceTree = "<group>"; };
+		8E179A45143999D80060D173 /* libSndFile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSndFile.a; path = ../../../3rdparty/libsndfile/osx/static/libSndFile.a; sourceTree = "<group>"; };
+		8E179A47143999EE0060D173 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = SDKs/MacOSX10.6.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		8E179A4914399A250060D173 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
+		8E179A4A14399A250060D173 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8BE7556314397F3500722E31 /* Frameworks */ = {
+		8E1799FE143998270060D173 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE7557C1439938400722E31 /* libMEngine.a in Frameworks */,
-				8BE7557B1439938200722E31 /* libMCore.a in Frameworks */,
+				8E179A4B14399A250060D173 /* OpenAL.framework in Frameworks */,
+				8E179A4C14399A250060D173 /* OpenGL.framework in Frameworks */,
+				8E179A48143999EE0060D173 /* libz.dylib in Frameworks */,
+				8E179A46143999D80060D173 /* libSndFile.a in Frameworks */,
+				8E179A44143999CA0060D173 /* libpng.a in Frameworks */,
+				8E179A42143999BE0060D173 /* libjpeg.a in Frameworks */,
+				8E179A40143999B20060D173 /* libfreetype.a in Frameworks */,
+				8E179A3E143999A30060D173 /* libil.a in Frameworks */,
+				8E179A361439998F0060D173 /* libbullet.a in Frameworks */,
+				8E179A371439998F0060D173 /* liblua.a in Frameworks */,
+				8E179A381439998F0060D173 /* libMaratisCommon.a in Frameworks */,
+				8E179A391439998F0060D173 /* libMCore.a in Frameworks */,
+				8E179A3A1439998F0060D173 /* libMEngine.a in Frameworks */,
+				8E179A3B1439998F0060D173 /* libMGui.a in Frameworks */,
+				8E179A3C1439998F0060D173 /* libtinyxml.a in Frameworks */,
+				8E179A04143998270060D173 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				8BE7552B14396AEC00722E31 /* Source */,
+				8E179A1F143998A70060D173 /* Resources */,
+				8E179A09143998280060D173 /* Newt */,
 				8BE7553B1439709F00722E31 /* Frameworks */,
 				8BE755341439700700722E31 /* Products */,
 			);
@@ -59,6 +101,7 @@
 		8BE7552B14396AEC00722E31 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8E179A24143998E60060D173 /* Player */,
 				8BE755751439885000722E31 /* plugin.cc */,
 				8BE755761439885000722E31 /* plugin.h */,
 			);
@@ -68,7 +111,7 @@
 		8BE755341439700700722E31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BE7556614397F3500722E31 /* Game.dylib */,
+				8E179A01143998270060D173 /* Newt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,31 +119,90 @@
 		8BE7553B1439709F00722E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8BE7556C14397FAC00722E31 /* libMCore.a */,
-				8BE7556A14397FAA00722E31 /* libMEngine.a */,
+				8E179A4914399A250060D173 /* OpenAL.framework */,
+				8E179A4A14399A250060D173 /* OpenGL.framework */,
+				8E179A47143999EE0060D173 /* libz.dylib */,
+				8E179A45143999D80060D173 /* libSndFile.a */,
+				8E179A43143999CA0060D173 /* libpng.a */,
+				8E179A41143999BE0060D173 /* libjpeg.a */,
+				8E179A3F143999B20060D173 /* libfreetype.a */,
+				8E179A3D143999A30060D173 /* libil.a */,
+				8E179A2F1439998F0060D173 /* libbullet.a */,
+				8E179A301439998F0060D173 /* liblua.a */,
+				8E179A311439998F0060D173 /* libMaratisCommon.a */,
+				8E179A321439998F0060D173 /* libMCore.a */,
+				8E179A331439998F0060D173 /* libMEngine.a */,
+				8E179A341439998F0060D173 /* libMGui.a */,
+				8E179A351439998F0060D173 /* libtinyxml.a */,
+				8E179A03143998270060D173 /* Cocoa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E179A09143998280060D173 /* Newt */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A0A143998280060D173 /* Supporting Files */,
+			);
+			path = Newt;
+			sourceTree = "<group>";
+		};
+		8E179A0A143998280060D173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A0B143998280060D173 /* Newt-Info.plist */,
+				8E179A0C143998280060D173 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E179A1F143998A70060D173 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A20143998B70060D173 /* font */,
+				8E179A21143998B70060D173 /* gui */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E179A24143998E60060D173 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A26143998E60060D173 /* main.cpp */,
+				8E179A27143998E60060D173 /* Maratis */,
+			);
+			name = Player;
+			path = "../../../3rdparty/maratis-dev/Maratis/Player";
+			sourceTree = "<group>";
+		};
+		8E179A27143998E60060D173 /* Maratis */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A28143998E60060D173 /* MaratisPlayer.cpp */,
+				8E179A29143998E60060D173 /* MaratisPlayer.h */,
+			);
+			path = Maratis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BE7556514397F3500722E31 /* Game */ = {
+		8E179A00143998270060D173 /* Newt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE7556714397F3500722E31 /* Build configuration list for PBXNativeTarget "Game" */;
+			buildConfigurationList = 8E179A1D143998280060D173 /* Build configuration list for PBXNativeTarget "Newt" */;
 			buildPhases = (
-				8BE7556214397F3500722E31 /* Sources */,
-				8BE7556314397F3500722E31 /* Frameworks */,
-				8BE755791439889300722E31 /* CopyFiles */,
+				8E1799FD143998270060D173 /* Sources */,
+				8E1799FE143998270060D173 /* Frameworks */,
+				8E1799FF143998270060D173 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Game;
-			productName = Game;
-			productReference = 8BE7556614397F3500722E31 /* Game.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			name = Newt;
+			productName = Newt;
+			productReference = 8E179A01143998270060D173 /* Newt.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -122,97 +224,140 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BE7556514397F3500722E31 /* Game */,
+				8E179A00143998270060D173 /* Newt */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8E1799FF143998270060D173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179A0E143998280060D173 /* InfoPlist.strings in Resources */,
+				8E179A22143998B70060D173 /* font in Resources */,
+				8E179A23143998B70060D173 /* gui in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8BE7556214397F3500722E31 /* Sources */ = {
+		8E1799FD143998270060D173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE755771439885000722E31 /* plugin.cc in Sources */,
+				8E179A4D14399A510060D173 /* plugin.cc in Sources */,
+				8E179A2C143998E60060D173 /* main.cpp in Sources */,
+				8E179A2D143998E60060D173 /* MaratisPlayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8E179A0C143998280060D173 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E179A0D143998280060D173 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		8BE7552914396AA200722E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
 			};
 			name = Debug;
 		};
 		8BE7552A14396AA200722E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
 			};
 			name = Release;
 		};
-		8BE7556814397F3500722E31 /* Debug */ = {
+		8E179A1B143998280060D173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
-				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
-					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
-				);
+				INFOPLIST_FILE = "Newt/Newt-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		8BE7556914397F3500722E31 /* Release */ = {
+		8E179A1C143998280060D173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
-					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
-				);
+				INFOPLIST_FILE = "Newt/Newt-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -228,11 +373,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE7556714397F3500722E31 /* Build configuration list for PBXNativeTarget "Game" */ = {
+		8E179A1D143998280060D173 /* Build configuration list for PBXNativeTarget "Newt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE7556814397F3500722E31 /* Debug */,
-				8BE7556914397F3500722E31 /* Release */,
+				8E179A1B143998280060D173 /* Debug */,
+				8E179A1C143998280060D173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

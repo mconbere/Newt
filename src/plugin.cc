@@ -20,7 +20,7 @@ int asdf(void) {
 
 void StartPlugin() {
   MEngine* engine = MEngine::getInstance();
-  engine->getScriptContext()->addFunction("asdf", foo);
+  //engine->getScriptContext()->addFunction("asdf", foo);
 }
 
 void EndPlugin() {
