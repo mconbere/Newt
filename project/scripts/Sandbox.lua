@@ -5,6 +5,10 @@ Jules = getObject("Jules")
 function onSceneUpdate()
 	coll = getNumCollisions(Feet)
 
+  if isKeyPressed("F") then
+    asdf()
+  end
+
 	move = 0
 	if coll > 1 then
 		if isKeyPressed("LEFT")  then

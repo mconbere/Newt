@@ -7,26 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BE755381439704700722E31 /* ScriptingUtilsPlugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7552C14396B3700722E31 /* ScriptingUtilsPlugin.cc */; };
-		8BE7553A1439709300722E31 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE755391439709300722E31 /* libMEngine.a */; };
-		8BE7553D143970DA00722E31 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7553C143970DA00722E31 /* libMCore.a */; };
+		8BE755771439885000722E31 /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BE755751439885000722E31 /* plugin.cc */; };
+		8BE7557A1439889C00722E31 /* Game.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BE7556614397F3500722E31 /* Game.dylib */; };
+		8BE7557B1439938200722E31 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7556C14397FAC00722E31 /* libMCore.a */; };
+		8BE7557C1439938400722E31 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7556A14397FAA00722E31 /* libMEngine.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8BE755791439889300722E31 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/../../../project";
+			dstSubfolderSpec = 0;
+			files = (
+				8BE7557A1439889C00722E31 /* Game.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		8BE7552C14396B3700722E31 /* ScriptingUtilsPlugin.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ScriptingUtilsPlugin.cc; path = ../../../src/ScriptingUtilsPlugin/ScriptingUtilsPlugin.cc; sourceTree = "<group>"; };
-		8BE7552D14396DCC00722E31 /* ScriptingUtilsPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ScriptingUtilsPlugin.h; path = ../../../src/ScriptingUtilsPlugin/ScriptingUtilsPlugin.h; sourceTree = "<group>"; };
-		8BE755331439700700722E31 /* libScriptingUtilsPlugin.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libScriptingUtilsPlugin.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE755391439709300722E31 /* libMEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMEngine.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMEngine.a"; sourceTree = "<group>"; };
-		8BE7553C143970DA00722E31 /* libMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMCore.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMCore.a"; sourceTree = "<group>"; };
+		8BE7556614397F3500722E31 /* Game.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Game.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE7556A14397FAA00722E31 /* libMEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMEngine.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMEngine.a"; sourceTree = "<group>"; };
+		8BE7556C14397FAC00722E31 /* libMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMCore.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMCore.a"; sourceTree = "<group>"; };
+		8BE755751439885000722E31 /* plugin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = plugin.cc; path = ../../../src/plugin.cc; sourceTree = "<group>"; };
+		8BE755761439885000722E31 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plugin.h; path = ../../../src/plugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8BE755301439700700722E31 /* Frameworks */ = {
+		8BE7556314397F3500722E31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE7553D143970DA00722E31 /* libMCore.a in Frameworks */,
-				8BE7553A1439709300722E31 /* libMEngine.a in Frameworks */,
+				8BE7557C1439938400722E31 /* libMEngine.a in Frameworks */,
+				8BE7557B1439938200722E31 /* libMCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,24 +59,16 @@
 		8BE7552B14396AEC00722E31 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8BE7552E14396F9100722E31 /* ScriptingUtilsPlugin */,
+				8BE755751439885000722E31 /* plugin.cc */,
+				8BE755761439885000722E31 /* plugin.h */,
 			);
 			name = Source;
-			sourceTree = "<group>";
-		};
-		8BE7552E14396F9100722E31 /* ScriptingUtilsPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				8BE7552D14396DCC00722E31 /* ScriptingUtilsPlugin.h */,
-				8BE7552C14396B3700722E31 /* ScriptingUtilsPlugin.cc */,
-			);
-			name = ScriptingUtilsPlugin;
 			sourceTree = "<group>";
 		};
 		8BE755341439700700722E31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BE755331439700700722E31 /* libScriptingUtilsPlugin.dylib */,
+				8BE7556614397F3500722E31 /* Game.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,40 +76,30 @@
 		8BE7553B1439709F00722E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8BE7553C143970DA00722E31 /* libMCore.a */,
-				8BE755391439709300722E31 /* libMEngine.a */,
+				8BE7556C14397FAC00722E31 /* libMCore.a */,
+				8BE7556A14397FAA00722E31 /* libMEngine.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		8BE755311439700700722E31 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		8BE755321439700700722E31 /* ScriptingUtilsPlugin */ = {
+		8BE7556514397F3500722E31 /* Game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE755351439700700722E31 /* Build configuration list for PBXNativeTarget "ScriptingUtilsPlugin" */;
+			buildConfigurationList = 8BE7556714397F3500722E31 /* Build configuration list for PBXNativeTarget "Game" */;
 			buildPhases = (
-				8BE7552F1439700700722E31 /* Sources */,
-				8BE755301439700700722E31 /* Frameworks */,
-				8BE755311439700700722E31 /* Headers */,
+				8BE7556214397F3500722E31 /* Sources */,
+				8BE7556314397F3500722E31 /* Frameworks */,
+				8BE755791439889300722E31 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ScriptingUtilsPlugin;
-			productName = ScriptingUtilsPlugin;
-			productReference = 8BE755331439700700722E31 /* libScriptingUtilsPlugin.dylib */;
+			name = Game;
+			productName = Game;
+			productReference = 8BE7556614397F3500722E31 /* Game.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -126,17 +122,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BE755321439700700722E31 /* ScriptingUtilsPlugin */,
+				8BE7556514397F3500722E31 /* Game */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8BE7552F1439700700722E31 /* Sources */ = {
+		8BE7556214397F3500722E31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE755381439704700722E31 /* ScriptingUtilsPlugin.cc in Sources */,
+				8BE755771439885000722E31 /* plugin.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,13 +151,13 @@
 			};
 			name = Release;
 		};
-		8BE755361439700700722E31 /* Debug */ = {
+		8BE7556814397F3500722E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -191,14 +187,14 @@
 			};
 			name = Debug;
 		};
-		8BE755371439700700722E31 /* Release */ = {
+		8BE7556914397F3500722E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -232,11 +228,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE755351439700700722E31 /* Build configuration list for PBXNativeTarget "ScriptingUtilsPlugin" */ = {
+		8BE7556714397F3500722E31 /* Build configuration list for PBXNativeTarget "Game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE755361439700700722E31 /* Debug */,
-				8BE755371439700700722E31 /* Release */,
+				8BE7556814397F3500722E31 /* Debug */,
+				8BE7556914397F3500722E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
