@@ -1,0 +1,246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BE755381439704700722E31 /* ScriptingUtilsPlugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7552C14396B3700722E31 /* ScriptingUtilsPlugin.cc */; };
+		8BE7553A1439709300722E31 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE755391439709300722E31 /* libMEngine.a */; };
+		8BE7553D143970DA00722E31 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7553C143970DA00722E31 /* libMCore.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8BE7552C14396B3700722E31 /* ScriptingUtilsPlugin.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ScriptingUtilsPlugin.cc; path = ../../../src/ScriptingUtilsPlugin/ScriptingUtilsPlugin.cc; sourceTree = "<group>"; };
+		8BE7552D14396DCC00722E31 /* ScriptingUtilsPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ScriptingUtilsPlugin.h; path = ../../../src/ScriptingUtilsPlugin/ScriptingUtilsPlugin.h; sourceTree = "<group>"; };
+		8BE755331439700700722E31 /* libScriptingUtilsPlugin.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libScriptingUtilsPlugin.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE755391439709300722E31 /* libMEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMEngine.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMEngine.a"; sourceTree = "<group>"; };
+		8BE7553C143970DA00722E31 /* libMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMCore.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug/libMCore.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BE755301439700700722E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE7553D143970DA00722E31 /* libMCore.a in Frameworks */,
+				8BE7553A1439709300722E31 /* libMEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BE7552214396AA100722E31 = {
+			isa = PBXGroup;
+			children = (
+				8BE7552B14396AEC00722E31 /* Source */,
+				8BE7553B1439709F00722E31 /* Frameworks */,
+				8BE755341439700700722E31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE7552B14396AEC00722E31 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8BE7552E14396F9100722E31 /* ScriptingUtilsPlugin */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8BE7552E14396F9100722E31 /* ScriptingUtilsPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				8BE7552D14396DCC00722E31 /* ScriptingUtilsPlugin.h */,
+				8BE7552C14396B3700722E31 /* ScriptingUtilsPlugin.cc */,
+			);
+			name = ScriptingUtilsPlugin;
+			sourceTree = "<group>";
+		};
+		8BE755341439700700722E31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE755331439700700722E31 /* libScriptingUtilsPlugin.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE7553B1439709F00722E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BE7553C143970DA00722E31 /* libMCore.a */,
+				8BE755391439709300722E31 /* libMEngine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8BE755311439700700722E31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8BE755321439700700722E31 /* ScriptingUtilsPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE755351439700700722E31 /* Build configuration list for PBXNativeTarget "ScriptingUtilsPlugin" */;
+			buildPhases = (
+				8BE7552F1439700700722E31 /* Sources */,
+				8BE755301439700700722E31 /* Frameworks */,
+				8BE755311439700700722E31 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScriptingUtilsPlugin;
+			productName = ScriptingUtilsPlugin;
+			productReference = 8BE755331439700700722E31 /* libScriptingUtilsPlugin.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BE7552414396AA100722E31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "OnLive, Inc";
+			};
+			buildConfigurationList = 8BE7552714396AA100722E31 /* Build configuration list for PBXProject "Newt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BE7552214396AA100722E31;
+			productRefGroup = 8BE755341439700700722E31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BE755321439700700722E31 /* ScriptingUtilsPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BE7552F1439700700722E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE755381439704700722E31 /* ScriptingUtilsPlugin.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BE7552914396AA200722E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8BE7552A14396AA200722E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		8BE755361439700700722E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BE755371439700700722E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/NewtWorkspace-etdqfltfpjyrlthkehdpernczidb/Build/Products/Debug\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BE7552714396AA100722E31 /* Build configuration list for PBXProject "Newt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE7552914396AA200722E31 /* Debug */,
+				8BE7552A14396AA200722E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE755351439700700722E31 /* Build configuration list for PBXNativeTarget "ScriptingUtilsPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE755361439700700722E31 /* Debug */,
+				8BE755371439700700722E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE7552414396AA100722E31 /* Project object */;
+}
