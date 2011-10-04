@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E179A7F143ACD5F0060D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A7E143ACD5F0060D173 /* Cocoa.framework */; };
+		8E179A89143ACD5F0060D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A87143ACD5F0060D173 /* InfoPlist.strings */; };
+		8E179AAF143ACDC40060D173 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179A9E143ACDC40060D173 /* main.cpp */; };
+		8E179AB0143ACDC40060D173 /* Maratis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179AA0143ACDC40060D173 /* Maratis.cpp */; };
+		8E179AB1143ACDC40060D173 /* MaratisUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179AA2143ACDC40060D173 /* MaratisUI.cpp */; };
+		8E179AB2143ACDC40060D173 /* MFontBin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179AA5143ACDC40060D173 /* MFontBin.cpp */; };
+		8E179AB3143ACDC40060D173 /* MFilesUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179AA8143ACDC40060D173 /* MFilesUpdate.cpp */; };
+		8E179AB4143ACDC40060D173 /* MRenderArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179AAB143ACDC40060D173 /* MRenderArray.cpp */; };
+		8E179AB9143ACDEB0060D173 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 8E179AB7143ACDEB0060D173 /* font */; };
+		8E179ABA143ACDEB0060D173 /* gui in Resources */ = {isa = PBXBuildFile; fileRef = 8E179AB8143ACDEB0060D173 /* gui */; };
+		8E179AC2143ACE380060D173 /* libbullet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ABB143ACE380060D173 /* libbullet.a */; };
+		8E179AC3143ACE380060D173 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ABC143ACE380060D173 /* liblua.a */; };
+		8E179AC4143ACE380060D173 /* libMaratisCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ABD143ACE380060D173 /* libMaratisCommon.a */; };
+		8E179AC5143ACE380060D173 /* libMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ABE143ACE380060D173 /* libMCore.a */; };
+		8E179AC6143ACE380060D173 /* libMEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ABF143ACE380060D173 /* libMEngine.a */; };
+		8E179AC7143ACE380060D173 /* libMGui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AC0143ACE380060D173 /* libMGui.a */; };
+		8E179AC8143ACE380060D173 /* libtinyxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AC1143ACE380060D173 /* libtinyxml.a */; };
+		8E179ACC143ACE380060D173 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AC9143ACE380060D173 /* libz.dylib */; };
+		8E179ACD143ACE380060D173 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ACA143ACE380060D173 /* OpenAL.framework */; };
+		8E179ACE143ACE380060D173 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ACB143ACE380060D173 /* OpenGL.framework */; };
+		8E179AD0143ACE480060D173 /* libil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179ACF143ACE480060D173 /* libil.a */; };
+		8E179AD2143ACE5E0060D173 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AD1143ACE5E0060D173 /* libfreetype.a */; };
+		8E179AD4143ACE6B0060D173 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AD3143ACE6B0060D173 /* libjpeg.a */; };
+		8E179AD6143ACE7B0060D173 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AD5143ACE7B0060D173 /* libpng.a */; };
+		8E179AD8143ACE930060D173 /* libSndFile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179AD7143ACE930060D173 /* libSndFile.a */; };
+		8E179AE3143ACF440060D173 /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E179AE1143ACF440060D173 /* plugin.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E179A7A143ACD5F0060D173 /* NewtEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewtEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179A7E143ACD5F0060D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8E179A86143ACD5F0060D173 /* NewtEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewtEditor-Info.plist"; sourceTree = "<group>"; };
+		8E179A88143ACD5F0060D173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E179A9E143ACDC40060D173 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8E179AA0143ACDC40060D173 /* Maratis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Maratis.cpp; sourceTree = "<group>"; };
+		8E179AA1143ACDC40060D173 /* Maratis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maratis.h; sourceTree = "<group>"; };
+		8E179AA2143ACDC40060D173 /* MaratisUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaratisUI.cpp; sourceTree = "<group>"; };
+		8E179AA3143ACDC40060D173 /* MaratisUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaratisUI.h; sourceTree = "<group>"; };
+		8E179AA5143ACDC40060D173 /* MFontBin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFontBin.cpp; sourceTree = "<group>"; };
+		8E179AA6143ACDC40060D173 /* MFontBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFontBin.h; sourceTree = "<group>"; };
+		8E179AA8143ACDC40060D173 /* MFilesUpdate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MFilesUpdate.cpp; sourceTree = "<group>"; };
+		8E179AA9143ACDC40060D173 /* MFilesUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFilesUpdate.h; sourceTree = "<group>"; };
+		8E179AAB143ACDC40060D173 /* MRenderArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MRenderArray.cpp; sourceTree = "<group>"; };
+		8E179AAC143ACDC40060D173 /* MRenderArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRenderArray.h; sourceTree = "<group>"; };
+		8E179AB7143ACDEB0060D173 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = font; path = "../../../3rdparty/maratis-dev/Data/Editor/font"; sourceTree = "<group>"; };
+		8E179AB8143ACDEB0060D173 /* gui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gui; path = "../../../3rdparty/maratis-dev/Data/Editor/gui"; sourceTree = "<group>"; };
+		8E179ABB143ACE380060D173 /* libbullet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbullet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179ABC143ACE380060D173 /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblua.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179ABD143ACE380060D173 /* libMaratisCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaratisCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179ABE143ACE380060D173 /* libMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179ABF143ACE380060D173 /* libMEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179AC0143ACE380060D173 /* libMGui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMGui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179AC1143ACE380060D173 /* libtinyxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtinyxml.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E179AC9143ACE380060D173 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8E179ACA143ACE380060D173 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		8E179ACB143ACE380060D173 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8E179ACF143ACE480060D173 /* libil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libil.a; path = ../../../3rdparty/devil/osx/libil.a; sourceTree = "<group>"; };
+		8E179AD1143ACE5E0060D173 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../3rdparty/freetype/osx/libfreetype.a; sourceTree = "<group>"; };
+		8E179AD3143ACE6B0060D173 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../3rdparty/libjpeg/osx/libjpeg.a; sourceTree = "<group>"; };
+		8E179AD5143ACE7B0060D173 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../3rdparty/libpng/osx/libpng.a; sourceTree = "<group>"; };
+		8E179AD7143ACE930060D173 /* libSndFile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSndFile.a; path = ../../../3rdparty/libsndfile/osx/static/libSndFile.a; sourceTree = "<group>"; };
+		8E179AE1143ACF440060D173 /* plugin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cc; sourceTree = "<group>"; };
+		8E179AE2143ACF440060D173 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E179A77143ACD5F0060D173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179AD8143ACE930060D173 /* libSndFile.a in Frameworks */,
+				8E179AD6143ACE7B0060D173 /* libpng.a in Frameworks */,
+				8E179AD4143ACE6B0060D173 /* libjpeg.a in Frameworks */,
+				8E179AD2143ACE5E0060D173 /* libfreetype.a in Frameworks */,
+				8E179AD0143ACE480060D173 /* libil.a in Frameworks */,
+				8E179ACC143ACE380060D173 /* libz.dylib in Frameworks */,
+				8E179ACD143ACE380060D173 /* OpenAL.framework in Frameworks */,
+				8E179ACE143ACE380060D173 /* OpenGL.framework in Frameworks */,
+				8E179AC2143ACE380060D173 /* libbullet.a in Frameworks */,
+				8E179AC3143ACE380060D173 /* liblua.a in Frameworks */,
+				8E179AC4143ACE380060D173 /* libMaratisCommon.a in Frameworks */,
+				8E179AC5143ACE380060D173 /* libMCore.a in Frameworks */,
+				8E179AC6143ACE380060D173 /* libMEngine.a in Frameworks */,
+				8E179AC7143ACE380060D173 /* libMGui.a in Frameworks */,
+				8E179AC8143ACE380060D173 /* libtinyxml.a in Frameworks */,
+				8E179A7F143ACD5F0060D173 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E179A6F143ACD5F0060D173 = {
+			isa = PBXGroup;
+			children = (
+				8E179A9B143ACD840060D173 /* Source */,
+				8E179AB6143ACDD40060D173 /* Resources */,
+				8E179A84143ACD5F0060D173 /* NewtEditor */,
+				8E179A7D143ACD5F0060D173 /* Frameworks */,
+				8E179A7B143ACD5F0060D173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E179A7B143ACD5F0060D173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A7A143ACD5F0060D173 /* NewtEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E179A7D143ACD5F0060D173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AD7143ACE930060D173 /* libSndFile.a */,
+				8E179AD5143ACE7B0060D173 /* libpng.a */,
+				8E179AD3143ACE6B0060D173 /* libjpeg.a */,
+				8E179AD1143ACE5E0060D173 /* libfreetype.a */,
+				8E179ACF143ACE480060D173 /* libil.a */,
+				8E179AC9143ACE380060D173 /* libz.dylib */,
+				8E179ACA143ACE380060D173 /* OpenAL.framework */,
+				8E179ACB143ACE380060D173 /* OpenGL.framework */,
+				8E179ABB143ACE380060D173 /* libbullet.a */,
+				8E179ABC143ACE380060D173 /* liblua.a */,
+				8E179ABD143ACE380060D173 /* libMaratisCommon.a */,
+				8E179ABE143ACE380060D173 /* libMCore.a */,
+				8E179ABF143ACE380060D173 /* libMEngine.a */,
+				8E179AC0143ACE380060D173 /* libMGui.a */,
+				8E179AC1143ACE380060D173 /* libtinyxml.a */,
+				8E179A7E143ACD5F0060D173 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E179A84143ACD5F0060D173 /* NewtEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A85143ACD5F0060D173 /* Supporting Files */,
+			);
+			path = NewtEditor;
+			sourceTree = "<group>";
+		};
+		8E179A85143ACD5F0060D173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A86143ACD5F0060D173 /* NewtEditor-Info.plist */,
+				8E179A87143ACD5F0060D173 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E179A9B143ACD840060D173 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AE0143ACF440060D173 /* src */,
+				8E179A9C143ACDC40060D173 /* Editor */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8E179A9C143ACDC40060D173 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				8E179A9E143ACDC40060D173 /* main.cpp */,
+				8E179A9F143ACDC40060D173 /* Maratis */,
+				8E179AA4143ACDC40060D173 /* MBins */,
+				8E179AA7143ACDC40060D173 /* MFilesUpdate */,
+				8E179AAA143ACDC40060D173 /* MRenderArray */,
+			);
+			name = Editor;
+			path = "../../../3rdparty/maratis-dev/Maratis/Editor";
+			sourceTree = "<group>";
+		};
+		8E179A9F143ACDC40060D173 /* Maratis */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AA0143ACDC40060D173 /* Maratis.cpp */,
+				8E179AA1143ACDC40060D173 /* Maratis.h */,
+				8E179AA2143ACDC40060D173 /* MaratisUI.cpp */,
+				8E179AA3143ACDC40060D173 /* MaratisUI.h */,
+			);
+			path = Maratis;
+			sourceTree = "<group>";
+		};
+		8E179AA4143ACDC40060D173 /* MBins */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AA5143ACDC40060D173 /* MFontBin.cpp */,
+				8E179AA6143ACDC40060D173 /* MFontBin.h */,
+			);
+			path = MBins;
+			sourceTree = "<group>";
+		};
+		8E179AA7143ACDC40060D173 /* MFilesUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AA8143ACDC40060D173 /* MFilesUpdate.cpp */,
+				8E179AA9143ACDC40060D173 /* MFilesUpdate.h */,
+			);
+			path = MFilesUpdate;
+			sourceTree = "<group>";
+		};
+		8E179AAA143ACDC40060D173 /* MRenderArray */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AAB143ACDC40060D173 /* MRenderArray.cpp */,
+				8E179AAC143ACDC40060D173 /* MRenderArray.h */,
+			);
+			path = MRenderArray;
+			sourceTree = "<group>";
+		};
+		8E179AB6143ACDD40060D173 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AB7143ACDEB0060D173 /* font */,
+				8E179AB8143ACDEB0060D173 /* gui */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E179AE0143ACF440060D173 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8E179AE1143ACF440060D173 /* plugin.cc */,
+				8E179AE2143ACF440060D173 /* plugin.h */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E179A79143ACD5F0060D173 /* NewtEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E179A98143ACD5F0060D173 /* Build configuration list for PBXNativeTarget "NewtEditor" */;
+			buildPhases = (
+				8E179A76143ACD5F0060D173 /* Sources */,
+				8E179A77143ACD5F0060D173 /* Frameworks */,
+				8E179A78143ACD5F0060D173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewtEditor;
+			productName = NewtEditor;
+			productReference = 8E179A7A143ACD5F0060D173 /* NewtEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E179A71143ACD5F0060D173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E179A74143ACD5F0060D173 /* Build configuration list for PBXProject "NewtEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E179A6F143ACD5F0060D173;
+			productRefGroup = 8E179A7B143ACD5F0060D173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E179A79143ACD5F0060D173 /* NewtEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E179A78143ACD5F0060D173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179A89143ACD5F0060D173 /* InfoPlist.strings in Resources */,
+				8E179AB9143ACDEB0060D173 /* font in Resources */,
+				8E179ABA143ACDEB0060D173 /* gui in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E179A76143ACD5F0060D173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E179AAF143ACDC40060D173 /* main.cpp in Sources */,
+				8E179AB0143ACDC40060D173 /* Maratis.cpp in Sources */,
+				8E179AB1143ACDC40060D173 /* MaratisUI.cpp in Sources */,
+				8E179AB2143ACDC40060D173 /* MFontBin.cpp in Sources */,
+				8E179AB3143ACDC40060D173 /* MFilesUpdate.cpp in Sources */,
+				8E179AB4143ACDC40060D173 /* MRenderArray.cpp in Sources */,
+				8E179AE3143ACF440060D173 /* plugin.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E179A87143ACD5F0060D173 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E179A88143ACD5F0060D173 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E179A96143ACD5F0060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E179A97143ACD5F0060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E179A99143ACD5F0060D173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "NewtEditor/NewtEditor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E179A9A143ACD5F0060D173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "NewtEditor/NewtEditor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../3rdparty/devil/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/freetype/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libjpeg/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libpng/osx\"",
+					"\"$(SRCROOT)/../../../3rdparty/libsndfile/osx/static\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E179A74143ACD5F0060D173 /* Build configuration list for PBXProject "NewtEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E179A96143ACD5F0060D173 /* Debug */,
+				8E179A97143ACD5F0060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E179A98143ACD5F0060D173 /* Build configuration list for PBXNativeTarget "NewtEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E179A99143ACD5F0060D173 /* Debug */,
+				8E179A9A143ACD5F0060D173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E179A71143ACD5F0060D173 /* Project object */;
+}
