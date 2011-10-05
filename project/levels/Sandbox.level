@@ -128,7 +128,7 @@
 			<active value="true" />
 			<transform 
 				position="-82.969910 0.756854 26.186455"
-				rotation="71.303062 -0.000008 -90.000000"
+				rotation="71.303047 -0.000009 -89.999992"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				clearColor="0.200000 0.300000 0.400000"
@@ -172,7 +172,7 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="Jules" file="../meshs/Jules.mesh">
-			<BoundingBox min="-4.696570 -4.532282 -0.121014" max="4.693010 4.184886 14.800737" />
+			<BoundingBox min="-4.696569 -4.532283 -0.121014" max="4.693012 4.184887 14.800740" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -261,6 +261,48 @@
 			<physics 
 				shape="TriangleMesh"
 				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="gem.0" file="../meshs/silver-gem.mesh">
+			<BoundingBox min="-1.000000 -0.547091 -1.815449" max="1.000000 0.547091 1.815449" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="25.941193 0.000000 10.000000"
+				rotation="0.000000 -0.000000 90.000000"
+				scale="2.000000 2.000000 2.000000" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Capsule"
+				ghost="true"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="gem.1" file="../meshs/silver-gem.mesh">
+			<BoundingBox min="-1.000000 -0.547091 -1.815449" max="1.000000 0.547091 1.815449" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="165.190781 0.000000 10.000000"
+				rotation="0.000000 -0.000000 90.000000"
+				scale="2.000000 2.000000 2.000000" />
+			<properties 
+				invisible="false" />
+			<physics 
+				shape="Capsule"
+				ghost="true"
 				mass="0.000000"
 				friction="0.500000"
 				restitution="0.000000"

@@ -1,13 +1,21 @@
 Feet = getObject("Feet")
 Player = getObject("Player")
 Jules = getObject("Jules")
+Gems = {getObject("gem.0"), getObject("gem.1")}
 
 function onSceneUpdate()
 	coll = getNumCollisions(Feet)
 
-  if isKeyPressed("F") then
-    asdf()
-  end
+	for key, obj in pairs(Gems) do
+		if isCollisionBetween(Player, obj) then
+			delete(obj)
+			table.remove(Gems, key)
+		end
+	end
+
+	if isKeyPressed("F") then
+		asdf()
+	end
 
 	move = 0
 	if coll > 1 then
