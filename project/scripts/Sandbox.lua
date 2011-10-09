@@ -8,7 +8,7 @@ function onSceneUpdate()
 
 	for key, obj in pairs(Gems) do
 		if isCollisionBetween(Player, obj) then
-			delete(obj)
+			deleteObject(obj)
 			table.remove(Gems, key)
 		end
 	end
