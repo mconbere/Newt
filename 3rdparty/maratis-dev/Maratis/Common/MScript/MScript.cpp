@@ -173,9 +173,6 @@ int getObject(lua_State * L)
 
 int deleteObject(lua_State * L)
 {
-	MLevel * level = MEngine::getInstance()->getLevel();
-	MScene * scene = level->getCurrentScene();
-
 	if(! isFunctionOk(L, "deleteObject", 1))
 	{
 		return 0;
@@ -185,20 +182,7 @@ int deleteObject(lua_State * L)
 	const char * name = lua_tostring(L, 1);
 	if (name && (object = getObject3d(name)))
 	{
-		// TODO(bmclarnon): Move this logic into MScene::deleteObject
-		if(object->getType() == M_OBJECT3D_ENTITY)
-		{
-			MOEntity * entity = (MOEntity *)object;
-			MPhysicsProperties * physics_props = entity->getPhysicsProperties();
-			MPhysicsContext * physics = MEngine::getInstance()->getPhysicsContext();
-			if(physics_props && physics)
-			{
-				unsigned int physics_id = physics_props->getCollisionObjectId();
-				physics->deleteObject(&physics_id);
-			}
-		}
-
-		scene->deleteObject(object);
+		MEngine::getInstance()->getLevel()->getCurrentScene()->deleteObject(object);
 	}
 
 	return 0;

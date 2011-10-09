@@ -480,6 +480,16 @@ void MScene::deleteObject(MObject3d * object)
 					break;
 				}
 			}
+
+			MPhysicsProperties * physics_props = ((MOEntity *)object)->getPhysicsProperties();
+			if(physics_props)
+			{
+				unsigned int physics_id = physics_props->getCollisionObjectId();
+				if(physics_id > 0)
+				{
+					MEngine::getInstance()->getPhysicsContext()->deleteObject(&physics_id);
+				}
+			}
 		}
 		break;
 
