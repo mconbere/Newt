@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B84893614426B240053ED3D /* on-collision-behavior.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8B84893414426B240053ED3D /* on-collision-behavior.cc */; };
+		8E0F0E051442BF610051C03B /* libNewtCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0F0E041442BF610051C03B /* libNewtCommon.a */; };
 		8E179A04143998270060D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A03143998270060D173 /* Cocoa.framework */; };
 		8E179A0E143998280060D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A0C143998280060D173 /* InfoPlist.strings */; };
 		8E179A22143998B70060D173 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A20143998B70060D173 /* font */; };
@@ -29,12 +29,10 @@
 		8E179A48143999EE0060D173 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A47143999EE0060D173 /* libz.dylib */; };
 		8E179A4B14399A250060D173 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A4914399A250060D173 /* OpenAL.framework */; };
 		8E179A4C14399A250060D173 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A4A14399A250060D173 /* OpenGL.framework */; };
-		8E179ADF143ACF3C0060D173 /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E179ADD143ACF3C0060D173 /* plugin.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B84893414426B240053ED3D /* on-collision-behavior.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "on-collision-behavior.cc"; sourceTree = "<group>"; };
-		8B84893514426B240053ED3D /* on-collision-behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "on-collision-behavior.h"; sourceTree = "<group>"; };
+		8E0F0E041442BF610051C03B /* libNewtCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libNewtCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E179A01143998270060D173 /* Newt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E179A03143998270060D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8E179A0B143998280060D173 /* Newt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Newt-Info.plist"; sourceTree = "<group>"; };
@@ -59,8 +57,6 @@
 		8E179A47143999EE0060D173 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = SDKs/MacOSX10.6.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		8E179A4914399A250060D173 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
 		8E179A4A14399A250060D173 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
-		8E179ADD143ACF3C0060D173 /* plugin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cc; sourceTree = "<group>"; };
-		8E179ADE143ACF3C0060D173 /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0F0E051442BF610051C03B /* libNewtCommon.a in Frameworks */,
 				8E179A4B14399A250060D173 /* OpenAL.framework in Frameworks */,
 				8E179A4C14399A250060D173 /* OpenGL.framework in Frameworks */,
 				8E179A48143999EE0060D173 /* libz.dylib in Frameworks */,
@@ -104,7 +101,6 @@
 		8BE7552B14396AEC00722E31 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8E179ADC143ACF3C0060D173 /* src */,
 				8E179A24143998E60060D173 /* Player */,
 			);
 			name = Source;
@@ -121,6 +117,7 @@
 		8BE7553B1439709F00722E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E0F0E041442BF610051C03B /* libNewtCommon.a */,
 				8E179A4914399A250060D173 /* OpenAL.framework */,
 				8E179A4A14399A250060D173 /* OpenGL.framework */,
 				8E179A47143999EE0060D173 /* libz.dylib */,
@@ -184,18 +181,6 @@
 				8E179A29143998E60060D173 /* MaratisPlayer.h */,
 			);
 			path = Maratis;
-			sourceTree = "<group>";
-		};
-		8E179ADC143ACF3C0060D173 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				8B84893414426B240053ED3D /* on-collision-behavior.cc */,
-				8B84893514426B240053ED3D /* on-collision-behavior.h */,
-				8E179ADD143ACF3C0060D173 /* plugin.cc */,
-				8E179ADE143ACF3C0060D173 /* plugin.h */,
-			);
-			name = src;
-			path = ../../../src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +248,6 @@
 			files = (
 				8E179A2C143998E60060D173 /* main.cpp in Sources */,
 				8E179A2D143998E60060D173 /* MaratisPlayer.cpp in Sources */,
-				8E179ADF143ACF3C0060D173 /* plugin.cc in Sources */,
-				8B84893614426B240053ED3D /* on-collision-behavior.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

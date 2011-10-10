@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0F0DFC1442BE980051C03B /* on-collision-behavior.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F0DF81442BE980051C03B /* on-collision-behavior.cc */; };
+		8E0F0DFD1442BE980051C03B /* on-collision-behavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0DF91442BE980051C03B /* on-collision-behavior.h */; };
+		8E0F0DFE1442BE980051C03B /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F0DFA1442BE980051C03B /* plugin.cc */; };
+		8E0F0DFF1442BE980051C03B /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0DFB1442BE980051C03B /* plugin.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E0F0DEF1442BE7D0051C03B /* libNewtCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNewtCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0F0DF81442BE980051C03B /* on-collision-behavior.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "on-collision-behavior.cc"; sourceTree = "<group>"; };
+		8E0F0DF91442BE980051C03B /* on-collision-behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "on-collision-behavior.h"; sourceTree = "<group>"; };
+		8E0F0DFA1442BE980051C03B /* plugin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cc; sourceTree = "<group>"; };
+		8E0F0DFB1442BE980051C03B /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E0F0DEC1442BE7D0051C03B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E0F0DE41442BE7C0051C03B = {
+			isa = PBXGroup;
+			children = (
+				8E0F0DF61442BE830051C03B /* Source */,
+				8E0F0DF01442BE7D0051C03B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E0F0DF01442BE7D0051C03B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F0DEF1442BE7D0051C03B /* libNewtCommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E0F0DF61442BE830051C03B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F0DF71442BE980051C03B /* src */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8E0F0DF71442BE980051C03B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F0DF81442BE980051C03B /* on-collision-behavior.cc */,
+				8E0F0DF91442BE980051C03B /* on-collision-behavior.h */,
+				8E0F0DFA1442BE980051C03B /* plugin.cc */,
+				8E0F0DFB1442BE980051C03B /* plugin.h */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E0F0DED1442BE7D0051C03B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0F0DFD1442BE980051C03B /* on-collision-behavior.h in Headers */,
+				8E0F0DFF1442BE980051C03B /* plugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E0F0DEE1442BE7D0051C03B /* NewtCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0F0DF31442BE7D0051C03B /* Build configuration list for PBXNativeTarget "NewtCommon" */;
+			buildPhases = (
+				8E0F0DEB1442BE7D0051C03B /* Sources */,
+				8E0F0DEC1442BE7D0051C03B /* Frameworks */,
+				8E0F0DED1442BE7D0051C03B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewtCommon;
+			productName = NewtCommon;
+			productReference = 8E0F0DEF1442BE7D0051C03B /* libNewtCommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E0F0DE61442BE7C0051C03B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Plausible Labs";
+			};
+			buildConfigurationList = 8E0F0DE91442BE7C0051C03B /* Build configuration list for PBXProject "NewtCommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E0F0DE41442BE7C0051C03B;
+			productRefGroup = 8E0F0DF01442BE7D0051C03B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E0F0DEE1442BE7D0051C03B /* NewtCommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E0F0DEB1442BE7D0051C03B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0F0DFC1442BE980051C03B /* on-collision-behavior.cc in Sources */,
+				8E0F0DFE1442BE980051C03B /* plugin.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E0F0DF11442BE7D0051C03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E0F0DF21442BE7D0051C03B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MEngine/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MCore/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/MSDK/MGui/Includes",
+					"${SRCROOT}/../../../3rdparty/maratis-dev/Maratis/Common",
+					"${SRCROOT}/../../../3rdparty/bullet",
+					"${SRCROOT}/../../../3rdparty/lua",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E0F0DF41442BE7D0051C03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E0F0DF51442BE7D0051C03B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E0F0DE91442BE7C0051C03B /* Build configuration list for PBXProject "NewtCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0F0DF11442BE7D0051C03B /* Debug */,
+				8E0F0DF21442BE7D0051C03B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E0F0DF31442BE7D0051C03B /* Build configuration list for PBXNativeTarget "NewtCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0F0DF41442BE7D0051C03B /* Debug */,
+				8E0F0DF51442BE7D0051C03B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E0F0DE61442BE7C0051C03B /* Project object */;
+}
