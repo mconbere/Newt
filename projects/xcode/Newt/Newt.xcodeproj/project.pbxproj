@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B84893614426B240053ED3D /* on-collision-behavior.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8B84893414426B240053ED3D /* on-collision-behavior.cc */; };
 		8E179A04143998270060D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A03143998270060D173 /* Cocoa.framework */; };
 		8E179A0E143998280060D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A0C143998280060D173 /* InfoPlist.strings */; };
 		8E179A22143998B70060D173 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A20143998B70060D173 /* font */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B84893414426B240053ED3D /* on-collision-behavior.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "on-collision-behavior.cc"; sourceTree = "<group>"; };
+		8B84893514426B240053ED3D /* on-collision-behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "on-collision-behavior.h"; sourceTree = "<group>"; };
 		8E179A01143998270060D173 /* Newt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E179A03143998270060D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8E179A0B143998280060D173 /* Newt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Newt-Info.plist"; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 		8E179ADC143ACF3C0060D173 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8B84893414426B240053ED3D /* on-collision-behavior.cc */,
+				8B84893514426B240053ED3D /* on-collision-behavior.h */,
 				8E179ADD143ACF3C0060D173 /* plugin.cc */,
 				8E179ADE143ACF3C0060D173 /* plugin.h */,
 			);
@@ -259,6 +264,7 @@
 				8E179A2C143998E60060D173 /* main.cpp in Sources */,
 				8E179A2D143998E60060D173 /* MaratisPlayer.cpp in Sources */,
 				8E179ADF143ACF3C0060D173 /* plugin.cc in Sources */,
+				8B84893614426B240053ED3D /* on-collision-behavior.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

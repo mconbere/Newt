@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B84893A14426B3E0053ED3D /* on-collision-behavior.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8B84893814426B3E0053ED3D /* on-collision-behavior.cc */; };
 		8E179A7F143ACD5F0060D173 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A7E143ACD5F0060D173 /* Cocoa.framework */; };
 		8E179A89143ACD5F0060D173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E179A87143ACD5F0060D173 /* InfoPlist.strings */; };
 		8E179AAF143ACDC40060D173 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E179A9E143ACDC40060D173 /* main.cpp */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B84893814426B3E0053ED3D /* on-collision-behavior.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "on-collision-behavior.cc"; sourceTree = "<group>"; };
+		8B84893914426B3E0053ED3D /* on-collision-behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "on-collision-behavior.h"; sourceTree = "<group>"; };
 		8E179A7A143ACD5F0060D173 /* NewtEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewtEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E179A7E143ACD5F0060D173 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8E179A86143ACD5F0060D173 /* NewtEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewtEditor-Info.plist"; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 		8E179AE0143ACF440060D173 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8B84893814426B3E0053ED3D /* on-collision-behavior.cc */,
+				8B84893914426B3E0053ED3D /* on-collision-behavior.h */,
 				8E179AE1143ACF440060D173 /* plugin.cc */,
 				8E179AE2143ACF440060D173 /* plugin.h */,
 			);
@@ -307,6 +312,7 @@
 				8E179AB3143ACDC40060D173 /* MFilesUpdate.cpp in Sources */,
 				8E179AB4143ACDC40060D173 /* MRenderArray.cpp in Sources */,
 				8E179AE3143ACF440060D173 /* plugin.cc in Sources */,
+				8B84893A14426B3E0053ED3D /* on-collision-behavior.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +443,7 @@
 				8E179A9A143ACD5F0060D173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

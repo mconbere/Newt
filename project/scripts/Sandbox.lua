@@ -3,12 +3,16 @@ Player = getObject("Player")
 Jules = getObject("Jules")
 Gems = {getObject("gem.0"), getObject("gem.1")}
 
+function onCollision()
+	print("Collision!")
+end
+
 function onSceneUpdate()
 	coll = getNumCollisions(Feet)
 
 	for key, obj in pairs(Gems) do
 		if isCollisionBetween(Player, obj) then
-			delete(obj)
+			deleteObject(obj)
 			table.remove(Gems, key)
 		end
 	end
