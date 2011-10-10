@@ -3,6 +3,10 @@ Player = getObject("Player")
 Jules = getObject("Jules")
 Gems = {getObject("gem.0"), getObject("gem.1")}
 
+function onCollision()
+	print("Collision!")
+end
+
 function onSceneUpdate()
 	coll = getNumCollisions(Feet)
 

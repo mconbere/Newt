@@ -4,10 +4,8 @@
 #include "plugin.h"
 
 #include "MEngine.h"
-#include "MLevel.h"
-#include "MScene.h"
-#include "MScriptContext.h"
-#include "MVector3.h"
+
+#include "on-collision-behavior.h"
 
 namespace {
 
@@ -22,6 +20,9 @@ int asdf(void) {
 void StartPlugin() {
   MEngine* engine = MEngine::getInstance();
   engine->getScriptContext()->addFunction("asdf", asdf);
+  engine->getBehaviorManager()->addBehavior(
+      OnCollisionBehavior::GetStaticName(), M_OBJECT3D,
+      OnCollisionBehavior::GetNew);
 }
 
 void EndPlugin() {
