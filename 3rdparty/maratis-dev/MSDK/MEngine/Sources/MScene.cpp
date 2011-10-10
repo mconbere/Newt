@@ -145,7 +145,7 @@ void MScene::setScriptFilename(const char * scriptFilename)
 	m_scriptFilename.set(scriptFilename);
 }
 
-bool createShape(MOEntity * entity, MPhysicsProperties * phyProps, unsigned int * shapeId)
+bool createShape(MOEntity * entity, MPhysicsProperties * phyProps, MPhysicsContext::ShapeId * shapeId)
 {
 	MPhysicsContext * physics = MEngine::getInstance()->getPhysicsContext();
 
@@ -223,7 +223,7 @@ bool createShape(MOEntity * entity, MPhysicsProperties * phyProps, unsigned int 
 					unsigned int s;
 					for(s=0; s<subMeshsNumber; s++)
 					{
-						unsigned int subShapeId;
+						MPhysicsContext::ShapeId subShapeId;
 						MSubMesh * subMesh = &subMeshs[s];
 						physics->createConvexHullShape(&subShapeId, subMesh->getVertices(), subMesh->getVerticesSize(), entity->getScale());
 						physics->addChildShape(*shapeId, subShapeId, MVector3(), MQuaternion());
@@ -261,7 +261,7 @@ bool createShape(MOEntity * entity, MPhysicsProperties * phyProps, unsigned int 
 					unsigned int s;
 					for(s=0; s<subMeshsNumber; s++)
 					{
-						unsigned int subShapeId;
+						MPhysicsContext::ShapeId subShapeId;
 						MSubMesh * subMesh = &subMeshs[s];
 						physics->createTriangleMeshShape(&subShapeId,
 							subMesh->getVertices(), subMesh->getVerticesSize(),
@@ -303,7 +303,7 @@ void MScene::preparePhysics(void)
 		if(! phyProps)
 			continue;
 
-		unsigned int shapeId = 0;
+		MPhysicsContext::ShapeId shapeId = 0;
 		if(createShape(entity, phyProps, &shapeId))
 		{
 			// has physics child
@@ -331,7 +331,7 @@ void MScene::preparePhysics(void)
 			// create multi shape
 			if(hasPhysicsChild)
 			{
-				unsigned int subShapeId = shapeId;
+				MPhysicsContext::ShapeId subShapeId = shapeId;
 				physics->createMultiShape(&shapeId);
 				physics->addChildShape(shapeId, subShapeId, MVector3(), MQuaternion());
 			}
@@ -349,7 +349,7 @@ void MScene::preparePhysics(void)
 		if(! phyProps)
 			continue;
 
-		unsigned int shapeId = phyProps->getShapeId();
+		MPhysicsContext::ShapeId shapeId = phyProps->getShapeId();
 		if(shapeId == 0)
 			continue;
 		
@@ -383,7 +383,7 @@ void MScene::preparePhysics(void)
 			{
 				MVector3 euler = entity->getTransformedRotation();
 	
-				unsigned int collisionObjectId;
+				MPhysicsContext::ObjectId collisionObjectId;
 				physics->createGhost(
 					&collisionObjectId, shapeId, 
 					entity->getTransformedPosition(),
@@ -395,7 +395,7 @@ void MScene::preparePhysics(void)
 			}
 			else
 			{
-				unsigned int collisionObjectId;
+				MPhysicsContext::ObjectId collisionObjectId;
 				physics->createRigidBody(
 					&collisionObjectId, shapeId, 
 					entity->getPosition(), entity->getRotation(),
@@ -423,7 +423,7 @@ void MScene::preparePhysics(void)
 		if(! phyProps)
 			continue;
 		
-		unsigned int objectId = phyProps->getCollisionObjectId();
+		MPhysicsContext::ObjectId objectId = phyProps->getCollisionObjectId();
 		MPhysicsConstraint * constraint = phyProps->getConstraint();
 		
 		if((! constraint) || (objectId == 0) || phyProps->isGhost())
@@ -437,7 +437,7 @@ void MScene::preparePhysics(void)
 				MPhysicsProperties * parentPhyProps = constraintParent->getPhysicsProperties();
 				if(parentPhyProps)
 				{
-					unsigned int parentObjectId = parentPhyProps->getCollisionObjectId();
+					MPhysicsContext::ObjectId parentObjectId = parentPhyProps->getCollisionObjectId();
 					if(parentObjectId != 0)
 					{
 						physics->createConstraint(

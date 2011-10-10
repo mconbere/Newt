@@ -51,8 +51,8 @@ public:
 	MPhysicsConstraint(void);
 	MPhysicsConstraint(const MPhysicsConstraint & constraint);
 	
-	unsigned int constraintId;
-	unsigned int parentObjectId;
+	MPhysicsContext::ConstraintId constraintId;
+	MPhysicsContext::ObjectId parentObjectId;
 	
 	MString parentName;
 	MVector3 pivot;
@@ -75,8 +75,8 @@ private:
 
 	MPhysicsConstraint * m_constraint;
 	
-	unsigned int m_shapeId;
-	unsigned int m_collisionObjectId;
+	MPhysicsContext::ShapeId m_shapeId;
+	MPhysicsContext::ObjectId m_collisionObjectId;
 	M_COLLISION_SHAPE_TYPE m_collisionShape;
 
 	bool m_ghost;
@@ -96,12 +96,12 @@ public:
 	inline MPhysicsConstraint * getConstraint(void){ return m_constraint; }
 
 	// shape id
-	inline void setShapeId(unsigned int shapeId){ m_shapeId = shapeId; }
-	inline unsigned int getShapeId(void){ return m_shapeId; }
+	inline void setShapeId(MPhysicsContext::ShapeId shapeId){ m_shapeId = shapeId; }
+	inline MPhysicsContext::ShapeId getShapeId(void){ return m_shapeId; }
 
 	// collision object id
-	inline void setCollisionObjectId(unsigned int collisionObjectId){ m_collisionObjectId = collisionObjectId; }
-	inline unsigned int getCollisionObjectId(void){ return m_collisionObjectId; }
+	inline void setCollisionObjectId(MPhysicsContext::ObjectId collisionObjectId){ m_collisionObjectId = collisionObjectId; }
+	inline MPhysicsContext::ObjectId getCollisionObjectId(void){ return m_collisionObjectId; }
 
 	// collision shape
 	inline void setCollisionShape(M_COLLISION_SHAPE_TYPE collisionShape){ m_collisionShape = collisionShape; }

@@ -41,7 +41,7 @@ int DeleteObject() {
       MPhysicsProperties* physics_props = entity->getPhysicsProperties();
       MPhysicsContext* physics = engine->getPhysicsContext();
       if (physics_props && physics) {
-        unsigned int physics_id = physics_props->getCollisionObjectId();
+        MPhysicsContext::ObjectId physics_id = physics_props->getCollisionObjectId();
         physics->deleteObject(&physics_id);
       }
     }

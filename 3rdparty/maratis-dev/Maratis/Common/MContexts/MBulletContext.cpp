@@ -72,41 +72,40 @@ void MBulletContext::init(const MVector3 & worldMin, const MVector3 & worldMax)
 // destroy
 void MBulletContext::clear(void)
 {
-	unsigned int i;
-	unsigned int id;
-
 	// delete constraints
-	for(i=0; i<m_constraints.size(); i++){
-		id = i;
-		deleteConstraint(&id);
+	if(m_dynamicsWorld) {
+		size_t numConstraints = m_dynamicsWorld->getNumConstraints();
+		vector<ConstraintId> constraints(numConstraints);
+		for(size_t i=0; i<numConstraints; i++){
+			constraints.push_back(m_dynamicsWorld->getConstraint((int)i));
+		}
+		for(vector<ConstraintId>::iterator it = constraints.begin(); it != constraints.end(); ++it) {
+			deleteConstraint(&(*it));
+		}
 	}
 
-	// remove the rigidbodies from the dynamics world and delete them
-	for(i=0; i<m_collisionObjects.size(); i++){
-		id = i;
-		deleteObject(&id);
+	if(m_dynamicsWorld) {
+		// make an explicit copy
+		btCollisionObjectArray collisionObjects = m_dynamicsWorld->getCollisionObjectArray();
+		for(int i=0; i<collisionObjects.size(); i++){
+		btCollisionObject *object = collisionObjects[i];
+			deleteObject((ObjectId *)&object);
+		}
 	}
 
 	// delete collision shapes
-	for(i=0; i<m_collisionShapes.size(); i++){
-		id = i;
+	for(set<btCollisionShape*>::iterator it=m_collisionShapes.begin(); it!=m_collisionShapes.end(); ++it) {
+		ShapeId id = *it;
 		deleteShape(&id);
 	}
 
-	m_collisionObjects.clear();
 	m_collisionShapes.clear();
-	m_constraints.clear();
-	
+
 	SAFE_DELETE(m_dynamicsWorld);
 	SAFE_DELETE(m_solver);
 	SAFE_DELETE(m_overlappingPairCache);
 	SAFE_DELETE(m_dispatcher);
 	SAFE_DELETE(m_collisionConfiguration);
-
-	// create NULL id 0
-	m_collisionShapes.push_back(NULL);
-	m_collisionObjects.push_back(NULL);
-	m_constraints.push_back(NULL);
 }
 
 // update simulation
@@ -123,17 +122,17 @@ void MBulletContext::setWorldGravity(const MVector3 & gravity){
 }
 
 // create object
-void MBulletContext::createGhost(unsigned int * objectId, unsigned int shapeId, const MVector3 & position, const MQuaternion & rotation)
+void MBulletContext::createGhost(ObjectId * objectId, ShapeId shapeId, const MVector3 & position, const MQuaternion & rotation)
 {
 	createRigidBody(objectId, shapeId, position, rotation, 0.0000001f);
-	m_collisionObjects[*objectId]->setCollisionFlags(m_collisionObjects[*objectId]->getCollisionFlags() | btCollisionObject::CF_NO_CONTACT_RESPONSE | btCollisionObject::CF_KINEMATIC_OBJECT);
+ 
+	btCollisionObject *object = (btCollisionObject *)*objectId;
+	object->setCollisionFlags(object->getCollisionFlags() | btCollisionObject::CF_NO_CONTACT_RESPONSE | btCollisionObject::CF_KINEMATIC_OBJECT);
 }
 
-void MBulletContext::createRigidBody(unsigned int * objectId, unsigned int shapeId, const MVector3 & position, const MQuaternion & rotation, float mass)
+void MBulletContext::createRigidBody(ObjectId * objectId, ShapeId shapeId, const MVector3 & position, const MQuaternion & rotation, float mass)
 {
-	*objectId = m_collisionObjects.size();
-
-	btCollisionShape * shape = m_collisionShapes[shapeId];
+	btCollisionShape * shape = (btCollisionShape *)shapeId;
 
 	btVector3 localInertia(0,0,0);
 	if(mass > 0)
@@ -153,13 +152,13 @@ void MBulletContext::createRigidBody(unsigned int * objectId, unsigned int shape
 	rigidBody->setSleepingThresholds(0.2f, 0.2f); // default : 0.8f, 1.0f
 
 	m_dynamicsWorld->addRigidBody(rigidBody);
-	m_collisionObjects.push_back(rigidBody);
+	*objectId = rigidBody;
 }
 
 // delete object
-void MBulletContext::deleteObject(unsigned int * objectId)
+void MBulletContext::deleteObject(ObjectId * objectId)
 {
-	btCollisionObject * object = m_collisionObjects[*objectId];
+	btCollisionObject * object = *((btCollisionObject **)objectId);
 	if(object)
 	{
 		if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
@@ -172,32 +171,32 @@ void MBulletContext::deleteObject(unsigned int * objectId)
 		}
 
 		m_dynamicsWorld->removeCollisionObject(object);
-		SAFE_DELETE(m_collisionObjects[*objectId]);
-		*objectId = 0;
+		SAFE_DELETE(object);
+		*objectId = NULL;
 	}
 }
 
 // object properties
-void MBulletContext::enableObjectKinematic(unsigned int objectId)
+void MBulletContext::enableObjectKinematic(ObjectId objectId)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	object->setCollisionFlags(object->getCollisionFlags() | btCollisionObject::CF_KINEMATIC_OBJECT);
 }
 
-void MBulletContext::disableObjectKinematic(unsigned int objectId){
+void MBulletContext::disableObjectKinematic(ObjectId objectId){
 
 }
 
-void MBulletContext::setObjectShape(unsigned int objectId, unsigned int shapeId)
+void MBulletContext::setObjectShape(ObjectId objectId, ShapeId shapeId)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
-	btCollisionShape * shape = m_collisionShapes[shapeId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
+	btCollisionShape * shape = (btCollisionShape *)shapeId;
 	object->setCollisionShape(shape);
 }
 
-void MBulletContext::setObjectMass(unsigned int objectId, float mass)
+void MBulletContext::setObjectMass(ObjectId objectId, float mass)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -205,23 +204,23 @@ void MBulletContext::setObjectMass(unsigned int objectId, float mass)
 	}
 }
 
-void MBulletContext::setObjectRestitution(unsigned int objectId, float restitution)
+void MBulletContext::setObjectRestitution(ObjectId objectId, float restitution)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	object->setRestitution(btScalar(restitution));
 }
 
-void MBulletContext::setObjectFriction(unsigned int objectId, float friction)
+void MBulletContext::setObjectFriction(ObjectId objectId, float friction)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object){
 		object->setFriction(friction);
 	}
 }
 
-void MBulletContext::setObjectLinearFactor(unsigned int objectId, const MVector3 & linearFactor)
+void MBulletContext::setObjectLinearFactor(ObjectId objectId, const MVector3 & linearFactor)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -229,9 +228,9 @@ void MBulletContext::setObjectLinearFactor(unsigned int objectId, const MVector3
 	}
 }
 
-void MBulletContext::setObjectAngularFactor(unsigned int objectId, float angularFactor)
+void MBulletContext::setObjectAngularFactor(ObjectId objectId, float angularFactor)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -239,9 +238,9 @@ void MBulletContext::setObjectAngularFactor(unsigned int objectId, float angular
 	}
 }
 
-void MBulletContext::setObjectDamping(unsigned int objectId, float linearDamping, float angularDamping)
+void MBulletContext::setObjectDamping(ObjectId objectId, float linearDamping, float angularDamping)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -249,14 +248,14 @@ void MBulletContext::setObjectDamping(unsigned int objectId, float linearDamping
 	}
 }
 
-void MBulletContext::setObjectTransform(unsigned int objectId, const MVector3 & position, const MQuaternion & rotation)
+void MBulletContext::setObjectTransform(ObjectId objectId, const MVector3 & position, const MQuaternion & rotation)
 {
 	btTransform transform;
 	transform.setIdentity();
 	transform.setOrigin(btVector3(position.x, position.y, position.z));
 	transform.setRotation(btQuaternion(rotation.values[0], rotation.values[1], rotation.values[2], rotation.values[3]));
 	
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	
 	
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
@@ -299,9 +298,9 @@ void MBulletContext::setObjectTransform(unsigned int objectId, const MVector3 & 
 	}
 }
 
-void MBulletContext::getObjectTransform(unsigned int objectId, MVector3 * position, MQuaternion * rotation)
+void MBulletContext::getObjectTransform(ObjectId objectId, MVector3 * position, MQuaternion * rotation)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -326,10 +325,22 @@ void MBulletContext::getObjectTransform(unsigned int objectId, MVector3 * positi
 	}
 }
 
-// affectors
-void MBulletContext::addCentralForce(unsigned int objectId, const MVector3 & force)
+void MBulletContext::setUserPointer(ObjectId objectId, void *userPointer)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject *object = (btCollisionObject *)objectId;
+	object->setUserPointer(userPointer);
+}
+
+void * MBulletContext::getUserPointer(ObjectId objectId)
+{
+	btCollisionObject *object = (btCollisionObject *)objectId;
+	return object->getUserPointer();
+}
+
+// affectors
+void MBulletContext::addCentralForce(ObjectId objectId, const MVector3 & force)
+{
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -338,9 +349,9 @@ void MBulletContext::addCentralForce(unsigned int objectId, const MVector3 & for
 	}
 }
 
-void MBulletContext::getCentralForce(unsigned int objectId, MVector3 * force)
+void MBulletContext::getCentralForce(ObjectId objectId, MVector3 * force)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -352,9 +363,9 @@ void MBulletContext::getCentralForce(unsigned int objectId, MVector3 * force)
 	}
 }
 
-void MBulletContext::addTorque(unsigned int objectId, const MVector3 & torque)
+void MBulletContext::addTorque(ObjectId objectId, const MVector3 & torque)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -363,9 +374,9 @@ void MBulletContext::addTorque(unsigned int objectId, const MVector3 & torque)
 	}
 }
 
-void MBulletContext::getTorque(unsigned int objectId, MVector3 * torque)
+void MBulletContext::getTorque(ObjectId objectId, MVector3 * torque)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -377,9 +388,9 @@ void MBulletContext::getTorque(unsigned int objectId, MVector3 * torque)
 	}
 }
 
-void MBulletContext::clearForces(unsigned int objectId)
+void MBulletContext::clearForces(ObjectId objectId)
 {
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 	if(object->getInternalType() == btCollisionObject::CO_RIGID_BODY)
 	{
 		btRigidBody * body = btRigidBody::upcast(object);
@@ -390,10 +401,10 @@ void MBulletContext::clearForces(unsigned int objectId)
 }
 
 // objects collision
-int MBulletContext::isObjectInCollision(unsigned int objectId)
+int MBulletContext::isObjectInCollision(ObjectId objectId)
 {
 	int nbColl = 0;
-	btCollisionObject * object = m_collisionObjects[objectId];
+	btCollisionObject * object = (btCollisionObject *)objectId;
 
 	int numManifolds = m_dynamicsWorld->getDispatcher()->getNumManifolds();
 	for(int i=0; i<numManifolds; i++)
@@ -420,10 +431,10 @@ int MBulletContext::isObjectInCollision(unsigned int objectId)
 	return nbColl;
 }
 
-bool MBulletContext::isObjectsCollision(unsigned int object1Id, unsigned int object2Id)
+bool MBulletContext::isObjectsCollision(ObjectId object1Id, ObjectId object2Id)
 {
-	btCollisionObject * object1 = m_collisionObjects[object1Id];
-	btCollisionObject * object2 = m_collisionObjects[object2Id];
+	btCollisionObject * object1 = (btCollisionObject *)object1Id;
+	btCollisionObject * object2 = (btCollisionObject *)object2Id;
 	
 
 	int numManifolds = m_dynamicsWorld->getDispatcher()->getNumManifolds();
@@ -448,61 +459,72 @@ bool MBulletContext::isObjectsCollision(unsigned int object1Id, unsigned int obj
 	return false;
 }
 
+void MBulletContext::forEachObjectColliding(objectCollidingCallback callback) {
+	int numManifolds = m_dynamicsWorld->getDispatcher()->getNumManifolds();
+	for(int i=0; i<numManifolds; i++)
+	{
+		btPersistentManifold * contactManifold = m_dynamicsWorld->getDispatcher()->getManifoldByIndexInternal(i);
+		btCollisionObject * obA = static_cast<btCollisionObject*>(contactManifold->getBody0());
+		btCollisionObject * obB = static_cast<btCollisionObject*>(contactManifold->getBody1());
+
+		callback(obA, obB);
+	}  
+}
+
+
 // create shape
-void MBulletContext::createMultiShape(unsigned int * shapeId)
+void MBulletContext::createMultiShape(ShapeId * shapeId)
 {
-	*shapeId = m_collisionShapes.size();
 	btCompoundShape * shape = new btCompoundShape();
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createBoxShape(unsigned int * shapeId, const MVector3 & scale)
+void MBulletContext::createBoxShape(ShapeId * shapeId, const MVector3 & scale)
 {
-	*shapeId = m_collisionShapes.size();
 	btCollisionShape * shape = new btBoxShape(btVector3(scale.x, scale.y, scale.z));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createSphereShape(unsigned int * shapeId, float radius)
+void MBulletContext::createSphereShape(ShapeId * shapeId, float radius)
 {
-	*shapeId = m_collisionShapes.size();
 	btCollisionShape * shape = new btSphereShape(btScalar(radius));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createConeShape(unsigned int * shapeId, float radius, float height)
+void MBulletContext::createConeShape(ShapeId * shapeId, float radius, float height)
 {
-	*shapeId = m_collisionShapes.size();
 	btCollisionShape * shape = new btConeShape(btScalar(radius), btScalar(height));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createCapsuleShape(unsigned int * shapeId, float radius, float height)
+void MBulletContext::createCapsuleShape(ShapeId * shapeId, float radius, float height)
 {
-	*shapeId = m_collisionShapes.size();
 	btCollisionShape * shape = new btCapsuleShape(btScalar(radius), btScalar(height));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createCylinderShape(unsigned int * shapeId, float radius, float height)
+void MBulletContext::createCylinderShape(ShapeId * shapeId, float radius, float height)
 {
-	*shapeId = m_collisionShapes.size();
 	btCollisionShape * shape = new btCylinderShape(btVector3(radius, height*0.5f, radius));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createConvexHullShape(unsigned int * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const MVector3 scale)
+void MBulletContext::createConvexHullShape(ShapeId * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const MVector3 scale)
 {
-	*shapeId = m_collisionShapes.size();
 	btConvexHullShape * shape = new btConvexHullShape((btScalar*)vertices, verticesNumber, sizeof(MVector3));
 	shape->setLocalScaling(btVector3(scale.x, scale.y, scale.z));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
-void MBulletContext::createTriangleMeshShape(unsigned int * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const void * indices, unsigned int indicesNumber, M_TYPES indicesType, const MVector3 scale)
+void MBulletContext::createTriangleMeshShape(ShapeId * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const void * indices, unsigned int indicesNumber, M_TYPES indicesType, const MVector3 scale)
 {
-	*shapeId = m_collisionShapes.size();
-
 	PHY_ScalarType iType = PHY_INTEGER;
 	int triIndexStride = sizeof(int)*3;
 	
@@ -525,22 +547,23 @@ void MBulletContext::createTriangleMeshShape(unsigned int * shapeId, const MVect
 
 	btBvhTriangleMeshShape * shape = new btBvhTriangleMeshShape(triMesh, true);
 	shape->setLocalScaling(btVector3(scale.x, scale.y, scale.z));
-	m_collisionShapes.push_back(shape);
+	m_collisionShapes.insert(shape);
+	*shapeId = shape;
 }
 
 // delete shape
-void MBulletContext::deleteShape(unsigned int * shapeId)
+void MBulletContext::deleteShape(ShapeId * shapeId)
 {
-	btCollisionShape * shape = m_collisionShapes[*shapeId];
+	btCollisionShape * shape = (btCollisionShape *)*shapeId;
 	if(shape)
 	{
-		SAFE_DELETE(m_collisionShapes[*shapeId]);
+		SAFE_DELETE(shape);
 		*shapeId = 0;
 	}
 }
 
 // add child shape to multishape
-void MBulletContext::addChildShape(unsigned int multiShapeId, unsigned int shapeId, const MVector3 & position, const MQuaternion & rotation)
+void MBulletContext::addChildShape(ShapeId multiShapeId, ShapeId shapeId, const MVector3 & position, const MQuaternion & rotation)
 {
 	btTransform transform;
 	transform.setIdentity();
@@ -549,24 +572,22 @@ void MBulletContext::addChildShape(unsigned int multiShapeId, unsigned int shape
 		btQuaternion(rotation.values[0], rotation.values[1], rotation.values[2], rotation.values[3])
 		);
 
-	btCompoundShape * multiShape = (btCompoundShape *)m_collisionShapes[multiShapeId];
-	btCollisionShape * shape = m_collisionShapes[shapeId];
+	btCompoundShape * multiShape = (btCompoundShape *)multiShapeId;
+	btCollisionShape * shape = (btCollisionShape *)shapeId;
 	multiShape->addChildShape(transform, shape);
 }
 
 // create constraint
-void MBulletContext::createConstraint(unsigned int * constraintId, unsigned int parentObjectId, unsigned int objectId, const MVector3 & pivot, bool disableParentCollision)
+void MBulletContext::createConstraint(ConstraintId * constraintId, ObjectId parentObjectId, ObjectId objectId, const MVector3 & pivot, bool disableParentCollision)
 {
-	btRigidBody * bA = btRigidBody::upcast(m_collisionObjects[parentObjectId]);
-	btRigidBody * bB = btRigidBody::upcast(m_collisionObjects[objectId]);
+	btRigidBody * bA = (btRigidBody *)parentObjectId;
+	btRigidBody * bB = (btRigidBody *)objectId;
 		
 	if(bA && bB)
 	{
 		bA->setActivationState(DISABLE_DEACTIVATION);
 		bB->setActivationState(DISABLE_DEACTIVATION);
-		
-		*constraintId = m_constraints.size();
-		
+
 		MVector3 position, euler;
 		MQuaternion rotation;
 		MMatrix4x4 matrix, matrix1, matrix2, rotMatrix;
@@ -601,14 +622,14 @@ void MBulletContext::createConstraint(unsigned int * constraintId, unsigned int 
 			*bA, *bB, frameInA, frameInB, true
 		);
 		
-		m_constraints.push_back(constraint);
 		m_dynamicsWorld->addConstraint(constraint, disableParentCollision);
+		*constraintId = constraint;
 	}
 }
 
-void MBulletContext::setLinearLimit(unsigned int constraintId, const MVector3 & lower, const MVector3 & upper)
+void MBulletContext::setLinearLimit(ConstraintId constraintId, const MVector3 & lower, const MVector3 & upper)
 {
-	btGeneric6DofSpringConstraint * constraint = (btGeneric6DofSpringConstraint *)m_constraints[constraintId];
+	btGeneric6DofSpringConstraint * constraint = (btGeneric6DofSpringConstraint *)constraintId;
 	if(constraint)
 	{
 		constraint->setLinearLowerLimit(btVector3(lower.x, lower.z, -upper.y));
@@ -616,9 +637,9 @@ void MBulletContext::setLinearLimit(unsigned int constraintId, const MVector3 & 
 	}
 }
 
-void MBulletContext::setAngularLimit(unsigned int constraintId, const MVector3 & lower, const MVector3 & upper)
+void MBulletContext::setAngularLimit(ConstraintId constraintId, const MVector3 & lower, const MVector3 & upper)
 {
-	btGeneric6DofSpringConstraint * constraint = (btGeneric6DofSpringConstraint *)m_constraints[constraintId];
+	btGeneric6DofSpringConstraint * constraint = (btGeneric6DofSpringConstraint *)constraintId;
 	if(constraint)
 	{
 		constraint->setAngularLowerLimit(btVector3(btScalar(lower.x*DEG_TO_RAD), btScalar(lower.z*DEG_TO_RAD), btScalar(-upper.y*DEG_TO_RAD)));
@@ -627,13 +648,13 @@ void MBulletContext::setAngularLimit(unsigned int constraintId, const MVector3 &
 }
 
 // delete constraint
-void MBulletContext::deleteConstraint(unsigned int * constraintId)
+void MBulletContext::deleteConstraint(ConstraintId * constraintId)
 {
-	btTypedConstraint * constraint = m_constraints[*constraintId];
+	btTypedConstraint * constraint = (btTypedConstraint *)*constraintId;
 	if(constraint)
 	{
 		m_dynamicsWorld->removeConstraint(constraint);
-		SAFE_DELETE(m_constraints[*constraintId]);
+		SAFE_DELETE(constraint);
 		*constraintId = 0;
 	}
 }

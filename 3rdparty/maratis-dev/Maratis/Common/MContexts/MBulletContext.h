@@ -35,7 +35,7 @@
 
 #include <btBulletDynamicsCommon.h>
 #include <MCore.h>
-
+#include <set>
 
 class MBulletContext : public MPhysicsContext
 {
@@ -47,10 +47,9 @@ private:
 	btDbvtBroadphase * m_overlappingPairCache;
 	btSequentialImpulseConstraintSolver * m_solver;
 	btDiscreteDynamicsWorld * m_dynamicsWorld;
-	
-	vector<btCollisionShape*> m_collisionShapes;
-	vector<btCollisionObject*> m_collisionObjects;
-	vector<btTypedConstraint*> m_constraints;
+
+	// bullet does not allow access to the set of all shapes, so keep track ourselves
+	set<btCollisionShape*> m_collisionShapes;
 
 public:
 
@@ -73,62 +72,65 @@ public:
 	void setWorldGravity(const MVector3 & gravity);
 
 	// create object
-	void createGhost(unsigned int * objectId, unsigned int shapeId, const MVector3 & position, const MQuaternion & rotation);
-	void createRigidBody(unsigned int * objectId, unsigned int shapeId, const MVector3 & position, const MQuaternion & rotation, float mass);
+	void createGhost(ObjectId * objectId, ShapeId shapeId, const MVector3 & position, const MQuaternion & rotation);
+	void createRigidBody(ObjectId * objectId, ShapeId shapeId, const MVector3 & position, const MQuaternion & rotation, float mass);
 
 	// delete object
-	void deleteObject(unsigned int * objectId);
+	void deleteObject(ObjectId * objectId);
 
 	// object properties
-	void enableObjectKinematic(unsigned int objectId);
-	void disableObjectKinematic(unsigned int objectId);
+	void enableObjectKinematic(ObjectId objectId);
+	void disableObjectKinematic(ObjectId objectId);
 
-	void setObjectShape(unsigned int objectId, unsigned int shapeId);
-	void setObjectMass(unsigned int objectId, float mass);
-	void setObjectRestitution(unsigned int objectId, float restitution);
-	void setObjectFriction(unsigned int objectId, float friction);
-	void setObjectLinearFactor(unsigned int objectId, const MVector3 & linearFactor);
-	void setObjectAngularFactor(unsigned int objectId, float angularFactor);
-	void setObjectDamping(unsigned int objectId, float linearDamping, float angularDamping);
-	void setObjectTransform(unsigned int objectId, const MVector3 & position, const MQuaternion & rotation);
-	void getObjectTransform(unsigned int objectId, MVector3 * position, MQuaternion * rotation);
+	void setObjectShape(ObjectId objectId, ShapeId shapeId);
+	void setObjectMass(ObjectId objectId, float mass);
+	void setObjectRestitution(ObjectId objectId, float restitution);
+	void setObjectFriction(ObjectId objectId, float friction);
+	void setObjectLinearFactor(ObjectId objectId, const MVector3 & linearFactor);
+	void setObjectAngularFactor(ObjectId objectId, float angularFactor);
+	void setObjectDamping(ObjectId objectId, float linearDamping, float angularDamping);
+	void setObjectTransform(ObjectId objectId, const MVector3 & position, const MQuaternion & rotation);
+	void getObjectTransform(ObjectId objectId, MVector3 * position, MQuaternion * rotation);
+	void setUserPointer(ObjectId objectId, void *userPointer);
+	void * getUserPointer(ObjectId objectId);
 
 	// affectors
-	void addCentralForce(unsigned int objectId, const MVector3 & force);
-	void getCentralForce(unsigned int objectId, MVector3 * force);
-	void addTorque(unsigned int objectId, const MVector3 & torque);
-	void getTorque(unsigned int objectId, MVector3 * torque);
-	void clearForces(unsigned int objectId);
+	void addCentralForce(ObjectId objectId, const MVector3 & force);
+	void getCentralForce(ObjectId objectId, MVector3 * force);
+	void addTorque(ObjectId objectId, const MVector3 & torque);
+	void getTorque(ObjectId objectId, MVector3 * torque);
+	void clearForces(ObjectId objectId);
 
 	// objects collision
-	int isObjectInCollision(unsigned int objectId);
-	bool isObjectsCollision(unsigned int objectId, unsigned int object2Id);
+	int isObjectInCollision(ObjectId objectId);
+	bool isObjectsCollision(ObjectId objectId, ObjectId object2Id);
+	void forEachObjectColliding(objectCollidingCallback callback);
 
 	// create shape
-	void createMultiShape(unsigned int * shapeId);
+	void createMultiShape(ShapeId * shapeId);
 
-	void createBoxShape(unsigned int * shapeId, const MVector3 & scale);
-	void createSphereShape(unsigned int * shapeId, float radius);
-	void createConeShape(unsigned int * shapeId, float radius, float height);
-	void createCapsuleShape(unsigned int * shapeId, float radius, float height);
-	void createCylinderShape(unsigned int * shapeId, float radius, float height);
+	void createBoxShape(ShapeId * shapeId, const MVector3 & scale);
+	void createSphereShape(ShapeId * shapeId, float radius);
+	void createConeShape(ShapeId * shapeId, float radius, float height);
+	void createCapsuleShape(ShapeId * shapeId, float radius, float height);
+	void createCylinderShape(ShapeId * shapeId, float radius, float height);
 
-	void createConvexHullShape(unsigned int * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const MVector3 scale = MVector3(1));
-	void createTriangleMeshShape(unsigned int * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const void * indices, unsigned int indicesNumber, M_TYPES indicesType, const MVector3 scale = MVector3(1));
+	void createConvexHullShape(ShapeId * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const MVector3 scale = MVector3(1));
+	void createTriangleMeshShape(ShapeId * shapeId, const MVector3 * vertices, unsigned int verticesNumber, const void * indices, unsigned int indicesNumber, M_TYPES indicesType, const MVector3 scale = MVector3(1));
 
 	// delete shape
-	void deleteShape(unsigned int * shapeId);
+	void deleteShape(ShapeId * shapeId);
 
 	// add child shape to multishape
-	void addChildShape(unsigned int multiShapeId, unsigned int shapeId, const MVector3 & position, const MQuaternion & rotation);
+	void addChildShape(ShapeId multiShapeId, ShapeId shapeId, const MVector3 & position, const MQuaternion & rotation);
 
 	// create constraint
-	void createConstraint(unsigned int * constraintId, unsigned int parentObjectId, unsigned int objectId, const MVector3 & pivot, bool disableParentCollision);
-	void setLinearLimit(unsigned int constraintId, const MVector3 & lower, const MVector3 & upper);
-	void setAngularLimit(unsigned int constraintId, const MVector3 & lower, const MVector3 & upper);
+	void createConstraint(ConstraintId * constraintId, ObjectId parentObjectId, ObjectId objectId, const MVector3 & pivot, bool disableParentCollision);
+	void setLinearLimit(ConstraintId constraintId, const MVector3 & lower, const MVector3 & upper);
+	void setAngularLimit(ConstraintId constraintId, const MVector3 & lower, const MVector3 & upper);
 	
 	// delete constraint
-	void deleteConstraint(unsigned int * constraintId);
+	void deleteConstraint(ConstraintId * constraintId);
 };
 
 #endif
