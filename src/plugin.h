@@ -12,3 +12,19 @@
 
 extern "C" DLLEXPORT void StartPlugin();
 extern "C" DLLEXPORT void EndPlugin();
+
+namespace newt {
+
+class Game;
+
+class Plugin {
+public:
+  void Start();
+  void End();
+
+  static Plugin* GetInstance();
+private:
+  Game* game_;
+};
+
+}  // namespace newt

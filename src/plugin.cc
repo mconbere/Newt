@@ -6,24 +6,35 @@
 #include "MEngine.h"
 
 #include "on-collision-behavior.h"
-
-namespace {
-
-int asdf(void) {
-  MEngine* engine = MEngine::getInstance();
-  engine->getLevel()->getCurrentScene()->setGravity(MVector3(0.98, 0, -0.98));
-  return 0;
-}
-
-}  // namespace
+#include "newt-game.h"
 
 void StartPlugin() {
-  MEngine* engine = MEngine::getInstance();
-  engine->getScriptContext()->addFunction("asdf", asdf);
-  engine->getBehaviorManager()->addBehavior(
-      OnCollisionBehavior::GetStaticName(), M_OBJECT3D,
-      OnCollisionBehavior::GetNew);
+  newt::Plugin::GetInstance()->Start();
 }
 
 void EndPlugin() {
+  newt::Plugin::GetInstance()->End();
 }
+
+namespace newt {
+
+void Plugin::Start() {
+  if (game_) delete game_;
+  game_ = new Game();
+  
+  MEngine* engine = MEngine::getInstance();
+  engine->setGame(game_);
+}
+
+void Plugin::End() {
+  MEngine* engine = MEngine::getInstance();
+  engine->setGame(NULL);
+  SAFE_DELETE(game_)
+}
+
+Plugin* Plugin::GetInstance() {
+  static Plugin plugin;
+  return &plugin;
+}
+
+}  // namespace newt

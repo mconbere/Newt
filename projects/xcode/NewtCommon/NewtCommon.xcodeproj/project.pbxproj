@@ -11,6 +11,8 @@
 		8E0F0DFD1442BE980051C03B /* on-collision-behavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0DF91442BE980051C03B /* on-collision-behavior.h */; };
 		8E0F0DFE1442BE980051C03B /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F0DFA1442BE980051C03B /* plugin.cc */; };
 		8E0F0DFF1442BE980051C03B /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0DFB1442BE980051C03B /* plugin.h */; };
+		8E0F0E751444138A0051C03B /* newt-game.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F0E731444138A0051C03B /* newt-game.cc */; };
+		8E0F0E761444138A0051C03B /* newt-game.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0E741444138A0051C03B /* newt-game.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8E0F0DF91442BE980051C03B /* on-collision-behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "on-collision-behavior.h"; sourceTree = "<group>"; };
 		8E0F0DFA1442BE980051C03B /* plugin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cc; sourceTree = "<group>"; };
 		8E0F0DFB1442BE980051C03B /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		8E0F0E731444138A0051C03B /* newt-game.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "newt-game.cc"; sourceTree = "<group>"; };
+		8E0F0E741444138A0051C03B /* newt-game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "newt-game.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		8E0F0DF71442BE980051C03B /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8E0F0E731444138A0051C03B /* newt-game.cc */,
+				8E0F0E741444138A0051C03B /* newt-game.h */,
 				8E0F0DF81442BE980051C03B /* on-collision-behavior.cc */,
 				8E0F0DF91442BE980051C03B /* on-collision-behavior.h */,
 				8E0F0DFA1442BE980051C03B /* plugin.cc */,
@@ -77,6 +83,7 @@
 			files = (
 				8E0F0DFD1442BE980051C03B /* on-collision-behavior.h in Headers */,
 				8E0F0DFF1442BE980051C03B /* plugin.h in Headers */,
+				8E0F0E761444138A0051C03B /* newt-game.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,7 @@
 			files = (
 				8E0F0DFC1442BE980051C03B /* on-collision-behavior.cc in Sources */,
 				8E0F0DFE1442BE980051C03B /* plugin.cc in Sources */,
+				8E0F0E751444138A0051C03B /* newt-game.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +237,7 @@
 				8E0F0DF51442BE7D0051C03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
