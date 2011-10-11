@@ -151,6 +151,8 @@ public:
 	// physics
 	void preparePhysics(void);
 	void updatePhysics(void);
+	
+	void getCollidingEntityPairs(vector<pair<MOEntity *, MOEntity *> >* pairs);
 
 	// update
 	void update(void);

@@ -389,7 +389,7 @@ void MScene::preparePhysics(void)
 					entity->getTransformedPosition(),
 					MQuaternion(euler.x, euler.y, euler.z)
 					);
-
+				physics->setUserPointer(collisionObjectId, entity);
 				phyProps->setShapeId(shapeId);
 				phyProps->setCollisionObjectId(collisionObjectId);
 			}
@@ -401,7 +401,7 @@ void MScene::preparePhysics(void)
 					entity->getPosition(), entity->getRotation(),
 					phyProps->getMass()
 					);
-
+				physics->setUserPointer(collisionObjectId, entity);
 				phyProps->setShapeId(shapeId);
 				phyProps->setCollisionObjectId(collisionObjectId);
 
@@ -715,6 +715,28 @@ void MScene::updatePhysics(void)
 				entity->setRotation(rotation);
 			}
 		}
+	}
+}
+
+void MScene::getCollidingEntityPairs(vector<pair<MOEntity *, MOEntity *> >* pairs)
+{
+	if(! pairs)
+		return;
+
+	MPhysicsContext * physics = MEngine::getInstance()->getPhysicsContext();
+	if(! physics)
+		return;
+
+	vector<pair<MPhysicsContext::ObjectId, MPhysicsContext::ObjectId> > objPairs;
+	physics->getCollidingObjectPairs(&objPairs);
+
+	size_t size = objPairs.size();
+	for(size_t i=0; i<size; i++)
+	{
+		const pair<MPhysicsContext::ObjectId, MPhysicsContext::ObjectId>& objPair = objPairs[i];
+		pair<MOEntity *, MOEntity *> pair;
+		pair.first = (MOEntity *)physics->getUserPointer(objPair.first);
+		pair.second = (MOEntity *)physics->getUserPointer(objPair.second);
 	}
 }
 

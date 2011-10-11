@@ -90,8 +90,7 @@ public:
 	// objects collision
 	virtual int isObjectInCollision(ObjectId objectId) = 0;
 	virtual bool isObjectsCollision(ObjectId object1Id, ObjectId object2Id) = 0;
-	typedef void objectCollidingCallback(ObjectId objectId, ObjectId object2Id);
-	virtual void forEachObjectColliding(objectCollidingCallback callback) = 0;
+	virtual void getCollidingObjectPairs(vector<pair<ObjectId, ObjectId> >* pairs) = 0;
 
 	// create shape
 	virtual void createMultiShape(ShapeId * shapeId) = 0;

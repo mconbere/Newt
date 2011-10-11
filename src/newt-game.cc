@@ -14,7 +14,13 @@ void Game::update() {
   MEngine* engine = MEngine::getInstance();
   MScene* scene = engine->getLevel()->getCurrentScene();
 
-  (void)scene; // inspect collisions for each object in the scene;
+  vector<pair<MOEntity *, MOEntity *> > pairs;
+  scene->getCollidingEntityPairs(&pairs);
+  
+  for (vector<pair<MOEntity *, MOEntity *> >::iterator it = pairs.begin();
+       it != pairs.end(); ++it) {
+    printf("Got collision: %p, %p\n", it->first, it->second);
+  }
 
   // Finally, call the original update method.
   MGame::update();

@@ -459,18 +459,20 @@ bool MBulletContext::isObjectsCollision(ObjectId object1Id, ObjectId object2Id)
 	return false;
 }
 
-void MBulletContext::forEachObjectColliding(objectCollidingCallback callback) {
+void MBulletContext::getCollidingObjectPairs(vector<pair<ObjectId, ObjectId> >* pairs)
+{
+	pairs->clear();
+
 	int numManifolds = m_dynamicsWorld->getDispatcher()->getNumManifolds();
 	for(int i=0; i<numManifolds; i++)
 	{
 		btPersistentManifold * contactManifold = m_dynamicsWorld->getDispatcher()->getManifoldByIndexInternal(i);
 		btCollisionObject * obA = static_cast<btCollisionObject*>(contactManifold->getBody0());
 		btCollisionObject * obB = static_cast<btCollisionObject*>(contactManifold->getBody1());
-
-		callback(obA, obB);
+		
+		pairs->push_back(pair<ObjectId, ObjectId>(obA, obB));
 	}  
 }
-
 
 // create shape
 void MBulletContext::createMultiShape(ShapeId * shapeId)

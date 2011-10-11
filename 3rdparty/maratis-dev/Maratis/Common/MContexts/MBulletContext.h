@@ -104,7 +104,7 @@ public:
 	// objects collision
 	int isObjectInCollision(ObjectId objectId);
 	bool isObjectsCollision(ObjectId objectId, ObjectId object2Id);
-	void forEachObjectColliding(objectCollidingCallback callback);
+	virtual void getCollidingObjectPairs(vector<pair<ObjectId, ObjectId> >* pairs);
 
 	// create shape
 	void createMultiShape(ShapeId * shapeId);
