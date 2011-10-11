@@ -308,6 +308,7 @@
 				8E2447121437813000C2214D /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8E2447121437813000C2214D /* Products */ = {
 			isa = PBXGroup;

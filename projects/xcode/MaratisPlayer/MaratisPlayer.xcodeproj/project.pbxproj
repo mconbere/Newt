@@ -94,6 +94,7 @@
 				8E17983C1439726B0060D173 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8E17983C1439726B0060D173 /* Products */ = {
 			isa = PBXGroup;

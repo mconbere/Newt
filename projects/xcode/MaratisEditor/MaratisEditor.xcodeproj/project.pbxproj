@@ -166,6 +166,7 @@
 				8E4C7D2C14379C2E0038F5DA /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8E4C7D2C14379C2E0038F5DA /* Products */ = {
 			isa = PBXGroup;

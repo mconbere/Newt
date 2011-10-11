@@ -97,6 +97,7 @@
 				8BE755341439700700722E31 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8BE7552B14396AEC00722E31 /* Source */ = {
 			isa = PBXGroup;

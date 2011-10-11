@@ -109,6 +109,7 @@
 				8E179A7B143ACD5F0060D173 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8E179A7B143ACD5F0060D173 /* Products */ = {
 			isa = PBXGroup;

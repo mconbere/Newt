@@ -155,6 +155,7 @@
 				8E2447DB1437857E00C2214D /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8E2447DB1437857E00C2214D /* Products */ = {
 			isa = PBXGroup;

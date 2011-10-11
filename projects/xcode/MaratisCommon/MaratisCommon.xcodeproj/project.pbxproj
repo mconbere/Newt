@@ -111,6 +111,7 @@
 				8E17990A143975720060D173 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		8E17990A143975720060D173 /* Products */ = {
 			isa = PBXGroup;
@@ -453,6 +454,7 @@
 				8E17990F143975720060D173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
