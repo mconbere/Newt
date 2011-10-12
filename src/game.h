@@ -4,12 +4,16 @@
 #include "MEngine.h"
 
 namespace newt {
-  
+
+class Entity;
+
 class Game : public MGame {
 public:
   Game();
 
   virtual void update();
+  
+  void GetCollidingEntityPairs(vector<pair<Entity*, Entity*> >* pairs);
 };
   
 }  // namespace newt

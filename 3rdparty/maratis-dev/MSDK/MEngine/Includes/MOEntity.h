@@ -171,6 +171,9 @@ private:
 
 	// bounding box
 	MBox3d m_boundingBox;
+	
+	// user pointer
+	void * m_userPointer;
 
 public:
 
@@ -208,6 +211,10 @@ public:
 
 	// visibility
 	void updateVisibility(MOCamera * camera);
+	
+	// user pointer
+	void setUserPointer(void * userPointer) { m_userPointer = userPointer; }
+	void * getUserPointer() { return m_userPointer; }
 };
 
 #endif
