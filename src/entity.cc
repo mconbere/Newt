@@ -7,12 +7,7 @@
 
 namespace newt {
 
-Entity::Entity(MScene* scene, MMeshRef* mesh_ref) {
-  MOEntity* scene_entity = scene->addNewEntity(mesh_ref);
-  SetSceneEntity(scene_entity);
-}
-
-Entity::Entity(MOEntity* entity) {
+Entity::Entity(MOEntity* entity, const map<string, string>& attributes) {
   SetSceneEntity(entity);
 }
 

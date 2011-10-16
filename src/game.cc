@@ -4,6 +4,10 @@
 #include "game.h"
 
 #include "entity.h"
+#include "player.h"
+#include "gem.h"
+#include "action.h"
+#include "collide.h"
 
 namespace newt {
 
@@ -29,15 +33,24 @@ void Game::update() {
   for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
     printf("Got collision: %p, %p\n", it->first, it->second);
+    it->first->RespondToAction(Collide(it->first, it->second));
   }
 }
 
 void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<string, string>& attributes) {
-  printf("Adding object Entity %p with attributes:\n", scene_entity);
-  for (map<string, string>::const_iterator it = attributes.begin(); it != attributes.end(); ++it) {
-    printf("  %s: %s\n", it->first.c_str(), it->second.c_str());
+  map<string, string>::const_iterator name = attributes.find("name");
+  if (name != attributes.end()) {
+    if (name->second == "Player") {
+      new Player(scene_entity, attributes);
+    } else if (name->second == "Gem") {
+      new Gem(scene_entity, attributes);
+    }
+    // add new else if clauses for new object types. At some point this should be switched to registered class
+    // logic.
+  } else {
+    // Make a default base entity for all other object
+    new Entity(scene_entity, attributes);
   }
-  new Entity(scene_entity);
 }
 
 void Game::onRemoveEntity(MScene* scene, MOEntity* scene_entity) {

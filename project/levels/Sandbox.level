@@ -290,7 +290,7 @@
 				angularDamping="0.010000"
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
-			<NewtEntity name="Gem" />
+			<attributes name="Gem" />
 		</Entity>
 		<Entity name="gem.1" file="../meshs/silver-gem.mesh">
 			<BoundingBox min="-1.000000 -0.547091 -1.815449" max="1.000000 0.547091 1.815449" />
@@ -312,7 +312,7 @@
 				angularDamping="0.010000"
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
-			<NewtEntity name="Gem" />
+			<attributes name="Gem" />
 		</Entity>
 
 	</Scene>
