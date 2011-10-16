@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BC658BC144B75C9004A3DE3 /* log_severity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658B7144B75C9004A3DE3 /* log_severity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658CD144B76B1004A3DE3 /* demangle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658BD144B76B1004A3DE3 /* demangle.cc */; };
+		8BC658CE144B76B1004A3DE3 /* demangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658BE144B76B1004A3DE3 /* demangle.h */; };
+		8BC658CF144B76B1004A3DE3 /* googletest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658BF144B76B1004A3DE3 /* googletest.h */; };
+		8BC658D0144B76B1004A3DE3 /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658C0144B76B1004A3DE3 /* logging.cc */; };
+		8BC658D1144B76B1004A3DE3 /* raw_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658C1144B76B1004A3DE3 /* raw_logging.cc */; };
+		8BC658D2144B76B1004A3DE3 /* signalhandler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658C2144B76B1004A3DE3 /* signalhandler.cc */; };
+		8BC658D3144B76B1004A3DE3 /* stacktrace_generic-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658C3144B76B1004A3DE3 /* stacktrace_generic-inl.h */; };
+		8BC658D4144B76B1004A3DE3 /* stacktrace_powerpc-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658C4144B76B1004A3DE3 /* stacktrace_powerpc-inl.h */; };
+		8BC658D5144B76B1004A3DE3 /* stacktrace_x86_64-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658C5144B76B1004A3DE3 /* stacktrace_x86_64-inl.h */; };
+		8BC658D6144B76B1004A3DE3 /* stacktrace_x86-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658C6144B76B1004A3DE3 /* stacktrace_x86-inl.h */; };
+		8BC658D7144B76B1004A3DE3 /* stacktrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658C7144B76B1004A3DE3 /* stacktrace.h */; };
+		8BC658D8144B76B1004A3DE3 /* symbolize.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658C8144B76B1004A3DE3 /* symbolize.cc */; };
+		8BC658D9144B76B1004A3DE3 /* symbolize.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658C9144B76B1004A3DE3 /* symbolize.h */; };
+		8BC658DA144B76B1004A3DE3 /* utilities.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658CA144B76B1004A3DE3 /* utilities.cc */; };
+		8BC658DB144B76B1004A3DE3 /* utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658CB144B76B1004A3DE3 /* utilities.h */; };
+		8BC658DC144B76B1004A3DE3 /* vlog_is_on.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC658CC144B76B1004A3DE3 /* vlog_is_on.cc */; };
+		8BC658E1144B76D2004A3DE3 /* commandlineflags.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658DE144B76D2004A3DE3 /* commandlineflags.h */; };
+		8BC658E2144B76D2004A3DE3 /* googleinit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658DF144B76D2004A3DE3 /* googleinit.h */; };
+		8BC658E3144B76D2004A3DE3 /* mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658E0144B76D2004A3DE3 /* mutex.h */; };
+		8BC658E8144B7CCD004A3DE3 /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658E4144B7CCD004A3DE3 /* logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658E9144B7CCD004A3DE3 /* raw_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658E5144B7CCD004A3DE3 /* raw_logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658EA144B7CCD004A3DE3 /* stl_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658E6144B7CCD004A3DE3 /* stl_logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658EB144B7CCD004A3DE3 /* vlog_is_on.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658E7144B7CCD004A3DE3 /* vlog_is_on.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658F8144B8098004A3DE3 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658F7144B8098004A3DE3 /* config.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8BC658AE144B754B004A3DE3 /* libglog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC658B7144B75C9004A3DE3 /* log_severity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log_severity.h; sourceTree = "<group>"; };
+		8BC658BD144B76B1004A3DE3 /* demangle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = demangle.cc; path = ../../../3rdparty/glog/src/demangle.cc; sourceTree = "<group>"; };
+		8BC658BE144B76B1004A3DE3 /* demangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = demangle.h; path = ../../../3rdparty/glog/src/demangle.h; sourceTree = "<group>"; };
+		8BC658BF144B76B1004A3DE3 /* googletest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = googletest.h; path = ../../../3rdparty/glog/src/googletest.h; sourceTree = "<group>"; };
+		8BC658C0144B76B1004A3DE3 /* logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = ../../../3rdparty/glog/src/logging.cc; sourceTree = "<group>"; };
+		8BC658C1144B76B1004A3DE3 /* raw_logging.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = raw_logging.cc; path = ../../../3rdparty/glog/src/raw_logging.cc; sourceTree = "<group>"; };
+		8BC658C2144B76B1004A3DE3 /* signalhandler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = signalhandler.cc; path = ../../../3rdparty/glog/src/signalhandler.cc; sourceTree = "<group>"; };
+		8BC658C3144B76B1004A3DE3 /* stacktrace_generic-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stacktrace_generic-inl.h"; path = "../../../3rdparty/glog/src/stacktrace_generic-inl.h"; sourceTree = "<group>"; };
+		8BC658C4144B76B1004A3DE3 /* stacktrace_powerpc-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stacktrace_powerpc-inl.h"; path = "../../../3rdparty/glog/src/stacktrace_powerpc-inl.h"; sourceTree = "<group>"; };
+		8BC658C5144B76B1004A3DE3 /* stacktrace_x86_64-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stacktrace_x86_64-inl.h"; path = "../../../3rdparty/glog/src/stacktrace_x86_64-inl.h"; sourceTree = "<group>"; };
+		8BC658C6144B76B1004A3DE3 /* stacktrace_x86-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stacktrace_x86-inl.h"; path = "../../../3rdparty/glog/src/stacktrace_x86-inl.h"; sourceTree = "<group>"; };
+		8BC658C7144B76B1004A3DE3 /* stacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stacktrace.h; path = ../../../3rdparty/glog/src/stacktrace.h; sourceTree = "<group>"; };
+		8BC658C8144B76B1004A3DE3 /* symbolize.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = symbolize.cc; path = ../../../3rdparty/glog/src/symbolize.cc; sourceTree = "<group>"; };
+		8BC658C9144B76B1004A3DE3 /* symbolize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbolize.h; path = ../../../3rdparty/glog/src/symbolize.h; sourceTree = "<group>"; };
+		8BC658CA144B76B1004A3DE3 /* utilities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilities.cc; path = ../../../3rdparty/glog/src/utilities.cc; sourceTree = "<group>"; };
+		8BC658CB144B76B1004A3DE3 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilities.h; path = ../../../3rdparty/glog/src/utilities.h; sourceTree = "<group>"; };
+		8BC658CC144B76B1004A3DE3 /* vlog_is_on.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vlog_is_on.cc; path = ../../../3rdparty/glog/src/vlog_is_on.cc; sourceTree = "<group>"; };
+		8BC658DE144B76D2004A3DE3 /* commandlineflags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commandlineflags.h; sourceTree = "<group>"; };
+		8BC658DF144B76D2004A3DE3 /* googleinit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = googleinit.h; sourceTree = "<group>"; };
+		8BC658E0144B76D2004A3DE3 /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		8BC658E4144B7CCD004A3DE3 /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging.h; sourceTree = "<group>"; };
+		8BC658E5144B7CCD004A3DE3 /* raw_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raw_logging.h; sourceTree = "<group>"; };
+		8BC658E6144B7CCD004A3DE3 /* stl_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stl_logging.h; sourceTree = "<group>"; };
+		8BC658E7144B7CCD004A3DE3 /* vlog_is_on.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlog_is_on.h; sourceTree = "<group>"; };
+		8BC658F7144B8098004A3DE3 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../3rdparty/glog/src/config.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8BC658A3144B754B004A3DE3 = {
+			isa = PBXGroup;
+			children = (
+				8BC658B5144B7553004A3DE3 /* Sources */,
+				8BC658AF144B754B004A3DE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC658AF144B754B004A3DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BC658AE144B754B004A3DE3 /* libglog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BC658B5144B7553004A3DE3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8BC658DD144B76D2004A3DE3 /* base */,
+				8BC658B6144B75C9004A3DE3 /* glog */,
+				8BC658F7144B8098004A3DE3 /* config.h */,
+				8BC658BD144B76B1004A3DE3 /* demangle.cc */,
+				8BC658BE144B76B1004A3DE3 /* demangle.h */,
+				8BC658BF144B76B1004A3DE3 /* googletest.h */,
+				8BC658C0144B76B1004A3DE3 /* logging.cc */,
+				8BC658C1144B76B1004A3DE3 /* raw_logging.cc */,
+				8BC658C2144B76B1004A3DE3 /* signalhandler.cc */,
+				8BC658C3144B76B1004A3DE3 /* stacktrace_generic-inl.h */,
+				8BC658C4144B76B1004A3DE3 /* stacktrace_powerpc-inl.h */,
+				8BC658C5144B76B1004A3DE3 /* stacktrace_x86_64-inl.h */,
+				8BC658C6144B76B1004A3DE3 /* stacktrace_x86-inl.h */,
+				8BC658C7144B76B1004A3DE3 /* stacktrace.h */,
+				8BC658C8144B76B1004A3DE3 /* symbolize.cc */,
+				8BC658C9144B76B1004A3DE3 /* symbolize.h */,
+				8BC658CA144B76B1004A3DE3 /* utilities.cc */,
+				8BC658CB144B76B1004A3DE3 /* utilities.h */,
+				8BC658CC144B76B1004A3DE3 /* vlog_is_on.cc */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8BC658B6144B75C9004A3DE3 /* glog */ = {
+			isa = PBXGroup;
+			children = (
+				8BC658B7144B75C9004A3DE3 /* log_severity.h */,
+				8BC658E4144B7CCD004A3DE3 /* logging.h */,
+				8BC658E5144B7CCD004A3DE3 /* raw_logging.h */,
+				8BC658E6144B7CCD004A3DE3 /* stl_logging.h */,
+				8BC658E7144B7CCD004A3DE3 /* vlog_is_on.h */,
+			);
+			name = glog;
+			path = ../../../3rdparty/glog/src/glog;
+			sourceTree = "<group>";
+		};
+		8BC658DD144B76D2004A3DE3 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				8BC658DE144B76D2004A3DE3 /* commandlineflags.h */,
+				8BC658DF144B76D2004A3DE3 /* googleinit.h */,
+				8BC658E0144B76D2004A3DE3 /* mutex.h */,
+			);
+			name = base;
+			path = ../../../3rdparty/glog/src/base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8BC658AC144B754B004A3DE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC658BC144B75C9004A3DE3 /* log_severity.h in Headers */,
+				8BC658E8144B7CCD004A3DE3 /* logging.h in Headers */,
+				8BC658E9144B7CCD004A3DE3 /* raw_logging.h in Headers */,
+				8BC658EA144B7CCD004A3DE3 /* stl_logging.h in Headers */,
+				8BC658EB144B7CCD004A3DE3 /* vlog_is_on.h in Headers */,
+				8BC658CE144B76B1004A3DE3 /* demangle.h in Headers */,
+				8BC658CF144B76B1004A3DE3 /* googletest.h in Headers */,
+				8BC658D3144B76B1004A3DE3 /* stacktrace_generic-inl.h in Headers */,
+				8BC658D4144B76B1004A3DE3 /* stacktrace_powerpc-inl.h in Headers */,
+				8BC658D5144B76B1004A3DE3 /* stacktrace_x86_64-inl.h in Headers */,
+				8BC658D6144B76B1004A3DE3 /* stacktrace_x86-inl.h in Headers */,
+				8BC658D7144B76B1004A3DE3 /* stacktrace.h in Headers */,
+				8BC658D9144B76B1004A3DE3 /* symbolize.h in Headers */,
+				8BC658DB144B76B1004A3DE3 /* utilities.h in Headers */,
+				8BC658E1144B76D2004A3DE3 /* commandlineflags.h in Headers */,
+				8BC658E2144B76D2004A3DE3 /* googleinit.h in Headers */,
+				8BC658E3144B76D2004A3DE3 /* mutex.h in Headers */,
+				8BC658F8144B8098004A3DE3 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8BC658AD144B754B004A3DE3 /* glog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC658B2144B754B004A3DE3 /* Build configuration list for PBXNativeTarget "glog" */;
+			buildPhases = (
+				8BC658AA144B754B004A3DE3 /* Sources */,
+				8BC658AC144B754B004A3DE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glog;
+			productName = glog;
+			productReference = 8BC658AE144B754B004A3DE3 /* libglog.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BC658A5144B754B004A3DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "OnLive, Inc";
+			};
+			buildConfigurationList = 8BC658A8144B754B004A3DE3 /* Build configuration list for PBXProject "glog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BC658A3144B754B004A3DE3;
+			productRefGroup = 8BC658AF144B754B004A3DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC658AD144B754B004A3DE3 /* glog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BC658AA144B754B004A3DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC658CD144B76B1004A3DE3 /* demangle.cc in Sources */,
+				8BC658D0144B76B1004A3DE3 /* logging.cc in Sources */,
+				8BC658D1144B76B1004A3DE3 /* raw_logging.cc in Sources */,
+				8BC658D2144B76B1004A3DE3 /* signalhandler.cc in Sources */,
+				8BC658D8144B76B1004A3DE3 /* symbolize.cc in Sources */,
+				8BC658DA144B76B1004A3DE3 /* utilities.cc in Sources */,
+				8BC658DC144B76B1004A3DE3 /* vlog_is_on.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BC658B0144B754B004A3DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BC658B1144B754B004A3DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BC658B3144B754B004A3DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_LIB_GFLAGS,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../../3rdparty/gflags/src";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BC658B4144B754B004A3DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"HAVE_LIB_GFLAGS=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../../3rdparty/gflags/src";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC658A8144B754B004A3DE3 /* Build configuration list for PBXProject "glog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC658B0144B754B004A3DE3 /* Debug */,
+				8BC658B1144B754B004A3DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC658B2144B754B004A3DE3 /* Build configuration list for PBXNativeTarget "glog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC658B3144B754B004A3DE3 /* Debug */,
+				8BC658B4144B754B004A3DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BC658A5144B754B004A3DE3 /* Project object */;
+}

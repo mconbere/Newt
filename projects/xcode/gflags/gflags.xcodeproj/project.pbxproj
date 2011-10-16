@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BC65894144B7419004A3DE3 /* gflags_completions.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6588F144B7419004A3DE3 /* gflags_completions.cc */; };
+		8BC65895144B7419004A3DE3 /* gflags_reporting.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC65890144B7419004A3DE3 /* gflags_reporting.cc */; };
+		8BC65896144B7419004A3DE3 /* gflags.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8BC65891144B7419004A3DE3 /* gflags.cc */; };
+		8BC65897144B7419004A3DE3 /* mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC65892144B7419004A3DE3 /* mutex.h */; };
+		8BC65898144B7419004A3DE3 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC65893144B7419004A3DE3 /* util.h */; };
+		8BC658A0144B7424004A3DE3 /* gflags.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC6589A144B7424004A3DE3 /* gflags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658A1144B7424004A3DE3 /* gflags_completions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC6589C144B7424004A3DE3 /* gflags_completions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658A2144B7424004A3DE3 /* gflags_declare.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC6589E144B7424004A3DE3 /* gflags_declare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC658F6144B8056004A3DE3 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC658F5144B8056004A3DE3 /* config.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8BC65887144B7407004A3DE3 /* libgflags.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgflags.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC6588F144B7419004A3DE3 /* gflags_completions.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gflags_completions.cc; path = ../../../3rdparty/gflags/src/gflags_completions.cc; sourceTree = "<group>"; };
+		8BC65890144B7419004A3DE3 /* gflags_reporting.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gflags_reporting.cc; path = ../../../3rdparty/gflags/src/gflags_reporting.cc; sourceTree = "<group>"; };
+		8BC65891144B7419004A3DE3 /* gflags.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gflags.cc; path = ../../../3rdparty/gflags/src/gflags.cc; sourceTree = "<group>"; };
+		8BC65892144B7419004A3DE3 /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutex.h; path = ../../../3rdparty/gflags/src/mutex.h; sourceTree = "<group>"; };
+		8BC65893144B7419004A3DE3 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../../3rdparty/gflags/src/util.h; sourceTree = "<group>"; };
+		8BC6589A144B7424004A3DE3 /* gflags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gflags.h; sourceTree = "<group>"; };
+		8BC6589C144B7424004A3DE3 /* gflags_completions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gflags_completions.h; sourceTree = "<group>"; };
+		8BC6589E144B7424004A3DE3 /* gflags_declare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gflags_declare.h; sourceTree = "<group>"; };
+		8BC658F5144B8056004A3DE3 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../3rdparty/gflags/src/config.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8BC6587C144B7407004A3DE3 = {
+			isa = PBXGroup;
+			children = (
+				8BC6588E144B740C004A3DE3 /* Sources */,
+				8BC65888144B7407004A3DE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC65888144B7407004A3DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BC65887144B7407004A3DE3 /* libgflags.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BC6588E144B740C004A3DE3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8BC65899144B7424004A3DE3 /* gflags */,
+				8BC658F5144B8056004A3DE3 /* config.h */,
+				8BC6588F144B7419004A3DE3 /* gflags_completions.cc */,
+				8BC65890144B7419004A3DE3 /* gflags_reporting.cc */,
+				8BC65891144B7419004A3DE3 /* gflags.cc */,
+				8BC65892144B7419004A3DE3 /* mutex.h */,
+				8BC65893144B7419004A3DE3 /* util.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8BC65899144B7424004A3DE3 /* gflags */ = {
+			isa = PBXGroup;
+			children = (
+				8BC6589A144B7424004A3DE3 /* gflags.h */,
+				8BC6589C144B7424004A3DE3 /* gflags_completions.h */,
+				8BC6589E144B7424004A3DE3 /* gflags_declare.h */,
+			);
+			name = gflags;
+			path = ../../../3rdparty/gflags/src/gflags;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8BC65885144B7407004A3DE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC658A0144B7424004A3DE3 /* gflags.h in Headers */,
+				8BC658A1144B7424004A3DE3 /* gflags_completions.h in Headers */,
+				8BC658A2144B7424004A3DE3 /* gflags_declare.h in Headers */,
+				8BC65897144B7419004A3DE3 /* mutex.h in Headers */,
+				8BC65898144B7419004A3DE3 /* util.h in Headers */,
+				8BC658F6144B8056004A3DE3 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8BC65886144B7407004A3DE3 /* gflags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC6588B144B7407004A3DE3 /* Build configuration list for PBXNativeTarget "gflags" */;
+			buildPhases = (
+				8BC65883144B7407004A3DE3 /* Sources */,
+				8BC65885144B7407004A3DE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gflags;
+			productName = gflags;
+			productReference = 8BC65887144B7407004A3DE3 /* libgflags.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BC6587E144B7407004A3DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "OnLive, Inc";
+			};
+			buildConfigurationList = 8BC65881144B7407004A3DE3 /* Build configuration list for PBXProject "gflags" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BC6587C144B7407004A3DE3;
+			productRefGroup = 8BC65888144B7407004A3DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC65886144B7407004A3DE3 /* gflags */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BC65883144B7407004A3DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC65894144B7419004A3DE3 /* gflags_completions.cc in Sources */,
+				8BC65895144B7419004A3DE3 /* gflags_reporting.cc in Sources */,
+				8BC65896144B7419004A3DE3 /* gflags.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BC65889144B7407004A3DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BC6588A144B7407004A3DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BC6588C144B7407004A3DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BC6588D144B7407004A3DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC65881144B7407004A3DE3 /* Build configuration list for PBXProject "gflags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC65889144B7407004A3DE3 /* Debug */,
+				8BC6588A144B7407004A3DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC6588B144B7407004A3DE3 /* Build configuration list for PBXNativeTarget "gflags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC6588C144B7407004A3DE3 /* Debug */,
+				8BC6588D144B7407004A3DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BC6587E144B7407004A3DE3 /* Project object */;
+}

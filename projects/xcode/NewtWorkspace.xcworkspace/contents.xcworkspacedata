@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:glog/glog.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:gflags/gflags.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NewtCommon/NewtCommon.xcodeproj">
    </FileRef>
    <FileRef
