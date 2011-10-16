@@ -758,6 +758,7 @@ void MScene::getCollidingEntityPairs(vector<pair<MOEntity *, MOEntity *> >* pair
 		pair<MOEntity *, MOEntity *> pair;
 		pair.first = (MOEntity *)physics->getUserPointer(objPair.first);
 		pair.second = (MOEntity *)physics->getUserPointer(objPair.second);
+		pairs->push_back(pair);
 	}
 }
 

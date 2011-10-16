@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include <string>
+
 #include "action.h"
 
 namespace newt {
@@ -11,7 +13,9 @@ class Collide : public Action {
  public:
   Collide(Entity* sender, Entity* receiver) : Action(sender, receiver) {}
 
-  virtual const string& Name() const { return "Collide"; }
+  virtual const std::string& Name() const;
+
+  static const std::string& ClassName();
 
  private:
 };

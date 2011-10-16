@@ -32,7 +32,6 @@ void Game::update() {
   
   for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
-    printf("Got collision: %p, %p\n", it->first, it->second);
     it->first->RespondToAction(Collide(it->first, it->second));
   }
 }
@@ -41,8 +40,10 @@ void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<strin
   map<string, string>::const_iterator name = attributes.find("name");
   if (name != attributes.end()) {
     if (name->second == "Player") {
+      printf("making a player!\n");
       new Player(scene_entity, attributes);
     } else if (name->second == "Gem") {
+      printf("making a gem!\n");
       new Gem(scene_entity, attributes);
     }
     // add new else if clauses for new object types. At some point this should be switched to registered class
