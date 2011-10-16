@@ -6,7 +6,7 @@
 #include "MEngine.h"
 
 #include "on-collision-behavior.h"
-#include "newt-game.h"
+#include "game.h"
 
 void StartPlugin() {
   newt::Plugin::GetInstance()->Start();

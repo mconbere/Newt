@@ -536,6 +536,7 @@ bool M_loadLevel(const char * filename, void * data, const bool clearData)
 	for(sceneNode; sceneNode; sceneNode=sceneNode->NextSiblingElement())
 	{
 		MScene * scene = level->addNewScene();
+		engine->getGame()->onCreateScene();
 
 		// clear links
 		g_links.clear();
@@ -684,8 +685,20 @@ bool M_loadLevel(const char * filename, void * data, const bool clearData)
 				meshRef = level->loadMesh(meshFilename, preload);
 			}
 
+			// Newt Addition: Allow a key-value list to be passed to the scene object, named "attributes"
+			// (currently only implemented for Entities)
+			map<string, string> attributes;
+			
+			TiXmlElement * entityAttributes = entityNode->FirstChildElement("attributes");
+			if(entityAttributes) {
+				const TiXmlAttribute * attribute = entityAttributes->FirstAttribute();
+				for(; attribute; attribute=attribute->Next()) {
+					attributes[attribute->Name()] = attribute->Value();
+				}
+			}
+			
 			// create entity
-			MOEntity * entity = scene->addNewEntity(meshRef);
+			MOEntity * entity = scene->addNewEntity(meshRef, attributes);
 			entity->setName(entityName);
 
 			// active

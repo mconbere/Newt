@@ -75,9 +75,9 @@ int main(int argc, char **argv)
 {
 	setlocale(LC_NUMERIC, "C");
 
-	unsigned int width = 1024;
-	unsigned int height = 768;
-	int fullscreen = true;
+	unsigned int width = 640;
+	unsigned int height = 480;
+	int fullscreen = false;
 
 	if(argc > 2)
 		sscanf(argv[2], "%d", &width);
@@ -108,14 +108,13 @@ int main(int argc, char **argv)
 	// window pointer event
 	window->setPointerEvent(windowEvents);
 
-	// load project
-	if(argc > 1)
-    {
-		char filename[256];
-		getGlobalFilename(filename, window->getCurrentDirectory(), argv[1]);
-		maratis->loadProject(filename);
-		engine->getGame()->begin();
-	}
+	string infilename = "project/Newt.mproj";
+	if (argc > 1) infilename = argv[1];
+
+	char filename[256];
+	getGlobalFilename(filename, window->getCurrentDirectory(), infilename.c_str());
+	maratis->loadProject(filename);
+	engine->getGame()->begin();
 
 	// time
 	unsigned int frequency = 60;

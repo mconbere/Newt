@@ -12,6 +12,10 @@ Entity::Entity(MScene* scene, MMeshRef* mesh_ref) {
   SetSceneEntity(scene_entity);
 }
 
+Entity::Entity(MOEntity* entity) {
+  SetSceneEntity(entity);
+}
+
 Entity::~Entity() {}
 
 void Entity::SetSceneEntity(MOEntity* scene_entity) {
