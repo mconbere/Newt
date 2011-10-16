@@ -62,6 +62,7 @@ public:
 	virtual void onBeginLevel(void){}
 	virtual void onEndLevel(void){}
 
+	virtual void onCreateScene(void){}
 	virtual void onBeginScene(void);
 	virtual void onEndScene(void);
 };

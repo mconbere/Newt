@@ -29,6 +29,7 @@
 		8E179A48143999EE0060D173 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A47143999EE0060D173 /* libz.dylib */; };
 		8E179A4B14399A250060D173 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A4914399A250060D173 /* OpenAL.framework */; };
 		8E179A4C14399A250060D173 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E179A4A14399A250060D173 /* OpenGL.framework */; };
+		8E350497144B6EEB004EBFD1 /* project in Resources */ = {isa = PBXBuildFile; fileRef = 8E350496144B6EEB004EBFD1 /* project */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		8E179A47143999EE0060D173 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = SDKs/MacOSX10.6.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		8E179A4914399A250060D173 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
 		8E179A4A14399A250060D173 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		8E350496144B6EEB004EBFD1 /* project */ = {isa = PBXFileReference; lastKnownFileType = folder; name = project; path = ../../../project; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		8E179A1F143998A70060D173 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8E350496144B6EEB004EBFD1 /* project */,
 				8E179A20143998B70060D173 /* font */,
 				8E179A21143998B70060D173 /* gui */,
 			);
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E350497144B6EEB004EBFD1 /* project in Resources */,
 				8E179A0E143998280060D173 /* InfoPlist.strings in Resources */,
 				8E179A22143998B70060D173 /* font in Resources */,
 				8E179A23143998B70060D173 /* gui in Resources */,

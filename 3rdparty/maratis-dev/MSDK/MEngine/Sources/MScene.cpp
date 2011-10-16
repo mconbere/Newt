@@ -35,7 +35,8 @@ MScene::MScene():
 m_dataMode(M_DATA_STATIC),
 m_currentFrame(0),
 m_currentCamera(0),
-m_gravity(0, 0, -0.981f)
+m_gravity(0, 0, -0.981f),
+m_externalSceneRep(NULL)
 {}
 
 MScene::~MScene()
@@ -60,6 +61,7 @@ MOCamera * MScene::addNewCamera(void)
 	MOCamera * newCamera = new MOCamera();
 	m_cameras.push_back(newCamera);
 	m_objects.push_back(newCamera);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewCamera(this, newCamera);
 	return newCamera;
 }
 
@@ -68,6 +70,7 @@ MOCamera * MScene::addNewCamera(const MOCamera & camera)
 	MOCamera * newCamera = new MOCamera(camera);
 	m_cameras.push_back(newCamera);
 	m_objects.push_back(newCamera);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewCamera(this, newCamera);
 	return newCamera;
 }
 
@@ -76,6 +79,7 @@ MOLight * MScene::addNewLight(void)
 	MOLight * newLight = new MOLight();
 	m_lights.push_back(newLight);
 	m_objects.push_back(newLight);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewLight(this, newLight);
 	return newLight;
 }
 
@@ -84,22 +88,25 @@ MOLight * MScene::addNewLight(const MOLight & light)
 	MOLight * newLight = new MOLight(light);
 	m_lights.push_back(newLight);
 	m_objects.push_back(newLight);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewLight(this, newLight);
 	return newLight;
 }
 
-MOEntity * MScene::addNewEntity(MMeshRef * meshRef)
+MOEntity * MScene::addNewEntity(MMeshRef * meshRef, const map<string, string>& attributes)
 {
 	MOEntity * newEntity = new MOEntity(meshRef);
 	m_entities.push_back(newEntity);
 	m_objects.push_back(newEntity);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewEntity(this, newEntity, attributes);
 	return newEntity;
 }
 
-MOEntity * MScene::addNewEntity(const MOEntity & entity)
+MOEntity * MScene::addNewEntity(const MOEntity & entity, const map<string, string>& attributes)
 {
 	MOEntity * newEntity = new MOEntity(entity);
 	m_entities.push_back(newEntity);
 	m_objects.push_back(newEntity);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewEntity(this, newEntity, attributes);
 	return newEntity;
 }
 
@@ -108,6 +115,7 @@ MOSound * MScene::addNewSound(MSoundRef * soundRef)
 	MOSound * newSoundSource = new MOSound(soundRef);
 	m_sounds.push_back(newSoundSource);
 	m_objects.push_back(newSoundSource);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewSound(this, newSoundSource);
 	return newSoundSource;
 }
 
@@ -116,6 +124,7 @@ MOSound * MScene::addNewSound(const MOSound & sound)
 	MOSound * newSoundSource = new MOSound(sound);
 	m_sounds.push_back(newSoundSource);
 	m_objects.push_back(newSoundSource);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewSound(this, newSoundSource);
 	return newSoundSource;
 }
 
@@ -124,6 +133,7 @@ MOText * MScene::addNewText(MFontRef * fontRef)
 	MOText * newText = new MOText(fontRef);
 	m_texts.push_back(newText);
 	m_objects.push_back(newText);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewText(this, newText);
 	return newText;
 }
 
@@ -132,6 +142,7 @@ MOText * MScene::addNewText(const MOText & text)
 	MOText * newText = new MOText(text);
 	m_texts.push_back(newText);
 	m_objects.push_back(newText);
+	if (m_externalSceneRep) m_externalSceneRep->onAddNewText(this, newText);
 	return newText;
 }
 
@@ -490,6 +501,8 @@ void MScene::deleteObject(MObject3d * object)
 					MEngine::getInstance()->getPhysicsContext()->deleteObject(&physics_id);
 				}
 			}
+			
+			if (m_externalSceneRep) m_externalSceneRep->onRemoveEntity(this, (MOEntity *)object);
 		}
 		break;
 
@@ -504,6 +517,8 @@ void MScene::deleteObject(MObject3d * object)
 					break;
 				}
 			}
+
+			if (m_externalSceneRep) m_externalSceneRep->onRemoveCamera(this, (MOCamera *)object);
 		}
 		break;
 
@@ -518,6 +533,8 @@ void MScene::deleteObject(MObject3d * object)
 					break;
 				}
 			}
+			
+			if (m_externalSceneRep) m_externalSceneRep->onRemoveLight(this, (MOLight *)object);
 		}
 		break;
 
@@ -532,6 +549,8 @@ void MScene::deleteObject(MObject3d * object)
 					break;
 				}
 			}
+			
+			if (m_externalSceneRep) m_externalSceneRep->onRemoveSound(this, (MOSound *)object);
 		}
 		break;
 
@@ -546,6 +565,8 @@ void MScene::deleteObject(MObject3d * object)
 					break;
 				}
 			}
+			
+			if (m_externalSceneRep) m_externalSceneRep->onRemoveText(this, (MOText *)object);
 		}
 		break;
 	}

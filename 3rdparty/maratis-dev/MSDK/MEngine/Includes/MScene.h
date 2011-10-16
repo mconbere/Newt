@@ -31,6 +31,25 @@
 #ifndef _M_SCENE_H
 #define _M_SCENE_H
 
+class MExternalSceneRep {
+public:
+	virtual ~MExternalSceneRep() {}
+	
+	virtual void onAddNewCamera(MScene *scene, MOCamera * camera) {}
+	virtual void onRemoveCamera(MScene *scene, MOCamera * camera) {}
+
+	virtual void onAddNewLight(MScene *scene, MOLight * light) {}
+	virtual void onRemoveLight(MScene *scene, MOLight * light) {}
+
+	virtual void onAddNewEntity(MScene *scene, MOEntity * entity, const map<string, string>& attributes) {}
+	virtual void onRemoveEntity(MScene *scene, MOEntity * entity) {}
+
+	virtual void onAddNewSound(MScene *scene, MOSound * sound) {}
+	virtual void onRemoveSound(MScene *scene, MOSound * sound) {}
+
+	virtual void onAddNewText(MScene *scene, MOText * text) {}
+	virtual void onRemoveText(MScene *scene, MOText * text) {}
+};
 
 // data modes
 enum M_DATA_MODES
@@ -78,6 +97,9 @@ private:
 
 	// gravity
 	MVector3 m_gravity;
+	
+	// external scene rep callback
+	MExternalSceneRep * m_externalSceneRep;
 
 public:
 
@@ -109,12 +131,15 @@ public:
 	MOCamera * addNewCamera(const MOCamera & camera);
 	MOLight * addNewLight(void);
 	MOLight * addNewLight(const MOLight & light);
-	MOEntity * addNewEntity(MMeshRef * meshRef);
-	MOEntity * addNewEntity(const MOEntity & entity);
+	MOEntity * addNewEntity(MMeshRef * meshRef, const map<string, string>& attributes = (map<string, string>()));
+	MOEntity * addNewEntity(const MOEntity & entity, const map<string, string>& attributes = (map<string, string>()));
 	MOSound * addNewSound(MSoundRef * soundRef);
 	MOSound * addNewSound(const MOSound & sound);
 	MOText * addNewText(MFontRef * fontRef);
 	MOText * addNewText(const MOText & text);
+
+	// hook object creation for external scene representations
+	void setExternalSceneRep(MExternalSceneRep * scene_rep) { m_externalSceneRep = scene_rep; }
 
 	// get objects number
 	inline unsigned int getObjectsNumber(void){ return m_objects.size(); }
@@ -153,7 +178,7 @@ public:
 	void updatePhysics(void);
 	
 	void getCollidingEntityPairs(vector<pair<MOEntity *, MOEntity *> >* pairs);
-
+	
 	// update
 	void update(void);
 

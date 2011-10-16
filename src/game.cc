@@ -8,26 +8,46 @@
 namespace newt {
 
 Game::Game() {
-  
 }
   
-void Game::update() {
-  // Perform all of the Newt related update logic.
+void Game::onCreateScene() {
+  MGame::onCreateScene();
+
   MEngine* engine = MEngine::getInstance();
   MScene* scene = engine->getLevel()->getCurrentScene();
 
-  vector<pair<MOEntity *, MOEntity *> > pairs;
-  scene->getCollidingEntityPairs(&pairs);
+  scene->setExternalSceneRep(this);
+}
+
+void Game::update() {
+  // First, call the original update method.
+  MGame::update();
+
+  vector<pair<Entity *, Entity *> > pairs;
+  GetCollidingEntityPairs(&pairs);
   
-  for (vector<pair<MOEntity *, MOEntity *> >::iterator it = pairs.begin();
+  for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
     printf("Got collision: %p, %p\n", it->first, it->second);
   }
-
-  // Finally, call the original update method.
-  MGame::update();
 }
-  
+
+void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<string, string>& attributes) {
+  printf("Adding object Entity %p with attributes:\n", scene_entity);
+  for (map<string, string>::const_iterator it = attributes.begin(); it != attributes.end(); ++it) {
+    printf("  %s: %s\n", it->first.c_str(), it->second.c_str());
+  }
+  new Entity(scene_entity);
+}
+
+void Game::onRemoveEntity(MScene* scene, MOEntity* scene_entity) {
+  // TODO(mconbere): I'm not sure what the use of this will be, but it seemed
+  // smart to add it while I was in the scene code. I can't hurt, and will
+  // probably come in handy
+  Entity* entity = Entity::FromSceneEntity(scene_entity);
+  (void)entity;
+}
+
 void Game::GetCollidingEntityPairs(vector<pair<Entity*, Entity*> >* pairs) {
   if (!pairs) return;
 
