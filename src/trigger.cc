@@ -20,6 +20,21 @@ void Trigger::AddEntity(const void* entity) {
   UpdateListeners();
 }
 
+void Trigger::RemoveEntity(const void* entity) {
+#ifdef DEBUG
+  assert(total_ == entities_.size());
+  assert(active_entities_.erase(entity) == 0);
+  assert(entities_.erase(entity) == 1);
+#else
+  (void) entity;
+#endif
+  --total_;
+  UpdateListeners();
+  if (total_ == 0) {
+    delete this;
+  }
+}
+
 void Trigger::Activate(const void* entity) {
 #ifdef DEBUG
   assert(entities_.find(entity) != entities_.end());

@@ -17,7 +17,7 @@ class TriggerListener {
   virtual void OnTriggerUpdate(const Trigger& t) = 0;
 };
   
-class Trigger : public Refcount {
+class Trigger {
  public:
   Trigger();
 
