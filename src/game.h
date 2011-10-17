@@ -17,7 +17,7 @@ public:
   virtual void onCreateScene();
   virtual void onAddNewEntity(MScene* scene, MOEntity* entity, const map<string, string>& attributes);
   virtual void onRemoveEntity(MScene* scene, MOEntity* entity);
-  
+
   void GetCollidingEntityPairs(vector<pair<Entity*, Entity*> >* pairs);
 };
   

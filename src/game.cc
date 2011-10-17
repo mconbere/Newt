@@ -11,10 +11,12 @@ namespace newt {
 
 Game::Game() {
 }
-  
+
 void Game::onCreateScene() {
   MGame::onCreateScene();
 
+  // Before the scene has objects added, inject ourselves as the callback object
+  // for entity creation.
   MEngine* engine = MEngine::getInstance();
   MScene* scene = engine->getLevel()->getCurrentScene();
 
@@ -27,7 +29,7 @@ void Game::update() {
 
   vector<pair<Entity *, Entity *> > pairs;
   GetCollidingEntityPairs(&pairs);
-  
+
   for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
     // Every action has an equal and opposite reaction. Call collision in
@@ -35,20 +37,22 @@ void Game::update() {
     it->first->CollideWith(it->second);
     it->second->CollideWith(it->first);
   }
-  
+
   // Clean up removed objects
   MEngine* engine = MEngine::getInstance();
   MScene* scene = engine->getLevel()->getCurrentScene();
   size_t entities_count = scene->getEntitiesNumber();
   for (size_t i = 0; i < entities_count; ++i) {
-    Entity* entity = Entity::FromSceneEntity(scene->getEntityByIndex((unsigned int)i));
+    Entity* entity =
+        Entity::FromSceneEntity(scene->getEntityByIndex((unsigned int)i));
     if (entity && entity->ShouldRemoveAtEndOfUpdate()) {
       scene->deleteObject(scene->getEntityByIndex((unsigned int)i));
     }
   }
 }
 
-void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<string, string>& attributes) {
+void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity,
+                          const map<string, string>& attributes) {
   map<string, string>::const_iterator name = attributes.find("name");
   if (name != attributes.end()) {
     if (name->second == "Player") {
@@ -56,8 +60,8 @@ void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<strin
     } else if (name->second == "Gem") {
       new Gem(scene_entity, attributes);
     }
-    // add new else if clauses for new object types. At some point this should be switched to registered class
-    // logic.
+    // add new else if clauses for new object types. At some point this should
+    // be switched to registered class logic.
   } else {
     // Make a default base entity for all other object. The default object
     // doesn't currently do anything, and if it's problematic in the future
@@ -67,11 +71,9 @@ void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<strin
 }
 
 void Game::onRemoveEntity(MScene* scene, MOEntity* scene_entity) {
-  // TODO(mconbere): I'm not sure what the use of this will be, but it seemed
-  // smart to add it while I was in the scene code. I can't hurt, and will
-  // probably come in handy
   Entity* entity = Entity::FromSceneEntity(scene_entity);
-  (void)entity;
+  delete entity;
+  scene_entity->setUserPointer(NULL);
 }
 
 void Game::GetCollidingEntityPairs(vector<pair<Entity*, Entity*> >* pairs) {
