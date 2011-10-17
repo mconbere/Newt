@@ -30,6 +30,8 @@ void Game::update() {
   
   for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
+    // Every action has an equal and opposite reaction. Call collision in
+    // both directions.
     it->first->CollideWith(it->second);
     it->second->CollideWith(it->first);
   }
@@ -57,7 +59,9 @@ void Game::onAddNewEntity(MScene* scene, MOEntity* scene_entity, const map<strin
     // add new else if clauses for new object types. At some point this should be switched to registered class
     // logic.
   } else {
-    // Make a default base entity for all other object
+    // Make a default base entity for all other object. The default object
+    // doesn't currently do anything, and if it's problematic in the future
+    // it can be removed.
     new Entity(scene_entity, attributes);
   }
 }
@@ -83,7 +87,9 @@ void Game::GetCollidingEntityPairs(vector<pair<Entity*, Entity*> >* pairs) {
        scene_entity_pairs.begin(); it != scene_entity_pairs.end(); ++it) {
     Entity* first = Entity::FromSceneEntity(it->first);
     Entity* second = Entity::FromSceneEntity(it->second);
-    pairs->push_back(pair<Entity*, Entity*>(first, second));
+    if (first && second) {
+      pairs->push_back(pair<Entity*, Entity*>(first, second));
+    }
   }
 }
 
