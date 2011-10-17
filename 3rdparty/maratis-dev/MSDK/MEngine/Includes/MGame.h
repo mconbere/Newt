@@ -62,7 +62,11 @@ public:
 	virtual void onBeginLevel(void){}
 	virtual void onEndLevel(void){}
 
+	// Actions to perform before anything in the scene is initialized. Useful for
+	// setting up callback objects on the current scene to modify scene creation
+	// behavior.
 	virtual void onCreateScene(void){}
+
 	virtual void onBeginScene(void);
 	virtual void onEndScene(void);
 };
