@@ -15,7 +15,9 @@ Gem::Gem(MOEntity* entity, const map<string, string>& attributes)
 bool Gem::CollideWith(Entity* entity) {
   if (entity->ReceiveInventory(inventory_)) {
     inventory_.Clear();
+    RemoveAtEndOfUpdate();
   }
+  return true;
 }
 
 }  // namespace newt

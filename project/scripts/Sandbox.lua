@@ -10,17 +10,6 @@ end
 function onSceneUpdate()
 	coll = getNumCollisions(Feet)
 
-	for key, obj in pairs(Gems) do
-		if isCollisionBetween(Player, obj) then
-			deleteObject(obj)
-			table.remove(Gems, key)
-		end
-	end
-
-	if isKeyPressed("F") then
-		asdf()
-	end
-
 	move = 0
 	if coll > 1 then
 		if isKeyPressed("LEFT")  then
