@@ -8,7 +8,9 @@ using namespace std;
 namespace newt {
 
 Gem::Gem(MOEntity* entity, const map<string, string>& attributes)
-    : Entity(entity, attributes) {}
+    : Entity(entity, attributes) {
+  inventory_.AddItem("gem", 1);
+}
   
 bool Gem::CollideWith(Entity* entity) {
   if (entity->ReceiveInventory(inventory_)) {

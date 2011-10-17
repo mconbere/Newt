@@ -31,6 +31,7 @@ void Game::update() {
   for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
     it->first->CollideWith(it->second);
+    it->second->CollideWith(it->first);
   }
   
   // Clean up removed objects

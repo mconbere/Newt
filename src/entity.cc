@@ -7,7 +7,8 @@
 
 namespace newt {
 
-Entity::Entity(MOEntity* entity, const map<string, string>& attributes) {
+Entity::Entity(MOEntity* entity, const map<string, string>& attributes)
+    : remove_at_end_of_update_(false) {
   SetSceneEntity(entity);
 }
 
