@@ -3,8 +3,6 @@
 
 #include "gem.h"
 
-#include "action.h"
-
 using namespace std;
 
 namespace newt {
@@ -12,13 +10,10 @@ namespace newt {
 Gem::Gem(MOEntity* entity, const map<string, string>& attributes)
     : Entity(entity, attributes) {}
   
-bool Gem::RespondToAction(const Action& action) {
-  if (action.Name() == "Collide") {
-    printf("Gem collision between %p and %p responded to\n", action.Sender(), action.Receiver());
-    return true;
+bool Gem::CollideWith(Entity* entity) {
+  if (entity->ReceiveInventory(inventory_)) {
+    inventory_.Clear();
   }
-  
-  return Entity::RespondToAction(action);
 }
 
 }  // namespace newt

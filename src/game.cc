@@ -6,8 +6,6 @@
 #include "entity.h"
 #include "player.h"
 #include "gem.h"
-#include "action.h"
-#include "collide.h"
 
 namespace newt {
 
@@ -32,7 +30,18 @@ void Game::update() {
   
   for (vector<pair<Entity *, Entity *> >::iterator it = pairs.begin();
        it != pairs.end(); ++it) {
-    it->first->RespondToAction(Collide(it->first, it->second));
+    it->first->CollideWith(it->second);
+  }
+  
+  // Clean up removed objects
+  MEngine* engine = MEngine::getInstance();
+  MScene* scene = engine->getLevel()->getCurrentScene();
+  size_t entities_count = scene->getEntitiesNumber();
+  for (size_t i = 0; i < entities_count; ++i) {
+    Entity* entity = Entity::FromSceneEntity(scene->getEntityByIndex((unsigned int)i));
+    if (entity && entity->ShouldRemoveAtEndOfUpdate()) {
+      scene->deleteObject(scene->getEntityByIndex((unsigned int)i));
+    }
   }
 }
 

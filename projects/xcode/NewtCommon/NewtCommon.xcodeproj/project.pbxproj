@@ -17,12 +17,10 @@
 		8E0F0E7B144546AD0051C03B /* entity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0E79144546AC0051C03B /* entity.h */; };
 		8E35049B144B85D8004EBFD1 /* player.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E350499144B85D8004EBFD1 /* player.cc */; };
 		8E35049C144B85D8004EBFD1 /* player.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E35049A144B85D8004EBFD1 /* player.h */; };
-		8E3504A1144B8E37004EBFD1 /* action.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E35049D144B8E37004EBFD1 /* action.cc */; };
-		8E3504A2144B8E37004EBFD1 /* action.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E35049E144B8E37004EBFD1 /* action.h */; };
-		8E3504A3144B8E37004EBFD1 /* collide.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E35049F144B8E37004EBFD1 /* collide.cc */; };
-		8E3504A4144B8E37004EBFD1 /* collide.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3504A0144B8E37004EBFD1 /* collide.h */; };
 		8E3504A7144B9363004EBFD1 /* gem.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E3504A5144B9363004EBFD1 /* gem.cc */; };
 		8E3504A8144B9363004EBFD1 /* gem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3504A6144B9363004EBFD1 /* gem.h */; };
+		8E76EF56144BA800006DE492 /* inventory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E76EF54144BA800006DE492 /* inventory.cc */; };
+		8E76EF57144BA800006DE492 /* inventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E76EF55144BA800006DE492 /* inventory.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +35,10 @@
 		8E0F0E79144546AC0051C03B /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
 		8E350499144B85D8004EBFD1 /* player.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cc; sourceTree = "<group>"; };
 		8E35049A144B85D8004EBFD1 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
-		8E35049D144B8E37004EBFD1 /* action.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = action.cc; sourceTree = "<group>"; };
-		8E35049E144B8E37004EBFD1 /* action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = action.h; sourceTree = "<group>"; };
-		8E35049F144B8E37004EBFD1 /* collide.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = collide.cc; sourceTree = "<group>"; };
-		8E3504A0144B8E37004EBFD1 /* collide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collide.h; sourceTree = "<group>"; };
 		8E3504A5144B9363004EBFD1 /* gem.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gem.cc; sourceTree = "<group>"; };
 		8E3504A6144B9363004EBFD1 /* gem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gem.h; sourceTree = "<group>"; };
+		8E76EF54144BA800006DE492 /* inventory.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inventory.cc; sourceTree = "<group>"; };
+		8E76EF55144BA800006DE492 /* inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inventory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +81,6 @@
 			children = (
 				8E3504A5144B9363004EBFD1 /* gem.cc */,
 				8E3504A6144B9363004EBFD1 /* gem.h */,
-				8E35049D144B8E37004EBFD1 /* action.cc */,
-				8E35049E144B8E37004EBFD1 /* action.h */,
-				8E35049F144B8E37004EBFD1 /* collide.cc */,
-				8E3504A0144B8E37004EBFD1 /* collide.h */,
 				8E350499144B85D8004EBFD1 /* player.cc */,
 				8E35049A144B85D8004EBFD1 /* player.h */,
 				8E0F0E78144546AC0051C03B /* entity.cc */,
@@ -99,6 +91,8 @@
 				8E0F0DF91442BE980051C03B /* on-collision-behavior.h */,
 				8E0F0DFA1442BE980051C03B /* plugin.cc */,
 				8E0F0DFB1442BE980051C03B /* plugin.h */,
+				8E76EF54144BA800006DE492 /* inventory.cc */,
+				8E76EF55144BA800006DE492 /* inventory.h */,
 			);
 			name = src;
 			path = ../../../src;
@@ -116,9 +110,8 @@
 				8E0F0E761444138A0051C03B /* game.h in Headers */,
 				8E0F0E7B144546AD0051C03B /* entity.h in Headers */,
 				8E35049C144B85D8004EBFD1 /* player.h in Headers */,
-				8E3504A2144B8E37004EBFD1 /* action.h in Headers */,
-				8E3504A4144B8E37004EBFD1 /* collide.h in Headers */,
 				8E3504A8144B9363004EBFD1 /* gem.h in Headers */,
+				8E76EF57144BA800006DE492 /* inventory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +170,8 @@
 				8E0F0E751444138A0051C03B /* game.cc in Sources */,
 				8E0F0E7A144546AD0051C03B /* entity.cc in Sources */,
 				8E35049B144B85D8004EBFD1 /* player.cc in Sources */,
-				8E3504A1144B8E37004EBFD1 /* action.cc in Sources */,
-				8E3504A3144B8E37004EBFD1 /* collide.cc in Sources */,
 				8E3504A7144B9363004EBFD1 /* gem.cc in Sources */,
+				8E76EF56144BA800006DE492 /* inventory.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

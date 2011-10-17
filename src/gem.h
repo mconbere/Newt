@@ -7,6 +7,7 @@
 #include <string>
 
 #include "entity.h"
+#include "inventory.h"
 
 class MOEntity;
 
@@ -16,7 +17,10 @@ class Gem : public Entity {
  public:
   Gem(MOEntity* entity, const std::map<std::string, std::string>& attributes);
   
-  virtual bool RespondToAction(const Action& action);
+  virtual bool CollideWith(Entity* entity);
+
+ private:
+  Inventory inventory_;
 };
 
 }  // namespace newt
