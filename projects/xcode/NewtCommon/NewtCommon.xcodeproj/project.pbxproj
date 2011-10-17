@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B4E9767144BB38F00AA25AA /* trigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4E9766144BB38F00AA25AA /* trigger.h */; };
+		8B4E976A144BB3CA00AA25AA /* trigger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8B4E9769144BB3CA00AA25AA /* trigger.cc */; };
+		8B4E976C144BB43400AA25AA /* refcount.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4E976B144BB43400AA25AA /* refcount.h */; };
 		8E0F0DFC1442BE980051C03B /* on-collision-behavior.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F0DF81442BE980051C03B /* on-collision-behavior.cc */; };
 		8E0F0DFD1442BE980051C03B /* on-collision-behavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0F0DF91442BE980051C03B /* on-collision-behavior.h */; };
 		8E0F0DFE1442BE980051C03B /* plugin.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F0DFA1442BE980051C03B /* plugin.cc */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B4E9766144BB38F00AA25AA /* trigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trigger.h; sourceTree = "<group>"; };
+		8B4E9769144BB3CA00AA25AA /* trigger.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trigger.cc; sourceTree = "<group>"; };
+		8B4E976B144BB43400AA25AA /* refcount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refcount.h; sourceTree = "<group>"; };
 		8E0F0DEF1442BE7D0051C03B /* libNewtCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNewtCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0F0DF81442BE980051C03B /* on-collision-behavior.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "on-collision-behavior.cc"; sourceTree = "<group>"; };
 		8E0F0DF91442BE980051C03B /* on-collision-behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "on-collision-behavior.h"; sourceTree = "<group>"; };
@@ -91,6 +97,9 @@
 				8E0F0DF91442BE980051C03B /* on-collision-behavior.h */,
 				8E0F0DFA1442BE980051C03B /* plugin.cc */,
 				8E0F0DFB1442BE980051C03B /* plugin.h */,
+				8B4E9766144BB38F00AA25AA /* trigger.h */,
+				8B4E9769144BB3CA00AA25AA /* trigger.cc */,
+				8B4E976B144BB43400AA25AA /* refcount.h */,
 				8E76EF54144BA800006DE492 /* inventory.cc */,
 				8E76EF55144BA800006DE492 /* inventory.h */,
 			);
@@ -112,6 +121,8 @@
 				8E35049C144B85D8004EBFD1 /* player.h in Headers */,
 				8E3504A8144B9363004EBFD1 /* gem.h in Headers */,
 				8E76EF57144BA800006DE492 /* inventory.h in Headers */,
+				8B4E9767144BB38F00AA25AA /* trigger.h in Headers */,
+				8B4E976C144BB43400AA25AA /* refcount.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +183,7 @@
 				8E35049B144B85D8004EBFD1 /* player.cc in Sources */,
 				8E3504A7144B9363004EBFD1 /* gem.cc in Sources */,
 				8E76EF56144BA800006DE492 /* inventory.cc in Sources */,
+				8B4E976A144BB3CA00AA25AA /* trigger.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
