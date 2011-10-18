@@ -3,8 +3,21 @@
 
 #pragma once
 
+class MMeshRef;
+class MScene;
+
 namespace newt {
 
-void AddRoomsToLevel();
+class MapGen {
+ public:
+  MapGen() {}
+
+  void SetRoom(MMeshRef* room_mesh) { room_mesh_ = room_mesh; }
+
+  bool CreateScene(MScene* scene);
+
+ private:
+  MMeshRef* room_mesh_;
+};
 
 }  // namespace newt

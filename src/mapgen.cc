@@ -122,42 +122,39 @@ void CalculatePositions(const Room map[], int room,
                        make_pair(pos.first+1, pos.second), seen, positions);
 }
 
-void CreateRooms(const Room *map, MLevel* level) {
-  static const char room_filename[] = "project/meshs/simple-room.mesh";
+void CreateRoom(const std::pair<int, int>& location, int number,
+                MMeshRef* room_mesh, MScene* scene) {
+  char name[10];
+  snprintf(name, sizeof(name), "room.%d", number);
+  
+  MOEntity* entity =
+  scene->addNewEntity(room_mesh, std::map<std::string, std::string>());
+  entity->setName(name);
+  entity->setActive(true);
+  entity->setInvisible(false);
+  *entity->getBoundingBox() = *room_mesh->getMesh()->getBoundingBox();
+  entity->setPosition(MVector3(location.first * 100.0,
+                               location.second * 100.0, 0.0));
+  entity->setScale(MVector3(1.0, 1.0, 1.0));
+  MPhysicsProperties* physics_props = entity->createPhysicsProperties();
+  physics_props->setCollisionShape(M_COLLISION_SHAPE_TRIANGLE_MESH);
+}
 
+void CreateRooms(const Room *map, MMeshRef* room_mesh, MScene* scene) {
   std::set<int> seen;
   std::map<std::pair<int, int>, int> positions;
   CalculatePositions(map, 0, make_pair(0, 0), &seen, &positions);
 
-  MScene* scene = level->getCurrentScene();
   for (std::map<std::pair<int, int>, int>::const_iterator it =
        positions.begin(); it != positions.end(); ++it) {
-    const std::pair<int, int>& loc = it->first;
-    const Room& room = map[it->second];
-
-    char name[10];
-    snprintf(name, sizeof(name), "room.%d", it->second);
-
-    MMeshRef* room_mesh = level->loadMesh(room_filename, true /* preload */);
-    
-    MOEntity* entity =
-        scene->addNewEntity(room_mesh, std::map<std::string, std::string>());
-    entity->setName(name);
-    entity->setActive(true);
-    entity->setInvisible(false);
-    *entity->getBoundingBox() = *room_mesh->getMesh()->getBoundingBox();
-    entity->setPosition(MVector3(loc.first * 100.0, loc.second * 100.0, 0.0));
-    entity->setScale(MVector3(1.0, 1.0, 1.0));
-    MPhysicsProperties* physics_props = entity->createPhysicsProperties();
-    physics_props->setCollisionShape(M_COLLISION_SHAPE_TRIANGLE_MESH);
-
+    CreateRoom(it->first, it->second, room_mesh, scene);
     // TODO(bmclarnon): Add door meshes as well.
   }
 }
 
 }  // namespace
 
-void AddRoomsToLevel() {
+bool MapGen::CreateScene(MScene* scene) {
   /*
    0--1--2
    |     |
@@ -186,8 +183,10 @@ void AddRoomsToLevel() {
   Room map[10];
   GenerateRooms(fixed, sizeof(fixed)/sizeof(Room), sizeof(map)/sizeof(Room),
                 map);
-
-  CreateRooms(map, MEngine::getInstance()->getLevel());
+  
+  CreateRooms(map, room_mesh_, scene);
+  
+  return true;
 }
   
 }  // namespace newt

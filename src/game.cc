@@ -19,12 +19,17 @@ void Game::onCreateScene() {
   // Before the scene has objects added, inject ourselves as the callback object
   // for entity creation.
   MEngine* engine = MEngine::getInstance();
-  MScene* scene = engine->getLevel()->getCurrentScene();
+  MLevel* level = engine->getLevel();
+  MScene* scene = level->getCurrentScene();
 
   scene->setExternalSceneRep(this);
 
+  MMeshRef* room = level->loadMesh("project/meshs/simple-room.mesh", true /* preload */);
+  
   // Add new objects to the created scene
-  AddRoomsToLevel();
+  MapGen map_gen;
+  map_gen.SetRoom(room);
+  map_gen.CreateScene(scene);
 }
 
 void Game::update() {
