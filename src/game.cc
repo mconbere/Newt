@@ -23,6 +23,7 @@ void Game::onCreateScene() {
 
   scene->setExternalSceneRep(this);
 
+  // Add new objects to the created scene
   AddRoomsToLevel();
 }
 

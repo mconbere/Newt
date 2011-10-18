@@ -139,13 +139,13 @@ void CreateRooms(const Room *map, MLevel* level) {
     snprintf(name, sizeof(name), "room.%d", it->second);
 
     MMeshRef* room_mesh = level->loadMesh(room_filename, true /* preload */);
+    
     MOEntity* entity =
         scene->addNewEntity(room_mesh, std::map<std::string, std::string>());
     entity->setName(name);
     entity->setActive(true);
     entity->setInvisible(false);
-    *entity->getBoundingBox()->getMin() = MVector3(-50.0, -50.0, 0.0);
-    *entity->getBoundingBox()->getMax() = MVector3(50.0, 50.0, 30.0);
+    *entity->getBoundingBox() = *room_mesh->getMesh()->getBoundingBox();
     entity->setPosition(MVector3(loc.first * 100.0, loc.second * 100.0, 0.0));
     entity->setScale(MVector3(1.0, 1.0, 1.0));
     MPhysicsProperties* physics_props = entity->createPhysicsProperties();
