@@ -4,6 +4,7 @@
 #include "game.h"
 
 #include "entity.h"
+#include "mapgen.h"
 #include "player.h"
 #include "gem.h"
 
@@ -19,6 +20,8 @@ void Game::onCreateScene() {
   MScene* scene = engine->getLevel()->getCurrentScene();
 
   scene->setExternalSceneRep(this);
+
+  AddRoomsToLevel();
 }
 
 void Game::update() {

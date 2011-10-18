@@ -14,7 +14,7 @@
 		<Light name="Light0">
 			<active value="true" />
 			<transform 
-				position="50.439373 0.000000 68.110901"
+				position="0.000000 0.000000 25.564388"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
@@ -23,112 +23,13 @@
 				intensity="1.000000"
 				spotAngle="180.000000"
 				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light1">
-			<active value="true" />
-			<transform 
-				position="-120.524292 0.000000 74.458832"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light2">
-			<active value="true" />
-			<transform 
-				position="177.077881 0.000000 68.110901"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light3">
-			<active value="true" />
-			<transform 
-				position="-250.729233 0.000000 68.110901"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light4">
-			<active value="true" />
-			<transform 
-				position="-645.596680 0.000000 68.110901"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light5">
-			<active value="true" />
-			<transform 
-				position="-518.958130 0.000000 68.110901"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light6">
-			<active value="true" />
-			<transform 
-				position="-373.474670 0.000000 74.458832"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light7">
-			<active value="true" />
-			<transform 
-				parent="Camera0"
-				position="-0.000000 0.000096 0.000042"
-				rotation="0.000044 7.407083 89.999947"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="200.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="45.000000"
-				spotExponent="0.100000"
 				shadow="false" />
 		</Light>
 		<Camera name="Camera0">
 			<active value="true" />
 			<transform 
-				position="-82.969910 0.756854 26.186455"
-				rotation="71.303047 -0.000009 -89.999992"
+				position="-20.000008 0.756854 26.186455"
+				rotation="71.303040 -0.000005 -90.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				clearColor="0.200000 0.300000 0.400000"
@@ -150,27 +51,6 @@
 					local="true" />
 			</Behavior>
 		</Camera>
-		<Entity name="Temple" file="../meshs/temple.mesh">
-			<BoundingBox min="-82.634369 -25.795452 0.994312" max="80.871910 25.453894 42.512367" />
-			<anim id="0" />
-			<active value="true" />
-			<transform 
-				position="-0.665533 0.213725 -0.187743"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="3.000000 3.000000 3.000000" />
-			<properties 
-				invisible="false" />
-			<physics 
-				shape="TriangleMesh"
-				ghost="false"
-				mass="0.000000"
-				friction="0.500000"
-				restitution="0.000000"
-				linearDamping="0.010000"
-				angularDamping="0.010000"
-				angularFactor="1.000000"
-				linearFactor="1.000000 1.000000 1.000000" />
-		</Entity>
 		<Entity name="Jules" file="../meshs/Jules.mesh">
 			<BoundingBox min="-4.696569 -4.532283 -0.121014" max="4.693012 4.184887 14.800740" />
 			<anim id="0" />
@@ -210,7 +90,7 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="-62.969872 0.756854 14.186463"
+				position="0.000000 0.756854 14.186463"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.500000" />
 			<properties 
@@ -241,27 +121,6 @@
 			<physics 
 				shape="Box"
 				ghost="true"
-				mass="0.000000"
-				friction="0.500000"
-				restitution="0.000000"
-				linearDamping="0.010000"
-				angularDamping="0.010000"
-				angularFactor="1.000000"
-				linearFactor="1.000000 1.000000 1.000000" />
-		</Entity>
-		<Entity name="Temple2" file="../meshs/temple.mesh">
-			<BoundingBox min="-82.634369 -25.795452 0.994312" max="80.871910 25.453894 42.512367" />
-			<anim id="0" />
-			<active value="true" />
-			<transform 
-				position="-473.649353 0.028241 -0.000399"
-				rotation="0.000000 -0.000000 180.000000"
-				scale="3.000000 3.000000 3.000000" />
-			<properties 
-				invisible="false" />
-			<physics 
-				shape="TriangleMesh"
-				ghost="false"
 				mass="0.000000"
 				friction="0.500000"
 				restitution="0.000000"
