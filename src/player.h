@@ -18,7 +18,7 @@ class Player : public Entity {
   Player(MOEntity* entity, const std::map<std::string, std::string>& attributes);
   
   virtual bool CollideWith(Entity* entity);
-  virtual bool ReceiveInventory(const Inventory& inventory);
+  virtual bool ReceiveInventory(Inventory* inventory);
 
  private:
   Inventory inventory_;

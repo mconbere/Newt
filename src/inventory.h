@@ -13,8 +13,7 @@ namespace newt {
     void AddItem(const std::string& item, int count);
     void AddInventory(const Inventory& other_inventory);
     void Clear();
-    // TODO(mconbere): implement this while not on a bus
-    //bool IsEmpty() { return items_map_.empty(); }
+    bool IsEmpty() { return items_map_.empty(); }
 
     // Hacky interface to see items
     const std::map<std::string, int>& ItemsMap() const { return items_map_; }

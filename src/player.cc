@@ -3,6 +3,8 @@
 
 #include "player.h"
 
+#include "entity.h"
+
 using namespace std;
 
 namespace newt {
@@ -14,14 +16,17 @@ bool Player::CollideWith(Entity* entity) {
   return true;
 }
 
-bool Player::ReceiveInventory(const Inventory& inventory) {
-  inventory_.AddInventory(inventory);
-  
+bool Player::ReceiveInventory(Inventory* inventory) {
+  // Accept the entire inventory.
+  inventory_.AddInventory(*inventory);
+  inventory->Clear();
+
   printf("Player inventory updated:\n");
   for (map<string, int>::const_iterator it = inventory_.ItemsMap().begin();
        it != inventory_.ItemsMap().end(); ++it) {
     printf("  %s: %d\n", it->first.c_str(), it->second);
   }
+
   return true;
 }
 

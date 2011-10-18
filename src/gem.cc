@@ -13,10 +13,12 @@ Gem::Gem(MOEntity* entity, const map<string, string>& attributes)
 }
   
 bool Gem::CollideWith(Entity* entity) {
-  if (entity->ReceiveInventory(inventory_)) {
-    inventory_.Clear();
+  entity->ReceiveInventory(&inventory_);
+
+  if (inventory_.IsEmpty()) {
     RemoveAtEndOfUpdate();
   }
+
   return true;
 }
 

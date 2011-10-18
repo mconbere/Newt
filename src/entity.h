@@ -26,7 +26,7 @@ class Entity {
 
   // Actions
   virtual bool CollideWith(Entity* entity) { return false; }
-  virtual bool ReceiveInventory(const Inventory& inventory) { return false; }
+  virtual bool ReceiveInventory(Inventory* inventory) { return false; }
 
   void RemoveAtEndOfUpdate() { remove_at_end_of_update_ = true; }
   void CancelRemoveAtEndOfUpdate() { remove_at_end_of_update_ = false; }
