@@ -659,11 +659,79 @@
 			Name="Newt"
 			>
 			<File
+				RelativePath="..\..\..\..\src\entity.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\entity.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\game.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\game.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\gem.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\gem.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\inventory.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\inventory.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\mapgen.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\mapgen.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\on-collision-behavior.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\on-collision-behavior.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\player.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\player.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\src\plugin.cc"
 				>
 			</File>
 			<File
 				RelativePath="..\..\..\..\src\plugin.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\refcount.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\trigger.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\trigger.h"
 				>
 			</File>
 		</Filter>

@@ -4,13 +4,20 @@
 #include "mapgen.h"
 
 #include <cstdlib>
+#include <cstdio>
+#include <ctime>
 #include <list>
 #include <map>
 #include <set>
 #include <utility>
+#include <vector>
 
 #include "MEngine.h"
 #include "MWindow.h"
+
+#ifdef WIN32
+#define snprintf _snprintf
+#endif
 
 namespace newt {
 namespace {
@@ -28,7 +35,7 @@ struct Room {
 };
 
 // adds the doors of a room in a random order.
-void AddDoors(const Room input[], const int mapping[], int room,
+void AddDoors(const Room input[], const std::vector<int> mapping, int room,
               std::list<int>* edges) {
   // Generate a random permutation of [0 1 2 3].
   int order[4];
@@ -49,14 +56,13 @@ void AddDoors(const Room input[], const int mapping[], int room,
 
 void GenerateRooms(const Room input[], int insize, int outsize, Room output[]) {
   static const int skip = 60; // percentage chance of skipping an edge
-  int mapping[insize];
+  std::vector<int> mapping(insize, -1);
   std::list<int> edges;
   
   if (insize < outsize) {
     return;
   }
   
-  memset(mapping, -1, sizeof(mapping));
   memset(output, -1, outsize*sizeof(Room));
   
   // Pick a random starting room and add it to our map.
@@ -128,7 +134,7 @@ void CreateRoom(const std::pair<int, int>& location, int number,
   snprintf(name, sizeof(name), "room.%d", number);
   
   MOEntity* entity =
-  scene->addNewEntity(room_mesh, std::map<std::string, std::string>());
+      scene->addNewEntity(room_mesh, std::map<std::string, std::string>());
   entity->setName(name);
   entity->setActive(true);
   entity->setInvisible(false);

@@ -24,7 +24,11 @@ void Game::onCreateScene() {
 
   scene->setExternalSceneRep(this);
 
-  MMeshRef* room = level->loadMesh("project/meshs/simple-room.mesh", true /* preload */);
+  char globalFilename[256];
+  getGlobalFilename(globalFilename,
+                    engine->getSystemContext()->getWorkingDirectory(),
+                    "meshs/simple-room.mesh");
+  MMeshRef* room = level->loadMesh(globalFilename, true /* preload */);
   
   // Add new objects to the created scene
   MapGen map_gen;

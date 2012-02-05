@@ -42,7 +42,7 @@
 				Optimization="0"
 				InlineFunctionExpansion="0"
 				AdditionalIncludeDirectories="..\..\MSDK\MCore\Includes;..\..\MSDK\MEngine\Includes;..\..\MSDK\MGui\Includes;..\..\Maratis\Common;..\..\..\..\3rdparty\tinyxml;..\..\..\..\3rdparty\lua;..\..\..\..\3rdparty\openal\include;..\..\..\..\3rdparty\devil;..\..\..\..\3rdparty\glee;..\..\..\..\3rdparty\libsndfile\include;..\..\..\..\3rdparty\bullet;..\..\..\..\3rdparty\freetype\include"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;TIXML_USE_STL"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;TIXML_USE_STL;NEWT_STATIC_PLUGIN"
 				IgnoreStandardIncludePath="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
@@ -614,11 +614,79 @@
 			Name="Newt"
 			>
 			<File
+				RelativePath="..\..\..\..\src\entity.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\entity.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\game.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\game.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\gem.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\gem.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\inventory.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\inventory.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\mapgen.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\mapgen.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\on-collision-behavior.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\on-collision-behavior.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\player.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\player.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\src\plugin.cc"
 				>
 			</File>
 			<File
 				RelativePath="..\..\..\..\src\plugin.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\refcount.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\trigger.cc"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\src\trigger.h"
 				>
 			</File>
 		</Filter>
